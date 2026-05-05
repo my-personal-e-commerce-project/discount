@@ -34130,3 +34130,14 @@
 2026.05.05 18:42:47 INFO  time: Imported build in 0.24s[0m
 2026.05.05 18:42:51 INFO  time: indexed workspace in 2.96s[0m
 2026.05.05 18:43:13 INFO  compiling discount (48 java sources)[0m
+2026.05.05 18:43:15 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.05.05 18:43:15 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.05.05 18:43:15 INFO  time: compiled discount in 2.64s[0m
