@@ -1,0 +1,69 @@
+package microservice.cloud.discount.shared.infrastructure.presentation.controller;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+import microservice.cloud.discount.shared.infrastructure.dto.ResponsePayload;
+import microservice.cloud.discount.shared.domain.exception.DataNotFound;
+import microservice.cloud.discount.shared.domain.exception.UnauthorizedException;
+
+@RestControllerAdvice
+public class ControllerAdvice {
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public Map<String, Object> handleValidationErrors(MethodArgumentNotValidException ex) {
+        Map<String, Object> response = new HashMap<>();
+
+        List<Map<String, String>> errors = ex.getBindingResult()
+            .getFieldErrors()
+            .stream()
+            .map(err -> Map.of(
+                "field", err.getField(),
+                "message", err.getDefaultMessage()
+            ))
+            .toList();
+
+        response.put("status", 400);
+        response.put("errors", errors);
+        return response;
+    }
+
+    @ExceptionHandler(RuntimeException.class)
+    public ResponseEntity<ResponsePayload<?>> handleRuntimeException(
+            RuntimeException ex) {
+
+        return new ResponseEntity<ResponsePayload<?>>(
+            ResponsePayload.builder().message(ex.getMessage()).build(), 
+            HttpStatus.BAD_REQUEST
+        );
+    }
+
+    @ExceptionHandler(UnauthorizedException.class)
+    public ResponseEntity<ResponsePayload<?>> handleUnauthorizedException(
+        UnauthorizedException ex
+    ) {
+
+        return new ResponseEntity<ResponsePayload<?>>(
+            ResponsePayload.builder().message(ex.getMessage()).build(), 
+            HttpStatus.UNAUTHORIZED
+        );
+    }
+
+    @ExceptionHandler(DataNotFound.class)
+    public ResponseEntity<ResponsePayload<?>> handleEntityNotFoundException(
+             DataNotFound ex) {
+
+        return new ResponseEntity<ResponsePayload<?>>(
+            ResponsePayload.builder().message(ex.getMessage()).build(), 
+            HttpStatus.NOT_FOUND
+        );
+    }
+}
