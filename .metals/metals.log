@@ -34102,3 +34102,31 @@
 2026.05.04 12:48:27 INFO  time: Connected to build server in 1.75s[0m
 2026.05.04 12:48:27 INFO  Connected to Build server: Bloop v1.4.13[0m
 2026.05.04 12:48:30 INFO  time: indexed workspace in 2.12s[0m
+2026.05.05 11:18:07 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.05.05 11:18:08 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.05.05 11:18:08 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.05.05 11:18:08 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.05.05 11:18:08 INFO  time: initialize in 0.88s[0m
+2026.05.05 11:18:09 INFO  Attempting to connect to the build server...[0m
+2026.05.05 11:18:08 INFO  skipping build import with status 'Installed'[0m
+2026.05.05 11:18:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.05.05 11:18:08 INFO  time: Connected to build server in 0.19s[0m
+2026.05.05 11:18:08 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.05.05 11:18:08 INFO  time: Imported build in 0.12s[0m
+2026.05.05 11:18:11 INFO  time: indexed workspace in 2.02s[0m
+2026.05.05 12:23:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.05.05 12:23:29 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.05.05 12:23:31 INFO  time: indexed workspace in 1.15s[0m
+2026.05.05 18:42:36 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.05.05 18:42:36 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.05.05 18:42:36 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.05.05 18:42:36 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.05.05 18:42:38 INFO  time: initialize in 1.88s[0m
+2026.05.05 18:42:42 INFO  Attempting to connect to the build server...[0m
+2026.05.05 18:42:43 INFO  skipping build import with status 'Installed'[0m
+2026.05.05 18:42:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.05.05 18:42:47 INFO  time: Connected to build server in 4.98s[0m
+2026.05.05 18:42:47 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.05.05 18:42:47 INFO  time: Imported build in 0.24s[0m
+2026.05.05 18:42:51 INFO  time: indexed workspace in 2.96s[0m
+2026.05.05 18:43:13 INFO  compiling discount (48 java sources)[0m
