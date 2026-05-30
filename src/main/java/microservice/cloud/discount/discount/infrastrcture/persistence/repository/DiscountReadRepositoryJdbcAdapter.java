@@ -19,7 +19,7 @@ public class DiscountReadRepositoryJdbcAdapter implements DiscountReadRepository
 
     @Override
     public Pagination<DiscountReadDTO> listDiscounts(int page, int size) {
-        Pageable pageable = PageRequest.of(0, 20);
+        Pageable pageable = PageRequest.of(page, size);
 
         Page<DiscountEntity> discounts = discountJdbcRepository.findAll(pageable);
 
@@ -49,7 +49,6 @@ public class DiscountReadRepositoryJdbcAdapter implements DiscountReadRepository
             entity.getMaxPrice(),
             entity.getMinStock(),
             entity.getMaxStock(),
-            entity.isAutoApply(),
             entity.getExpiredAt() 
         );
     }

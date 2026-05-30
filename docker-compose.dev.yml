@@ -3,7 +3,7 @@ services:
     image: debezium/postgres:16
     container_name: discount-postgres-1
     ports:
-      - "5433:5432"
+      - 5434:5432
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
@@ -19,9 +19,8 @@ services:
       -c max_wal_senders=10
 # =========================================================================
 # Para registrar el conector manualmente, ejecutá este comando en tu terminal:
-# 
 # curl -i -X PUT -H "Accept:application/json" -H "Content-Type:application/json" \
-#  localhost:8083/connectors/discount-connector/config -d '{
+#  localhost:8084/connectors/discount-container/config -d '{
 #    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
 #    "database.hostname": "discount-postgres-1",
 #    "database.port": "5432",
@@ -44,7 +43,7 @@ services:
     depends_on:
       - postgres
     ports:
-      - "8083:8083"
+      - "8084:8083"
     networks:
       - e-commerce-network
     environment:

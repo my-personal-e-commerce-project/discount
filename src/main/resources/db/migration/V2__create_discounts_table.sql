@@ -13,7 +13,6 @@ CREATE TABLE discounts (
     min_stock int DEFAULT NULL,
     max_stock int DEFAULT NULL,
 
-    auto_apply BOOLEAN DEFAULT NULL,
     expired_at timestamp DEFAULT now()
 );
 
@@ -39,16 +38,15 @@ BEGIN
         SELECT jsonb_build_object(
             'id', NEW.id,
             'name', NEW.name,
-            'discount_type', NEW.discount_type,
-            'decrement_value', NEW.decrement_value,
-            'percentage_value', NEW.percentage_value,
-            'global_categories', NEW.global_categories,
-            'min_price', NEW.min_price,
-            'max_price', NEW.max_price,
-            'min_stock', NEW.min_stock,
-            'max_stock', NEW.max_stock,
-            'auto_apply', NEW.auto_apply,
-            'expired_at', NEW.expired_at,
+            'discountType', NEW.discount_type,
+            'decrementValue', NEW.decrement_value,
+            'percentageValue', NEW.percentage_value,
+            'globalCategories', NEW.global_categories,
+            'minPrice', NEW.min_price,
+            'maxPrice', NEW.max_price,
+            'minStock', NEW.min_stock,
+            'maxStock', NEW.max_stock,
+            'expiredAt', NEW.expired_at,
             'categories', (
                 SELECT coalesce(
                     jsonb_agg(pc.category_id), 

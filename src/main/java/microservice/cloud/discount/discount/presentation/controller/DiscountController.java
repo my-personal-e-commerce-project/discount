@@ -71,7 +71,6 @@ public class DiscountController {
                 : new Price(discount.getMaxPrice()),
             discount.getMinStock() == null? null: new Quantity(discount.getMinStock()),
             discount.getMaxStock() == null? null: new Quantity(discount.getMaxStock()),
-            discount.isAutoApply(),
             discount.getExpiredAt()
         );
 
@@ -104,7 +103,6 @@ public class DiscountController {
                     : new Price(discount.getMaxPrice()),
                 discount.getMinStock() == null? null: new Quantity(discount.getMinStock()),
                 discount.getMaxStock() == null? null: new Quantity(discount.getMaxStock()),
-                discount.isAutoApply(),
                 discount.getExpiredAt()
             )
         );

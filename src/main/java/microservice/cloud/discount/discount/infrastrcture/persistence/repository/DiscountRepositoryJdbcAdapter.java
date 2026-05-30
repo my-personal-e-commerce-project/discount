@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import lombok.RequiredArgsConstructor;
 import microservice.cloud.discount.discount.domain.entity.Discount;
+import microservice.cloud.discount.discount.domain.exception.ThisDiscountAlreadyExistsException;
 import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
 import microservice.cloud.discount.discount.domain.value_objects.DiscountType;
 import microservice.cloud.discount.discount.domain.value_objects.Percentage;
@@ -66,6 +67,48 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
     }
 
     @Override
+    public void existsDiscountWithFollowingAttributes(
+        String name, 
+        boolean globalCategories,
+        Set<String> allowedCategories,
+        DiscountType discountType, 
+        Percentage percentageValue,
+        Price decrementValue, 
+        Price minPrice, 
+        Price maxPrice, 
+        Quantity minStock, 
+        Quantity maxStock
+    ) {
+        List<DiscountEntity> discounts = discountJdbcRepository
+            .findByNameContainingAndDiscountTypeAndGlobalCategoriesAndPercentageValueAndDecrementValueAndMinPriceAndMaxPriceAndMinStockAndMaxStock(
+                name,
+                discountType.toString(), 
+                globalCategories,
+                percentageValue == null? null: percentageValue.value(), 
+                decrementValue == null? null: decrementValue.value(),
+                minPrice == null? null: minPrice.value(), 
+                maxPrice == null? null: maxPrice.value(), 
+                minStock == null? null: minStock.value(), 
+                maxStock == null? null: maxStock.value()
+            );
+
+        discounts.forEach(d -> {
+            Set<String> categories = d.getAllowedCategories()
+                .stream()
+                .map(c -> c.categoryId())
+                .collect(Collectors.toSet());
+
+            if(
+                categories.containsAll(allowedCategories)
+                && allowedCategories.containsAll(categories)
+            ) {
+                if(!discounts.isEmpty())
+                    throw new ThisDiscountAlreadyExistsException();
+            }
+        });
+    }
+
+    @Override
     public List<Discount> getDiscountsByIds(Set<String> discountIds) {
         List<DiscountEntity> discounts = 
             discountJdbcRepository.findByIdIn(discountIds);
@@ -92,7 +135,6 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
             entity.getMaxPrice() == null? null: new Price(entity.getMaxPrice()), 
             entity.getMinStock() == null? null: new Quantity(entity.getMinStock()),
             entity.getMaxStock() == null? null: new Quantity(entity.getMinStock()),
-            entity.isAutoApply(),
             entity.getExpiredAt()
         );
     }
@@ -116,7 +158,6 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
             discount.maxPrice() == null? null: discount.maxPrice().value(), 
             discount.minStock() == null? null: discount.minStock().value(), 
             discount.maxStock() == null? null: discount.maxStock().value(), 
-            discount.autoApply(), 
             discount.expiredAt()
         );
     }

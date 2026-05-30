@@ -12,5 +12,18 @@ import microservice.cloud.discount.discount.infrastrcture.persistence.model.Disc
 public interface DiscountJdbcRepository extends PagingAndSortingRepository<DiscountEntity, String> {
 
     List<DiscountEntity> findByIdIn(Set<String> ids);
+
+    List<DiscountEntity> findByNameContainingAndDiscountTypeAndGlobalCategoriesAndPercentageValueAndDecrementValueAndMinPriceAndMaxPriceAndMinStockAndMaxStock(
+        String name, 
+        String discountType,
+        boolean globalCategories,
+        Double percentageValue,
+        Double decrementValue,
+        Double minPrice,
+        Double maxPrice,
+        Integer minStock,
+        Integer maxStock
+    );
+
     long countByIdIn(Set<String> ids);
 }

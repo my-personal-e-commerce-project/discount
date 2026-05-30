@@ -42,7 +42,6 @@ public class CreateDiscountUseCase {
         Price maxPrice,
         Quantity minStock,
         Quantity maxStock,
-        boolean autoApply,
         LocalDateTime expiredAt
     ) {
         Me me = getMePort.execute();
@@ -53,6 +52,19 @@ public class CreateDiscountUseCase {
         me.IHavePermission(Permission.createDiscount());
 
         if(!globalCategories) validTheseCategoriesPort.execute(allowedCategories);
+
+        discountRepository.existsDiscountWithFollowingAttributes(
+            name,
+            globalCategories,
+            allowedCategories,
+            discountType,
+            percentageValue,
+            decrementValue,
+            minPrice,
+            maxPrice,
+            minStock,
+            maxStock
+        );
 
         Discount discount = Discount.factory(
             id,
@@ -66,7 +78,6 @@ public class CreateDiscountUseCase {
             maxPrice,
             minStock,
             maxStock,
-            autoApply,
             expiredAt
         );
 

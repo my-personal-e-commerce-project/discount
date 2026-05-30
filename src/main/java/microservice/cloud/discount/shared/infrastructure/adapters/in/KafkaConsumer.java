@@ -15,16 +15,15 @@ import microservice.cloud.discount.shared.infrastructure.dto.InventoryEventDto;
 @RequiredArgsConstructor
 @Configuration
 public class KafkaConsumer {
-
     private final RemoveDiscountCategoriesLogUseCase removeDiscountCategoriesLogUseCase;
     
     @Bean
     public Consumer<Message<InventoryEventDto>> inventoryHandler() {
         return message -> {
-            if(message.getPayload().getPayload().getAfter().getType().equals("CATEGORY_DELETED")) {
+            if(message.getPayload().getAfter().getType().equals("CATEGORY_DELETED")) {
                 removeDiscountCategoriesLogUseCase.execute(
                     Id.fromString(
-                        message.getPayload().getPayload().getAfter().getAggregateId()
+                        message.getPayload().getAfter().getAggregateId()
                     )
                 );
             }

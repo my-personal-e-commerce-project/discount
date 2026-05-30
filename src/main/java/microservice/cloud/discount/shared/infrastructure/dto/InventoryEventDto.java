@@ -12,13 +12,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class InventoryEventDto {
-    private Payload payload;
-
-    @Data
-    public static class Payload {
-        private After after;
-        private String op;
-    }
+    
+    private After after;
+    private String op;
 
     @Data
     public static class After {

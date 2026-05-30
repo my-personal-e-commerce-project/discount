@@ -12,4 +12,9 @@ public record Percentage(
 
         this.value = value;
     }
+
+    public boolean equals(Percentage percentage) {
+
+        return percentage.value.equals(value);
+    }
 }

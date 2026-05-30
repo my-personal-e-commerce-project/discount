@@ -24,7 +24,6 @@ public class Discount extends AggregateRoot {
     private Price maxPrice;
     private Quantity minStock;
     private Quantity maxStock;
-    private boolean autoApply;
     private LocalDateTime expiredAt;
 
     public Discount(
@@ -39,17 +38,16 @@ public class Discount extends AggregateRoot {
         Price maxPrice,
         Quantity minStock,
         Quantity maxStock,
-        boolean autoApply,
         LocalDateTime expiredAt
     ) {
         if(name == null)
             throw new RuntimeException("The name cannot be null");
 
         if(globalCategories && !allowedCategories.isEmpty())
-            throw new RuntimeException("This discounts cannot have categories field, because globalCategories field is false");
+            throw new RuntimeException("This discount cannot have categories, because globalCategories field is false");
 
         if(!globalCategories && allowedCategories.isEmpty())
-            throw new RuntimeException("This discounts should have categories field, because globalCategories field is true");
+            throw new RuntimeException("This discount should have categories, because globalCategories field is true");
 
         if(discountType == null)
             throw new RuntimeException("The discountType field cannot be null.");
@@ -71,7 +69,6 @@ public class Discount extends AggregateRoot {
         this.maxPrice = maxPrice;
         this.minStock = minStock;
         this.maxStock = maxStock;
-        this.autoApply = autoApply;
         this.expiredAt = expiredAt;
     }
 
@@ -87,7 +84,6 @@ public class Discount extends AggregateRoot {
         Price maxPrice,
         Quantity minStock,
         Quantity maxStock,
-        boolean autoApply,
         LocalDateTime expiredAt
     ) {
         Discount discount = new Discount(
@@ -102,7 +98,6 @@ public class Discount extends AggregateRoot {
             maxPrice, 
             minStock, 
             maxStock, 
-            autoApply,
             expiredAt
         );
 
@@ -119,7 +114,6 @@ public class Discount extends AggregateRoot {
                 maxPrice == null? null: maxPrice.value(),
                 minStock == null? null: minStock.value(),
                 maxStock == null? null: maxStock.value(),
-                autoApply, 
                 expiredAt
             )
         );
@@ -142,6 +136,5 @@ public class Discount extends AggregateRoot {
     public Price maxPrice() {return maxPrice;}
     public Quantity minStock() {return minStock;}
     public Quantity maxStock() {return maxStock;}
-    public boolean autoApply() {return autoApply;}
     public LocalDateTime expiredAt() {return expiredAt;}
 }
