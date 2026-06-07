@@ -101,6 +101,7 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
             if(
                 categories.containsAll(allowedCategories)
                 && allowedCategories.containsAll(categories)
+                && d.getName().equals(name)
             ) {
                 if(!discounts.isEmpty())
                     throw new ThisDiscountAlreadyExistsException();

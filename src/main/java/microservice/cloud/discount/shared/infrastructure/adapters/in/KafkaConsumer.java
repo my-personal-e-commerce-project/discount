@@ -10,23 +10,23 @@ import org.springframework.messaging.Message;
 import lombok.RequiredArgsConstructor;
 import microservice.cloud.discount.discount.application.use_cases.RemoveDiscountCategoriesLogUseCase;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
-import microservice.cloud.discount.shared.infrastructure.dto.InventoryEventDto;
+import microservice.cloud.discount.shared.infrastructure.dto.DeletedCategory;
 
 @RequiredArgsConstructor
 @Configuration
 public class KafkaConsumer {
+
     private final RemoveDiscountCategoriesLogUseCase removeDiscountCategoriesLogUseCase;
     
     @Bean
-    public Consumer<Message<InventoryEventDto>> inventoryHandler() {
+    public Consumer<Message<DeletedCategory>> deletedCategorySagaHandler() {
         return message -> {
-            if(message.getPayload().getAfter().getType().equals("CATEGORY_DELETED")) {
-                removeDiscountCategoriesLogUseCase.execute(
-                    Id.fromString(
-                        message.getPayload().getAfter().getAggregateId()
-                    )
-                );
-            }
+            System.out.println("deletedCategorySagaHandler");
+            removeDiscountCategoriesLogUseCase.execute(
+                Id.fromString(
+                    message.getPayload().aggregateId()
+                )
+            );
         };
     }
 }
