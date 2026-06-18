@@ -4,6 +4,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import lombok.RequiredArgsConstructor;
 import microservice.cloud.discount.discount.application.dtos.DiscountReadDTO;
@@ -17,6 +18,7 @@ public class DiscountReadRepositoryJdbcAdapter implements DiscountReadRepository
 
     private final DiscountJdbcRepository discountJdbcRepository;
 
+    @Transactional(readOnly = true)
     @Override
     public Pagination<DiscountReadDTO> listDiscounts(int page, int size) {
         Pageable pageable = PageRequest.of(page, size);

@@ -26,6 +26,7 @@ CREATE TABLE discount_categories (
 CREATE INDEX idx_category_id ON discount_categories (category_id);
 
 
+
 CREATE OR REPLACE FUNCTION fn_build_discount_outbox()
 RETURNS TRIGGER AS $$
 DECLARE

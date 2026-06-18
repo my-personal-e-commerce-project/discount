@@ -1,9 +1,17 @@
 package microservice.cloud.discount.discount.application.use_cases;
 
+import java.time.LocalDateTime;
+import java.util.Set;
+
 import microservice.cloud.discount.discount.application.ports.out.ValidTheseCategoriesPort;
 import microservice.cloud.discount.discount.domain.entity.Discount;
 import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
+import microservice.cloud.discount.discount.domain.value_objects.DiscountType;
+import microservice.cloud.discount.discount.domain.value_objects.Percentage;
+import microservice.cloud.discount.discount.domain.value_objects.Price;
+import microservice.cloud.discount.discount.domain.value_objects.Quantity;
 import microservice.cloud.discount.shared.application.ports.out.GetMePort;
+import microservice.cloud.discount.shared.domain.value_objects.Id;
 import microservice.cloud.discount.shared.domain.value_objects.Me;
 import microservice.cloud.discount.shared.domain.value_objects.Permission;
 
@@ -23,7 +31,20 @@ public class UpdateDiscountUseCase {
         this.getMePort = getMePort;
     }
 
-    public void execute(Discount discount) {
+    public void execute(
+        Id id,
+        String name,
+        DiscountType discountType,
+        Percentage percentageValue,
+        Price decrementValue,
+        Set<String> allowedCategories,
+        boolean globalCategories,
+        Price minPrice,
+        Price maxPrice,
+        Quantity minStock,
+        Quantity maxStock,
+        LocalDateTime expiredAt
+    ) {
         Me me = getMePort.execute();
 
         if(me == null)
@@ -31,9 +52,23 @@ public class UpdateDiscountUseCase {
 
         me.IHavePermission(Permission.createDiscount());
 
-        if(!discount.globalCategories()) validTheseCategoriesPort.execute(discount.allowedCategories());
+        if(!globalCategories) validTheseCategoriesPort.execute(allowedCategories);
 
-        discountRepository.getById(discount.id());
+        Discount discount = discountRepository.getById(id);
+
+        discount.update(
+            name, 
+            discountType, 
+            percentageValue, 
+            decrementValue, 
+            allowedCategories, 
+            globalCategories, 
+            minPrice, 
+            maxPrice, 
+            minStock, 
+            maxStock, 
+            expiredAt
+        );
 
         discountRepository.update(discount);
     }

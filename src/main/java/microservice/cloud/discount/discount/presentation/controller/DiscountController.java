@@ -18,10 +18,10 @@ import microservice.cloud.discount.discount.application.use_cases.CreateDiscount
 import microservice.cloud.discount.discount.application.use_cases.DeleteDiscountUseCase;
 import microservice.cloud.discount.discount.application.use_cases.ListDiscountsUseCase;
 import microservice.cloud.discount.discount.application.use_cases.UpdateDiscountUseCase;
-import microservice.cloud.discount.discount.domain.entity.Discount;
 import microservice.cloud.discount.discount.domain.value_objects.DiscountType;
 import microservice.cloud.discount.discount.domain.value_objects.Percentage;
 import microservice.cloud.discount.discount.presentation.validate.DiscountDTO;
+import microservice.cloud.discount.discount.presentation.validate.UpdateDiscountDTO;
 import microservice.cloud.discount.discount.domain.value_objects.Price;
 import microservice.cloud.discount.discount.domain.value_objects.Quantity;
 import microservice.cloud.discount.shared.application.dto.Pagination;
@@ -78,33 +78,31 @@ public class DiscountController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<DiscountDTO> updateDiscount(
-        @RequestBody @Valid DiscountDTO discount,
+    public ResponseEntity<UpdateDiscountDTO> updateDiscount(
+        @RequestBody @Valid UpdateDiscountDTO discount,
         @PathVariable String id
     ) {
-        discount.setId(Id.generate().value());
-
+        discount.setId(id);
+        
         updateDiscountUseCase.execute(
-            new Discount(
-                Id.fromString(id),
-                discount.getName(),
-                DiscountType.valueOf(discount.getDiscountType()),
-                discount.getPercentageValue() == null
-                    ? null
-                    : new Percentage(discount.getPercentageValue()),
-                discount.getDecrementValue() == null? null: new Price(discount.getDecrementValue()),
-                discount.getAllowedCategories(),
-                discount.isGlobalCategories(),
-                discount.getMinPrice() == null
-                    ? null
-                    : new Price(discount.getMinPrice()),
-                discount.getMaxPrice() == null
-                    ? null
-                    : new Price(discount.getMaxPrice()),
-                discount.getMinStock() == null? null: new Quantity(discount.getMinStock()),
-                discount.getMaxStock() == null? null: new Quantity(discount.getMaxStock()),
-                discount.getExpiredAt()
-            )
+            Id.fromString(id),
+            discount.getName(),
+            DiscountType.valueOf(discount.getDiscountType()),
+            discount.getPercentageValue() == null
+                ? null
+                : new Percentage(discount.getPercentageValue()),
+            discount.getDecrementValue() == null? null: new Price(discount.getDecrementValue()),
+            discount.getAllowedCategories(),
+            discount.isGlobalCategories(),
+            discount.getMinPrice() == null
+                ? null
+                : new Price(discount.getMinPrice()),
+            discount.getMaxPrice() == null
+                ? null
+                : new Price(discount.getMaxPrice()),
+            discount.getMinStock() == null? null: new Quantity(discount.getMinStock()),
+            discount.getMaxStock() == null? null: new Quantity(discount.getMaxStock()),
+            discount.getExpiredAt()
         );
 
         return ResponseEntity.ok(discount);

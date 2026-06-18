@@ -25,7 +25,6 @@ public class DiscountEntity {
    
     @Table("discount_categories")
     public static record DiscountCategoryReference(
-        @Id
         @Column("category_id") String categoryId
     ) {}
 

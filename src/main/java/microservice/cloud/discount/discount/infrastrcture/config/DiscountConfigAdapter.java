@@ -11,7 +11,6 @@ import microservice.cloud.discount.discount.application.use_cases.ListDiscountsU
 import microservice.cloud.discount.discount.application.use_cases.RemoveDiscountCategoriesLogUseCase;
 import microservice.cloud.discount.discount.application.use_cases.UpdateDiscountUseCase;
 import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
-import microservice.cloud.discount.shared.application.ports.out.EventPublisher;
 import microservice.cloud.discount.shared.application.ports.out.GetMePort;
 
 @Configuration
@@ -46,10 +45,9 @@ public class DiscountConfigAdapter {
     
     @Bean
     public RemoveDiscountCategoriesLogUseCase removeDiscountCategoriesLogUseCase(
-        DiscountRepository discountRepository,
-        EventPublisher eventPublisher
+        DiscountRepository discountRepository
     ) {
-        return new RemoveDiscountCategoriesLogUseCase(discountRepository, eventPublisher);
+        return new RemoveDiscountCategoriesLogUseCase(discountRepository);
     }
 
     @Bean 

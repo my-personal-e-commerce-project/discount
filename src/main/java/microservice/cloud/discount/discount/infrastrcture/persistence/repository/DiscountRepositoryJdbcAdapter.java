@@ -15,7 +15,6 @@ import microservice.cloud.discount.discount.domain.repository.DiscountRepository
 import microservice.cloud.discount.discount.domain.value_objects.DiscountType;
 import microservice.cloud.discount.discount.domain.value_objects.Percentage;
 import microservice.cloud.discount.discount.infrastrcture.persistence.model.DiscountEntity;
-import microservice.cloud.discount.discount.infrastrcture.persistence.model.DiscountEntity.DiscountCategoryReference;
 import microservice.cloud.discount.discount.domain.value_objects.Price;
 import microservice.cloud.discount.discount.domain.value_objects.Quantity;
 import microservice.cloud.discount.shared.domain.exception.DataNotFound;
@@ -46,16 +45,13 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
         jdbcAggregateTemplate.deleteById(discount.id().value(), DiscountEntity.class);
     }
 
+    @Transactional
     @Override
     public void removeDiscountCategoriesLog(Id id) {
-        DiscountCategoryReference entity 
-            = jdbcAggregateTemplate.findById(id.value(), DiscountCategoryReference.class);
-
-        if(entity != null) {
-            jdbcAggregateTemplate.delete(entity);
-        }
+        discountJdbcRepository.deleteByCategoryId(id.value());
     }
 
+    @Transactional(readOnly = true)
     @Override
     public Discount getById(Id id) {
         DiscountEntity entity = jdbcAggregateTemplate.findById(id.value(), DiscountEntity.class);

@@ -10,7 +10,7 @@ public record DiscountReadDTO(
     Double percentageValue,
     Double decrementValue,
     List<String> allowedCategories,
-    boolean validAllCategories,
+    boolean isGlobalCategories,
     Double minPrice,
     Double maxPrice,
     int minStock,
