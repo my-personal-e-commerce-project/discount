@@ -11,10 +11,12 @@ import microservice.cloud.discount.discount.domain.value_objects.Price;
 import microservice.cloud.discount.discount.domain.value_objects.Quantity;
 import microservice.cloud.discount.shared.domain.entity.AggregateRoot;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
+import microservice.cloud.discount.shared.domain.value_objects.Slug;
 
 public class Discount extends AggregateRoot {
     private final Id id;
     private String name;
+    private Slug slug;
     private DiscountType discountType;
     private Percentage percentageValue;
     private Price decrementValue;
@@ -29,6 +31,7 @@ public class Discount extends AggregateRoot {
     public Discount(
         Id id,
         String name, 
+        Slug slug,
         DiscountType discountType,
         Percentage percentageValue,
         Price decrementValue,
@@ -57,6 +60,7 @@ public class Discount extends AggregateRoot {
 
         this.id = id;
         this.name = name;
+        this.slug = slug;
         this.discountType = discountType;
         this.percentageValue = percentageValue;
         this.decrementValue = decrementValue;
@@ -71,7 +75,8 @@ public class Discount extends AggregateRoot {
 
     public static Discount factory(
         Id id,
-        String name, 
+        String name,
+        Slug slug,
         DiscountType discountType,
         Percentage percentageValue,
         Price decrementValue,
@@ -85,7 +90,8 @@ public class Discount extends AggregateRoot {
     ) {
         Discount discount = new Discount(
             id, 
-            name, 
+            name,
+            slug,
             discountType, 
             percentageValue, 
             decrementValue, 
@@ -120,6 +126,7 @@ public class Discount extends AggregateRoot {
 
     public void update(
         String name,
+        Slug slug,
         DiscountType discountType,
         Percentage percentageValue,
         Price decrementValue,
@@ -147,6 +154,7 @@ public class Discount extends AggregateRoot {
             throw new RuntimeException("The decrementValue should be null.");
 
         this.name = name;
+        this.slug = slug;
         this.discountType = discountType;
         this.percentageValue = percentageValue;
         this.decrementValue = decrementValue;
@@ -161,6 +169,7 @@ public class Discount extends AggregateRoot {
 
     public Id id() {return id;}
     public String name() {return name;}
+    public Slug slug() {return slug;}
     public DiscountType discountType() {return discountType;}
     public Percentage percentageValue() {return percentageValue;}
     public Price decrementValue() {return decrementValue;}

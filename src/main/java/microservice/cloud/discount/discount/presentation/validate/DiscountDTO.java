@@ -19,7 +19,10 @@ public class DiscountDTO {
     private String id;
     @NotEmpty
     private String name;
-    
+   
+    @NotEmpty
+    private String slug;
+
     @NotEmpty
     private String discountType;
    
@@ -31,8 +34,8 @@ public class DiscountDTO {
     private boolean globalCategories = false;
     private Double minPrice = null;
     private Double maxPrice = null;
-    private Integer minStock = 0;
-    private Integer maxStock = 0;
+    private Integer minStock = null;
+    private Integer maxStock = null;
 
     @NotNull
     @Future

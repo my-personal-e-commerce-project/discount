@@ -19,6 +19,7 @@ public class DiscountEntity {
     @Id
     private final String id;
     private String name;
+    private String slug;
     private String discountType;
     private Double percentageValue;
     private Double decrementValue;

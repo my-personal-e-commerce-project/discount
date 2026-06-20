@@ -14,6 +14,7 @@ import microservice.cloud.discount.shared.application.ports.out.GetMePort;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
 import microservice.cloud.discount.shared.domain.value_objects.Me;
 import microservice.cloud.discount.shared.domain.value_objects.Permission;
+import microservice.cloud.discount.shared.domain.value_objects.Slug;
 
 public class UpdateDiscountUseCase {
 
@@ -34,6 +35,7 @@ public class UpdateDiscountUseCase {
     public void execute(
         Id id,
         String name,
+        Slug slug,
         DiscountType discountType,
         Percentage percentageValue,
         Price decrementValue,
@@ -57,7 +59,8 @@ public class UpdateDiscountUseCase {
         Discount discount = discountRepository.getById(id);
 
         discount.update(
-            name, 
+            name,
+            slug,
             discountType, 
             percentageValue, 
             decrementValue, 

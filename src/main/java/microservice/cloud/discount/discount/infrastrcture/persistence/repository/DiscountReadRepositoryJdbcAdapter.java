@@ -39,6 +39,7 @@ public class DiscountReadRepositoryJdbcAdapter implements DiscountReadRepository
         return new DiscountReadDTO(
             entity.getId(),
             entity.getName(),
+            entity.getSlug(),
             entity.getDiscountType().toString(),
             entity.getPercentageValue(),
             entity.getDecrementValue(),

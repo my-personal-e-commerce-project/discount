@@ -19,6 +19,7 @@ import microservice.cloud.discount.discount.domain.value_objects.Price;
 import microservice.cloud.discount.discount.domain.value_objects.Quantity;
 import microservice.cloud.discount.shared.domain.exception.DataNotFound;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
+import microservice.cloud.discount.shared.domain.value_objects.Slug;
 
 @RequiredArgsConstructor
 @Repository
@@ -117,7 +118,8 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
     
         return new Discount(
             Id.fromString(entity.getId()), 
-            entity.getName(), 
+            entity.getName(),
+            Slug.fromString(entity.getSlug()),
             DiscountType.valueOf(entity.getDiscountType()), 
             entity.getPercentageValue() == null? null: new Percentage(entity.getPercentageValue()), 
             entity.getDecrementValue() == null? null: new Price(entity.getDecrementValue()), 
@@ -140,7 +142,8 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
     
         return new DiscountEntity(
             discount.id().value(), 
-            discount.name(), 
+            discount.name(),
+            discount.slug().value(),
             discount.discountType().toString(), 
             discount.percentageValue() == null? null: discount.percentageValue().value(), 
             discount.decrementValue() == null? null: discount.decrementValue().value(),

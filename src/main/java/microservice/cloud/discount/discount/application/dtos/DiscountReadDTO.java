@@ -6,6 +6,7 @@ import java.util.List;
 public record DiscountReadDTO(
     String id,
     String name,
+    String slug,
     String discountType,
     Double percentageValue,
     Double decrementValue,
@@ -13,7 +14,7 @@ public record DiscountReadDTO(
     boolean isGlobalCategories,
     Double minPrice,
     Double maxPrice,
-    int minStock,
-    int maxStock,
+    Integer minStock,
+    Integer maxStock,
     LocalDateTime expiredAt
 ) {}

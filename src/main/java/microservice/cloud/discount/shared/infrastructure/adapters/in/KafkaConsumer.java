@@ -1,12 +1,9 @@
-
 package microservice.cloud.discount.shared.infrastructure.adapters.in;
 
-import java.util.function.Consumer;
 import java.util.function.Function;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.messaging.Message;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -36,10 +33,6 @@ public class KafkaConsumer {
                 outputEvent = new CategoryDiscountRemoved(
                     aggregateId
                 );
-                System.out.println("debug");
-                System.out.println("debug");
-                System.out.println("debug");
-                System.out.println("debug");
             } catch (Exception e) {
                 log.error("Error processing DeletedCategory event", e.getMessage());
                 outputEvent = new CategoryDiscountRemoved(

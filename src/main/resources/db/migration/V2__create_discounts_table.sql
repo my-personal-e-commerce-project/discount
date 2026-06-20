@@ -1,6 +1,7 @@
 CREATE TABLE discounts (
     id VARCHAR(255) PRIMARY KEY UNIQUE NOT NULL,
     name VARCHAR(255) NOT NULL,
+    slug VARCHAR(255) NOT NULL,
     discount_type VARCHAR(255) NOT NULL,
     decrement_value DOUBLE PRECISION DEFAULT NULL,
     percentage_value DOUBLE PRECISION DEFAULT NULL,
@@ -39,6 +40,7 @@ BEGIN
         SELECT jsonb_build_object(
             'id', NEW.id,
             'name', NEW.name,
+            'slug', NEW.slug,
             'discountType', NEW.discount_type,
             'decrementValue', NEW.decrement_value,
             'percentageValue', NEW.percentage_value,

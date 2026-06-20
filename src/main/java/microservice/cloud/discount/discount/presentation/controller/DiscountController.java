@@ -26,6 +26,7 @@ import microservice.cloud.discount.discount.domain.value_objects.Price;
 import microservice.cloud.discount.discount.domain.value_objects.Quantity;
 import microservice.cloud.discount.shared.application.dto.Pagination;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
+import microservice.cloud.discount.shared.domain.value_objects.Slug;
 
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/discounts")
@@ -52,10 +53,12 @@ public class DiscountController {
         @RequestBody @Valid DiscountDTO discount
     ) {
         discount.setId(Id.generate().value());
+        discount.setSlug(Slug.create(discount.getSlug()).value());
 
         createDiscountUseCase.execute(
             Id.fromString(discount.getId()),
             discount.getName(),
+            Slug.fromString(discount.getSlug()),
             DiscountType.valueOf(discount.getDiscountType()),
             discount.getPercentageValue() == null
                 ? null
@@ -83,10 +86,12 @@ public class DiscountController {
         @PathVariable String id
     ) {
         discount.setId(id);
+        discount.setSlug(Slug.create(discount.getSlug()).value());
         
         updateDiscountUseCase.execute(
             Id.fromString(id),
             discount.getName(),
+            Slug.fromString(discount.getSlug()),
             DiscountType.valueOf(discount.getDiscountType()),
             discount.getPercentageValue() == null
                 ? null
