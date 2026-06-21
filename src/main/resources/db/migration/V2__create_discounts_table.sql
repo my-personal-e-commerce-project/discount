@@ -50,7 +50,7 @@ BEGIN
             'minStock', NEW.min_stock,
             'maxStock', NEW.max_stock,
             'expiredAt', NEW.expired_at,
-            'categories', (
+            'allowedCategories', (
                 SELECT coalesce(
                     jsonb_agg(pc.category_id), 
                     '[]'::jsonb
