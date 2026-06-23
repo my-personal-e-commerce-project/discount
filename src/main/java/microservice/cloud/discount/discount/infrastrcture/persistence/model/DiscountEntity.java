@@ -37,5 +37,6 @@ public class DiscountEntity {
     private Double maxPrice;
     private Integer minStock;
     private Integer maxStock;
+    private boolean isActive;
     private LocalDateTime expiredAt;
 }

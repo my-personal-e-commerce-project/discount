@@ -26,6 +26,7 @@ public class Discount extends AggregateRoot {
     private Price maxPrice;
     private Quantity minStock;
     private Quantity maxStock;
+    private boolean isActive;
     private LocalDateTime expiredAt;
 
     public Discount(
@@ -41,6 +42,7 @@ public class Discount extends AggregateRoot {
         Price maxPrice,
         Quantity minStock,
         Quantity maxStock,
+        boolean isActive,
         LocalDateTime expiredAt
     ) {
         if(name == null)
@@ -70,6 +72,7 @@ public class Discount extends AggregateRoot {
         this.maxPrice = maxPrice;
         this.minStock = minStock;
         this.maxStock = maxStock;
+        this.isActive = isActive;
         this.expiredAt = expiredAt;
     }
 
@@ -86,6 +89,7 @@ public class Discount extends AggregateRoot {
         Price maxPrice,
         Quantity minStock,
         Quantity maxStock,
+        boolean isActive,
         LocalDateTime expiredAt
     ) {
         Discount discount = new Discount(
@@ -100,7 +104,8 @@ public class Discount extends AggregateRoot {
             minPrice, 
             maxPrice, 
             minStock, 
-            maxStock, 
+            maxStock,
+            isActive,
             expiredAt
         );
 
@@ -117,6 +122,7 @@ public class Discount extends AggregateRoot {
                 maxPrice == null? null: maxPrice.value(),
                 minStock == null? null: minStock.value(),
                 maxStock == null? null: maxStock.value(),
+                isActive,
                 expiredAt
             )
         );
@@ -136,6 +142,7 @@ public class Discount extends AggregateRoot {
         Price maxPrice,
         Quantity minStock,
         Quantity maxStock,
+        boolean isActive,
         LocalDateTime expiredAt
     ) {
         if(name == null)
@@ -183,5 +190,6 @@ public class Discount extends AggregateRoot {
     public Price maxPrice() {return maxPrice;}
     public Quantity minStock() {return minStock;}
     public Quantity maxStock() {return maxStock;}
+    public boolean isActive() {return isActive;}
     public LocalDateTime expiredAt() {return expiredAt;}
 }

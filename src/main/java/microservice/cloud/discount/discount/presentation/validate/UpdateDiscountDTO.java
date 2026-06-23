@@ -36,6 +36,7 @@ public class UpdateDiscountDTO {
     private Double maxPrice = null;
     private Integer minStock = null;
     private Integer maxStock = null;
+    private boolean isActive = false;
 
     @NotNull
     @Future

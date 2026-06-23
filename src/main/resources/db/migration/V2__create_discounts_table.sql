@@ -13,6 +13,7 @@ CREATE TABLE discounts (
     
     min_stock int DEFAULT NULL,
     max_stock int DEFAULT NULL,
+    is_active boolean DEFAULT true NOT NULL,
 
     expired_at timestamp DEFAULT now()
 );

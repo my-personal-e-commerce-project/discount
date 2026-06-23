@@ -134,6 +134,7 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
             entity.getMaxPrice() == null? null: new Price(entity.getMaxPrice()), 
             entity.getMinStock() == null? null: new Quantity(entity.getMinStock()),
             entity.getMaxStock() == null? null: new Quantity(entity.getMinStock()),
+            entity.isActive(),
             entity.getExpiredAt()
         );
     }
@@ -157,7 +158,8 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
             discount.minPrice() == null? null: discount.minPrice().value(), 
             discount.maxPrice() == null? null: discount.maxPrice().value(), 
             discount.minStock() == null? null: discount.minStock().value(), 
-            discount.maxStock() == null? null: discount.maxStock().value(), 
+            discount.maxStock() == null? null: discount.maxStock().value(),
+            discount.isActive(),
             discount.expiredAt()
         );
     }

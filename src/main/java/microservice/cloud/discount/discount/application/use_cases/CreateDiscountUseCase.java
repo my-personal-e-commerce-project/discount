@@ -44,6 +44,7 @@ public class CreateDiscountUseCase {
         Price maxPrice,
         Quantity minStock,
         Quantity maxStock,
+        boolean isActive,
         LocalDateTime expiredAt
     ) {
         Me me = getMePort.execute();
@@ -81,6 +82,7 @@ public class CreateDiscountUseCase {
             maxPrice,
             minStock,
             maxStock,
+            isActive,
             expiredAt
         );
 

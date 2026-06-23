@@ -1,5 +1,7 @@
 package microservice.cloud.discount.discount.presentation.controller;
 
+import java.util.Set;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -41,7 +43,14 @@ public class DiscountController {
     @GetMapping 
     public ResponseEntity<Pagination<DiscountReadDTO>> listDiscounts(
         @RequestParam(defaultValue = "0") int page,
-        @RequestParam(defaultValue = "10") int size
+        @RequestParam(defaultValue = "10") int size,
+        @RequestParam() Set<String> allowedCategories,
+        @RequestParam() Boolean globalCategories,
+        @RequestParam() Boolean isActive,
+        @RequestParam() Integer minStock,
+        @RequestParam() Integer maxStock,
+        @RequestParam() Double minPrice,
+        @RequestParam() Double maxPrice
     ) {
         return ResponseEntity.ok(
             listDiscountsUseCase.execute(page, size)
@@ -74,6 +83,7 @@ public class DiscountController {
                 : new Price(discount.getMaxPrice()),
             discount.getMinStock() == null? null: new Quantity(discount.getMinStock()),
             discount.getMaxStock() == null? null: new Quantity(discount.getMaxStock()),
+            discount.isActive(),
             discount.getExpiredAt()
         );
 
@@ -107,6 +117,7 @@ public class DiscountController {
                 : new Price(discount.getMaxPrice()),
             discount.getMinStock() == null? null: new Quantity(discount.getMinStock()),
             discount.getMaxStock() == null? null: new Quantity(discount.getMaxStock()),
+            discount.isActive(),
             discount.getExpiredAt()
         );
 

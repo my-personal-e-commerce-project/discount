@@ -45,6 +45,7 @@ public class UpdateDiscountUseCase {
         Price maxPrice,
         Quantity minStock,
         Quantity maxStock,
+        boolean isActive,
         LocalDateTime expiredAt
     ) {
         Me me = getMePort.execute();
@@ -70,6 +71,7 @@ public class UpdateDiscountUseCase {
             maxPrice, 
             minStock, 
             maxStock, 
+            isActive,
             expiredAt
         );
 

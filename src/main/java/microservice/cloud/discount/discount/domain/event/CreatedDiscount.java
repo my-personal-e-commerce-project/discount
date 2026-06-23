@@ -17,6 +17,7 @@ public record CreatedDiscount(
     Double maxPrice,
     Integer minStock,
     Integer maxStock,
+    boolean isActive,
     LocalDateTime expiredAt
 ) implements DomainEvent {
 
