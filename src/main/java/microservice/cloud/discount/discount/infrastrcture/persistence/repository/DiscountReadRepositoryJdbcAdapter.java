@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import lombok.RequiredArgsConstructor;
 import microservice.cloud.discount.discount.application.dtos.DiscountReadDTO;
+import microservice.cloud.discount.discount.application.dtos.Query;
 import microservice.cloud.discount.discount.application.ports.out.DiscountReadRepository;
 import microservice.cloud.discount.discount.infrastrcture.persistence.extractor.DiscountResultSetExtractor;
 import microservice.cloud.discount.shared.application.dto.Pagination;
@@ -27,13 +28,7 @@ public class DiscountReadRepositoryJdbcAdapter implements DiscountReadRepository
     public Pagination<DiscountReadDTO> listDiscounts(
         int page, 
         int size,
-        List<String> allowedCategories,
-        Boolean globalCategories,
-        Boolean isActive,
-        Integer minStock,
-        Integer maxStock,
-        Double minPrice,
-        Double maxPrice
+        Query query
     ) {
         int offset = page * size;
         
@@ -54,30 +49,33 @@ public class DiscountReadRepositoryJdbcAdapter implements DiscountReadRepository
         params.addValue("limit", size, Types.INTEGER);
         params.addValue("offset", offset, Types.INTEGER);
 
-        if (globalCategories != null) {
+        if (query.query() != null && !query.query().isBlank()) {
+            sql.append(" AND d.name LIKE :query");
+            params.addValue("query", query.query());
+        }
+        if (query.globalCategories() != null) {
             sql.append(" AND d.global_categories = :globalCategories");
-            params.addValue("globalCategories", globalCategories, Types.BOOLEAN);
+            params.addValue("globalCategories", query.globalCategories(), Types.BOOLEAN);
         }
-        if (isActive != null) {
+        if (query.isActive() != null) {
             sql.append(" AND d.is_active = :isActive");
-            params.addValue("isActive", isActive, Types.BOOLEAN);
+            params.addValue("isActive", query.isActive(), Types.BOOLEAN);
         }
-        if (minPrice != null) {
+        if (query.minPrice() != null) {
             sql.append(" AND d.min_price <= :minPrice");
-            params.addValue("minPrice", minPrice, Types.DOUBLE);
+            params.addValue("minPrice", query.minPrice(), Types.DOUBLE);
         }
-        if (maxPrice != null) {
+        if (query.maxPrice() != null) {
             sql.append(" AND d.max_price >= :maxPrice");
-            params.addValue("maxPrice", maxPrice, Types.DOUBLE);
+            params.addValue("maxPrice", query.maxPrice(), Types.DOUBLE);
         }
-        if (minStock != null) {
+        if (query.minStock() != null) {
             sql.append(" AND d.min_stock <= :minStock");
-            params.addValue("minStock", minStock, Types.INTEGER);
+            params.addValue("minStock", query.minStock(), Types.INTEGER);
         }
-        
-        if (maxStock != null) {
+        if (query.maxStock() != null) {
             sql.append(" AND d.max_stock >= :maxStock");
-            params.addValue("maxStock", maxStock, Types.INTEGER);
+            params.addValue("maxStock", query.maxStock(), Types.INTEGER);
         }
 
         sql.append(" LIMIT :limit OFFSET :offset");

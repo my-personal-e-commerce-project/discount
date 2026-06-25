@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import microservice.cloud.discount.discount.application.dtos.DiscountReadDTO;
+import microservice.cloud.discount.discount.application.dtos.Query;
 import microservice.cloud.discount.discount.application.use_cases.CreateDiscountUseCase;
 import microservice.cloud.discount.discount.application.use_cases.DeleteDiscountUseCase;
 import microservice.cloud.discount.discount.application.use_cases.ListDiscountsUseCase;
@@ -45,6 +46,7 @@ public class DiscountController {
     public ResponseEntity<Pagination<DiscountReadDTO>> listDiscounts(
         @RequestParam(defaultValue = "0") int page,
         @RequestParam(defaultValue = "10") int size,
+        @RequestParam(required = false) String query,
         @RequestParam(required = false) Set<String> allowedCategories,
         @RequestParam(required = false) Boolean globalCategories,
         @RequestParam(required = false) Boolean isActive,
@@ -54,7 +56,22 @@ public class DiscountController {
         @RequestParam(required = false) Double maxPrice
     ) {
         return ResponseEntity.ok(
-            listDiscountsUseCase.execute(page, size, allowedCategories == null? null: new ArrayList<>(allowedCategories), globalCategories, isActive, minStock, maxStock, minPrice, maxPrice)
+            listDiscountsUseCase.execute(
+                page, 
+                size, 
+                new Query(
+                    query,
+                    allowedCategories == null
+                        ? null
+                        : new ArrayList<>(allowedCategories),
+                    globalCategories,
+                    isActive,
+                    minStock,
+                    maxStock,
+                    minPrice,
+                    maxPrice
+                )
+            )
         );
     }
 
