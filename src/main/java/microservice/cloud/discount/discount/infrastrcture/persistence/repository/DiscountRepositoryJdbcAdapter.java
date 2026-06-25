@@ -63,6 +63,7 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
         return toMap(entity);
     }
 
+    @Transactional(readOnly = true)
     @Override
     public void existsDiscountWithFollowingAttributes(
         String name, 
@@ -106,6 +107,7 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
         });
     }
 
+    @Transactional(readOnly = true)
     @Override
     public List<Discount> getDiscountsByIds(Set<String> discountIds) {
         List<DiscountEntity> discounts = 

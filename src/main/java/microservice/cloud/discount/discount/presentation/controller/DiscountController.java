@@ -1,5 +1,6 @@
 package microservice.cloud.discount.discount.presentation.controller;
 
+import java.util.ArrayList;
 import java.util.Set;
 
 import org.springframework.http.ResponseEntity;
@@ -44,16 +45,16 @@ public class DiscountController {
     public ResponseEntity<Pagination<DiscountReadDTO>> listDiscounts(
         @RequestParam(defaultValue = "0") int page,
         @RequestParam(defaultValue = "10") int size,
-        @RequestParam() Set<String> allowedCategories,
-        @RequestParam() Boolean globalCategories,
-        @RequestParam() Boolean isActive,
-        @RequestParam() Integer minStock,
-        @RequestParam() Integer maxStock,
-        @RequestParam() Double minPrice,
-        @RequestParam() Double maxPrice
+        @RequestParam(required = false) Set<String> allowedCategories,
+        @RequestParam(required = false) Boolean globalCategories,
+        @RequestParam(required = false) Boolean isActive,
+        @RequestParam(required = false) Integer minStock,
+        @RequestParam(required = false) Integer maxStock,
+        @RequestParam(required = false) Double minPrice,
+        @RequestParam(required = false) Double maxPrice
     ) {
         return ResponseEntity.ok(
-            listDiscountsUseCase.execute(page, size)
+            listDiscountsUseCase.execute(page, size, allowedCategories == null? null: new ArrayList<>(allowedCategories), globalCategories, isActive, minStock, maxStock, minPrice, maxPrice)
         );
     }
 

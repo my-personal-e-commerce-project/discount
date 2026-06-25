@@ -5,14 +5,14 @@ import java.util.Set;
 
 import org.springframework.data.jdbc.repository.query.Modifying;
 import org.springframework.data.jdbc.repository.query.Query;
-import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.ListPagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 import feign.Param;
 import microservice.cloud.discount.discount.infrastrcture.persistence.model.DiscountEntity;
 
 @Repository
-public interface DiscountJdbcRepository extends PagingAndSortingRepository<DiscountEntity, String> {
+public interface DiscountJdbcRepository extends ListPagingAndSortingRepository<DiscountEntity, String> {
 
     List<DiscountEntity> findByIdIn(Set<String> ids);
 
