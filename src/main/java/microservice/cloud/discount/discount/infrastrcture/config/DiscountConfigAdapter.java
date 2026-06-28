@@ -17,7 +17,7 @@ import microservice.cloud.discount.shared.application.ports.out.GetMePort;
 public class DiscountConfigAdapter {
    
     @Bean
-    public CreateDiscountUseCase createCouponUseCase(
+    public CreateDiscountUseCase createDiscountUseCase(
         DiscountRepository discountRepository,
         ValidTheseCategoriesPort validTheseCategoriesPort,
         GetMePort getMePort
@@ -51,7 +51,7 @@ public class DiscountConfigAdapter {
     }
 
     @Bean 
-    public ListDiscountsUseCase listCouponsUseCase(
+    public ListDiscountsUseCase listDiscountUseCase(
         DiscountReadRepository discountReadRepository
     ) {
         return new ListDiscountsUseCase(discountReadRepository);

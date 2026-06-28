@@ -57,24 +57,23 @@ public class UpdateDiscountUseCase {
 
         if(!globalCategories) validTheseCategoriesPort.execute(allowedCategories);
 
-        Discount discount = discountRepository.getById(id);
-
-        discount.update(
-            name,
-            slug,
-            discountType, 
-            percentageValue, 
-            decrementValue, 
-            allowedCategories, 
-            globalCategories, 
-            minPrice, 
-            maxPrice, 
-            minStock, 
-            maxStock, 
-            isActive,
-            expiredAt
+        discountRepository.updateIfExists(
+            new Discount(
+                id,
+                name,
+                slug,
+                discountType, 
+                percentageValue, 
+                decrementValue, 
+                allowedCategories, 
+                globalCategories, 
+                minPrice, 
+                maxPrice, 
+                minStock, 
+                maxStock, 
+                isActive,
+                expiredAt
+            )
         );
-
-        discountRepository.update(discount);
     }
 }

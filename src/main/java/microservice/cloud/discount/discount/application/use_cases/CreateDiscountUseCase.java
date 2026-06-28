@@ -10,6 +10,7 @@ import microservice.cloud.discount.discount.domain.value_objects.DiscountType;
 import microservice.cloud.discount.discount.domain.value_objects.Percentage;
 import microservice.cloud.discount.discount.domain.value_objects.Price;
 import microservice.cloud.discount.discount.domain.value_objects.Quantity;
+import microservice.cloud.discount.shared.application.ports.out.EventPublisher;
 import microservice.cloud.discount.shared.application.ports.out.GetMePort;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
 import microservice.cloud.discount.shared.domain.value_objects.Me;
@@ -69,7 +70,7 @@ public class CreateDiscountUseCase {
             maxStock
         );
 
-        Discount discount = Discount.factory(
+        Discount discount = new Discount(
             id,
             name,
             slug,

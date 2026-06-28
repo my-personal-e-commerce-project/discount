@@ -36,8 +36,15 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
 
     @Transactional
     @Override
-    public void update(Discount discount) {
-        jdbcAggregateTemplate.update(toMap(discount));
+    public void updateIfExists(Discount discount) {
+        DiscountEntity entity = jdbcAggregateTemplate.findById(discount.id().value(), DiscountEntity.class);
+
+        if(entity == null)
+            throw new DataNotFound("Discount not found");
+
+        entity.updateFromDomain(discount);
+        
+        jdbcAggregateTemplate.update(entity);
     }
 
     @Transactional
@@ -162,7 +169,8 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
             discount.minStock() == null? null: discount.minStock().value(), 
             discount.maxStock() == null? null: discount.maxStock().value(),
             discount.isActive(),
-            discount.expiredAt()
+            discount.expiredAt(),
+            1L
         );
     }
 }

@@ -4,16 +4,14 @@ import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
-import microservice.cloud.discount.discount.domain.event.CreatedDiscount;
 import microservice.cloud.discount.discount.domain.value_objects.DiscountType;
 import microservice.cloud.discount.discount.domain.value_objects.Percentage;
 import microservice.cloud.discount.discount.domain.value_objects.Price;
 import microservice.cloud.discount.discount.domain.value_objects.Quantity;
-import microservice.cloud.discount.shared.domain.entity.AggregateRoot;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
 import microservice.cloud.discount.shared.domain.value_objects.Slug;
 
-public class Discount extends AggregateRoot {
+public class Discount {
     private final Id id;
     private String name;
     private Slug slug;
@@ -28,7 +26,7 @@ public class Discount extends AggregateRoot {
     private Quantity maxStock;
     private boolean isActive;
     private LocalDateTime expiredAt;
-
+   
     public Discount(
         Id id,
         String name, 
@@ -73,104 +71,6 @@ public class Discount extends AggregateRoot {
         this.minStock = minStock;
         this.maxStock = maxStock;
         this.isActive = isActive;
-        this.expiredAt = expiredAt;
-    }
-
-    public static Discount factory(
-        Id id,
-        String name,
-        Slug slug,
-        DiscountType discountType,
-        Percentage percentageValue,
-        Price decrementValue,
-        Set<String> allowedCategories,
-        boolean globalCategories,
-        Price minPrice,
-        Price maxPrice,
-        Quantity minStock,
-        Quantity maxStock,
-        boolean isActive,
-        LocalDateTime expiredAt
-    ) {
-        Discount discount = new Discount(
-            id, 
-            name,
-            slug,
-            discountType, 
-            percentageValue, 
-            decrementValue, 
-            allowedCategories, 
-            globalCategories, 
-            minPrice, 
-            maxPrice, 
-            minStock, 
-            maxStock,
-            isActive,
-            expiredAt
-        );
-
-        discount.publishEvent(
-            new CreatedDiscount(
-                id.value(),
-                name,
-                discountType.toString(),
-                percentageValue == null? null: percentageValue.value(),
-                decrementValue == null? null: decrementValue.value(),
-                allowedCategories,
-                globalCategories,
-                minPrice == null? null: minPrice.value(),
-                maxPrice == null? null: maxPrice.value(),
-                minStock == null? null: minStock.value(),
-                maxStock == null? null: maxStock.value(),
-                isActive,
-                expiredAt
-            )
-        );
-
-        return discount;
-    }
-
-    public void update(
-        String name,
-        Slug slug,
-        DiscountType discountType,
-        Percentage percentageValue,
-        Price decrementValue,
-        Set<String> allowedCategories,
-        boolean globalCategories,
-        Price minPrice,
-        Price maxPrice,
-        Quantity minStock,
-        Quantity maxStock,
-        boolean isActive,
-        LocalDateTime expiredAt
-    ) {
-        if(name == null)
-            throw new RuntimeException("The name cannot be null");
-
-        if(globalCategories && !allowedCategories.isEmpty())
-            throw new RuntimeException("This discount cannot have categories, because globalCategories field is true");
-
-        if(discountType == null)
-            throw new RuntimeException("The discountType field cannot be null.");
-
-        if(discountType.toString().equals(DiscountType.DECREMENT.toString()) && percentageValue != null)
-            throw new RuntimeException("The percentageValue should be null.");
-
-        if(discountType.toString().equals(DiscountType.PERCENTAGE.toString()) && decrementValue != null)
-            throw new RuntimeException("The decrementValue should be null.");
-
-        this.name = name;
-        this.slug = slug;
-        this.discountType = discountType;
-        this.percentageValue = percentageValue;
-        this.decrementValue = decrementValue;
-        this.allowedCategories = allowedCategories;
-        this.globalCategories = globalCategories;
-        this.minPrice = minPrice;
-        this.maxPrice = maxPrice;
-        this.minStock = minStock;
-        this.maxStock = maxStock;
         this.expiredAt = expiredAt;
     }
 

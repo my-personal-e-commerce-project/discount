@@ -15,7 +15,9 @@ CREATE TABLE discounts (
     max_stock int DEFAULT NULL,
     is_active boolean DEFAULT true NOT NULL,
 
-    expired_at timestamp DEFAULT now()
+    expired_at timestamp DEFAULT now(),
+
+    version BIGINT NOT NULL DEFAULT 1
 );
 
 CREATE TABLE discount_categories (

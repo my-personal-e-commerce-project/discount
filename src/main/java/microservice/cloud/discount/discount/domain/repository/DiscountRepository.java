@@ -13,7 +13,7 @@ import microservice.cloud.discount.shared.domain.value_objects.Id;
 public interface DiscountRepository {
 
     public void save(Discount discount);
-    public void update(Discount discount);
+    public void updateIfExists(Discount discount);
     public void delete(Discount discount);
     public Discount getById(Id id);
     public void existsDiscountWithFollowingAttributes(
