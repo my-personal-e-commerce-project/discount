@@ -50,6 +50,7 @@ public class DiscountController {
         @RequestParam(required = false) Set<String> allowedCategories,
         @RequestParam(required = false) Boolean globalCategories,
         @RequestParam(required = false) Boolean isActive,
+        @RequestParam(required = false) Boolean autoApply,
         @RequestParam(required = false) Integer minStock,
         @RequestParam(required = false) Integer maxStock,
         @RequestParam(required = false) Double minPrice,
@@ -66,6 +67,7 @@ public class DiscountController {
                         : new ArrayList<>(allowedCategories),
                     globalCategories,
                     isActive,
+                    autoApply,
                     minStock,
                     maxStock,
                     minPrice,
@@ -101,6 +103,7 @@ public class DiscountController {
                 : new Price(discount.getMaxPrice()),
             discount.getMinStock() == null? null: new Quantity(discount.getMinStock()),
             discount.getMaxStock() == null? null: new Quantity(discount.getMaxStock()),
+            discount.isAutoApply(),
             discount.isActive(),
             discount.getExpiredAt()
         );
@@ -115,7 +118,9 @@ public class DiscountController {
     ) {
         discount.setId(id);
         discount.setSlug(Slug.create(discount.getSlug()).value());
-        
+       
+        System.out.println(discount.isGlobalCategories());
+
         updateDiscountUseCase.execute(
             Id.fromString(id),
             discount.getName(),
@@ -135,6 +140,7 @@ public class DiscountController {
                 : new Price(discount.getMaxPrice()),
             discount.getMinStock() == null? null: new Quantity(discount.getMinStock()),
             discount.getMaxStock() == null? null: new Quantity(discount.getMaxStock()),
+            discount.isAutoApply(),
             discount.isActive(),
             discount.getExpiredAt()
         );

@@ -6,7 +6,6 @@ import java.util.Set;
 
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -31,14 +30,14 @@ public class UpdateDiscountDTO {
 
     private Set<String> allowedCategories = new HashSet<>();
     
-    private boolean globalCategories = false;
+    private boolean isGlobalCategories = false;
     private Double minPrice = null;
     private Double maxPrice = null;
     private Integer minStock = null;
     private Integer maxStock = null;
+    private boolean autoApply = true;
     private boolean isActive = false;
 
-    @NotNull
     @Future
     private LocalDateTime expiredAt;
 }

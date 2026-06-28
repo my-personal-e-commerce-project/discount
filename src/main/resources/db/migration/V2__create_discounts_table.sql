@@ -13,6 +13,8 @@ CREATE TABLE discounts (
     
     min_stock int DEFAULT NULL,
     max_stock int DEFAULT NULL,
+
+    auto_apply boolean DEFAULT true NOT NULL,
     is_active boolean DEFAULT true NOT NULL,
 
     expired_at timestamp DEFAULT now(),
@@ -52,6 +54,8 @@ BEGIN
             'maxPrice', NEW.max_price,
             'minStock', NEW.min_stock,
             'maxStock', NEW.max_stock,
+            'autoApply', NEW.auto_apply,
+            'isActive', NEW.is_active,
             'expiredAt', NEW.expired_at,
             'allowedCategories', (
                 SELECT coalesce(

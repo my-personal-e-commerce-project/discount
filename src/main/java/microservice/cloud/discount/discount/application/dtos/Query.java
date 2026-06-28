@@ -7,6 +7,7 @@ public record Query(
     List<String> allowedCategories,
     Boolean globalCategories,
     Boolean isActive,
+    Boolean autoApply,
     Integer minStock,
     Integer maxStock,
     Double minPrice,

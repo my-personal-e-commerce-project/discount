@@ -16,6 +16,7 @@ public record DiscountReadDTO(
     Double maxPrice,
     Integer minStock,
     Integer maxStock,
+    boolean autoApply,
     boolean isActive,
     LocalDateTime expiredAt
 ) {}

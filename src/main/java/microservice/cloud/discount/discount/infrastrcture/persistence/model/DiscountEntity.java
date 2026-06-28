@@ -40,6 +40,7 @@ public class DiscountEntity {
     private Double maxPrice;
     private Integer minStock;
     private Integer maxStock;
+    private boolean autoApply;
     private boolean isActive;
     private LocalDateTime expiredAt;
 
@@ -50,8 +51,8 @@ public class DiscountEntity {
         this.name = discount.name();
         this.slug = discount.slug().value();
         this.discountType = discount.discountType().toString();
-        this.percentageValue = discount.percentageValue().value();
-        this.decrementValue = discount.decrementValue().value();
+        this.percentageValue = discount.percentageValue() == null? null: discount.percentageValue().value();
+        this.decrementValue = discount.decrementValue() == null? null: discount.decrementValue().value();
         this.allowedCategories = discount.allowedCategories() == null
                 ? null
                 : discount.allowedCategories()
@@ -59,10 +60,11 @@ public class DiscountEntity {
                     .map((String c) -> new DiscountEntity.DiscountCategoryReference(c))
                     .collect(Collectors.toSet());
         this.globalCategories = discount.globalCategories();
-        this.minPrice = discount.minPrice().value();
-        this.maxPrice = discount.maxPrice().value();
-        this.minStock = discount.minStock().value();
-        this.maxStock = discount.maxStock().value();
+        this.minPrice = discount.minPrice() == null? null: discount.minPrice().value();
+        this.maxPrice = discount.maxPrice() == null? null: discount.maxPrice().value();
+        this.minStock = discount.minStock() == null? null: discount.minStock().value();
+        this.maxStock = discount.maxStock() == null? null: discount.maxStock().value();
+        this.autoApply = discount.autoApply();
         this.isActive = discount.isActive();
         this.expiredAt = discount.expiredAt();
     } 

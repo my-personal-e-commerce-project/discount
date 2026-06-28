@@ -41,6 +41,7 @@ public class DiscountResultSetExtractor implements ResultSetExtractor<List<Disco
                     rs.getDouble("maxPrice"),
                     rs.getInt("minStock"),
                     rs.getInt("maxStock"),
+                    rs.getBoolean("autoApply"),
                     rs.getBoolean("isActive"),
                     null
                 );

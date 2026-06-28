@@ -24,6 +24,7 @@ public class Discount {
     private Price maxPrice;
     private Quantity minStock;
     private Quantity maxStock;
+    private boolean autoApply;
     private boolean isActive;
     private LocalDateTime expiredAt;
    
@@ -40,6 +41,7 @@ public class Discount {
         Price maxPrice,
         Quantity minStock,
         Quantity maxStock,
+        boolean autoApply,
         boolean isActive,
         LocalDateTime expiredAt
     ) {
@@ -70,6 +72,7 @@ public class Discount {
         this.maxPrice = maxPrice;
         this.minStock = minStock;
         this.maxStock = maxStock;
+        this.autoApply = autoApply;
         this.isActive = isActive;
         this.expiredAt = expiredAt;
     }
@@ -89,6 +92,7 @@ public class Discount {
     public Price minPrice() {return minPrice;}
     public Price maxPrice() {return maxPrice;}
     public Quantity minStock() {return minStock;}
+    public boolean autoApply() {return autoApply;}
     public Quantity maxStock() {return maxStock;}
     public boolean isActive() {return isActive;}
     public LocalDateTime expiredAt() {return expiredAt;}

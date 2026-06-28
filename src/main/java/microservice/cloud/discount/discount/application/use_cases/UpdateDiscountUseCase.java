@@ -45,6 +45,7 @@ public class UpdateDiscountUseCase {
         Price maxPrice,
         Quantity minStock,
         Quantity maxStock,
+        boolean autoApply,
         boolean isActive,
         LocalDateTime expiredAt
     ) {
@@ -70,7 +71,8 @@ public class UpdateDiscountUseCase {
                 minPrice, 
                 maxPrice, 
                 minStock, 
-                maxStock, 
+                maxStock,
+                autoApply,
                 isActive,
                 expiredAt
             )

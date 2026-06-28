@@ -45,6 +45,7 @@ public class CreateDiscountUseCase {
         Price maxPrice,
         Quantity minStock,
         Quantity maxStock,
+        boolean autoApply,
         boolean isActive,
         LocalDateTime expiredAt
     ) {
@@ -83,6 +84,7 @@ public class CreateDiscountUseCase {
             maxPrice,
             minStock,
             maxStock,
+            autoApply,
             isActive,
             expiredAt
         );
