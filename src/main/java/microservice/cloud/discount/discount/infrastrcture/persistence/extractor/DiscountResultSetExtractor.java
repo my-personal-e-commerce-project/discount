@@ -2,6 +2,7 @@ package microservice.cloud.discount.discount.infrastrcture.persistence.extractor
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -41,9 +42,9 @@ public class DiscountResultSetExtractor implements ResultSetExtractor<List<Disco
                     rs.getDouble("maxPrice"),
                     rs.getInt("minStock"),
                     rs.getInt("maxStock"),
-                    rs.getBoolean("autoApply"),
+                    rs.getBoolean("isCouponDiscount"),
                     rs.getBoolean("isActive"),
-                    null
+                    rs.getObject("expiredAt", LocalDateTime.class)
                 );
             }
 

@@ -57855,3 +57855,818 @@ import microservice.cloud.inventory.shared.domain.exception.UnauthorizedExceptio
   Use -proc:none to disable annotation processing..[0m
 2026.06.28 20:50:32 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
 2026.06.28 20:50:32 INFO  time: compiled discount in 2.5s[0m
+2026.06.29 11:01:07 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.06.29 11:01:07 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.06.29 11:01:07 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.06.29 11:01:07 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.06.29 11:01:10 INFO  time: initialize in 2.2s[0m
+2026.06.29 11:01:10 INFO  Attempting to connect to the build server...[0m
+2026.06.29 11:01:10 INFO  skipping build import with status 'Requested'[0m
+2026.06.29 11:01:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.06.29 11:01:13 INFO  time: Connected to build server in 3.39s[0m
+2026.06.29 11:01:13 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.06.29 11:01:13 INFO  time: Imported build in 0.15s[0m
+2026.06.29 11:01:16 INFO  time: indexed workspace in 2.15s[0m
+2026.06.29 11:02:54 INFO  compiling discount (1 java source)[0m
+2026.06.29 11:02:56 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.06.29 11:02:56 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.06.29 11:02:56 INFO  time: compiled discount in 2.57s[0m
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@68f1ab26 rejected from java.util.concurrent.ThreadPoolExecutor@3349e9bb[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 335]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026.06.29 13:16:49 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.06.29 13:16:50 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.06.29 13:16:50 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.06.29 13:16:50 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.06.29 13:16:52 INFO  time: initialize in 2.18s[0m
+2026.06.29 13:16:53 INFO  Attempting to connect to the build server...[0m
+2026.06.29 13:16:54 INFO  skipping build import with status 'Requested'[0m
+2026.06.29 13:16:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.06.29 13:16:57 INFO  time: Connected to build server in 3.8s[0m
+2026.06.29 13:16:57 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.06.29 13:16:57 INFO  time: Imported build in 0.14s[0m
+2026.06.29 13:16:59 INFO  time: indexed workspace in 1.9s[0m
+2026.06.29 13:17:47 INFO  compiling discount (1 java source)[0m
+2026.06.29 13:17:49 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:59: error: cannot find symbol
+            params.addValue("discountType", query.discountType().toString());
+                                                 ^
+  symbol:   method discountType()
+  location: variable query of type Query
+1 error.[0m
+2026.06.29 13:17:49 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.06.29 13:17:49 WARN  javac exited with exit code 1[0m
+2026.06.29 13:17:49 INFO  time: compiled discount in 2.6s[0m
+2026.06.29 13:18:10 INFO  compiling discount (1 java source)[0m
+2026.06.29 13:18:12 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.06.29 13:18:12 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.06.29 13:18:12 INFO  time: compiled discount in 2.68s[0m
+2026.06.29 13:18:21 INFO  compiling discount (1 java source)[0m
+2026.06.29 13:18:23 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.06.29 13:18:23 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.06.29 13:18:23 INFO  time: compiled discount in 2.46s[0m
+2026.06.29 13:18:27 INFO  compiling discount (1 java source)[0m
+2026.06.29 13:18:29 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.06.29 13:18:29 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.06.29 13:18:29 INFO  time: compiled discount in 2.42s[0m
+2026.06.29 13:20:38 INFO  compiling discount (1 java source)[0m
+2026.06.29 13:20:41 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.06.29 13:20:41 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.06.29 13:20:41 INFO  time: compiled discount in 2.3s[0m
+2026.06.29 13:21:36 INFO  compiling discount (1 java source)[0m
+2026.06.29 13:21:39 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.06.29 13:21:39 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.06.29 13:21:39 INFO  time: compiled discount in 2.33s[0m
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@68e400f0 rejected from java.util.concurrent.ThreadPoolExecutor@3349e9bb[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 556]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026.07.02 17:43:36 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.07.02 17:43:37 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.07.02 17:43:37 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.07.02 17:43:37 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.07.02 17:43:39 INFO  time: initialize in 2.38s[0m
+2026.07.02 17:43:40 INFO  Attempting to connect to the build server...[0m
+2026.07.02 17:43:41 INFO  skipping build import with status 'Requested'[0m
+2026.07.02 17:43:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.07.02 17:43:41 INFO  time: Connected to build server in 0.73s[0m
+2026.07.02 17:43:41 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.07.02 17:43:41 INFO  time: Imported build in 0.13s[0m
+2026.07.02 17:43:45 INFO  time: indexed workspace in 3.34s[0m
+2026.07.02 17:43:45 INFO  compiling discount (1 java source)[0m
+2026.07.02 17:43:46 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/domain/entity/Discount.java:75: error: cannot find symbol
+        this.autoApply = autoApply;
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/domain/entity/Discount.java:95: error: cannot find symbol
+    public boolean autoApply() {return autoApply;}
+                                       ^
+  symbol:   variable autoApply
+  location: class Discount
+2 errors.[0m
+2026.07.02 17:43:46 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:43:46 WARN  javac exited with exit code 1[0m
+2026.07.02 17:43:46 INFO  time: compiled discount in 1.45s[0m
+2026.07.02 17:43:53 INFO  compiling discount (1 java source)[0m
+2026.07.02 17:43:56 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/domain/entity/Discount.java:75: error: cannot find symbol
+        this.autoApply = autoApply;
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/domain/entity/Discount.java:75: error: cannot find symbol
+        this.autoApply = autoApply;
+                         ^
+  symbol:   variable autoApply
+  location: class Discount
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/domain/entity/Discount.java:95: error: cannot find symbol
+    public boolean autoApply() {return autoApply;}
+                                       ^
+  symbol:   variable autoApply
+  location: class Discount
+3 errors.[0m
+2026.07.02 17:43:56 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:43:56 WARN  javac exited with exit code 1[0m
+2026.07.02 17:43:56 INFO  time: compiled discount in 2.21s[0m
+2026.07.02 17:44:05 INFO  compiling discount (1 java source)[0m
+2026.07.02 17:44:07 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/domain/entity/Discount.java:95: error: cannot find symbol
+    public boolean autoApply() {return autoApply;}
+                                       ^
+  symbol:   variable autoApply
+  location: class Discount
+1 error.[0m
+2026.07.02 17:44:07 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:44:07 WARN  javac exited with exit code 1[0m
+2026.07.02 17:44:07 INFO  time: compiled discount in 2.24s[0m
+2026.07.02 17:44:16 INFO  compiling discount (1 java source)[0m
+2026.07.02 17:44:18 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.07.02 17:44:18 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:44:18 INFO  time: compiled discount in 2.44s[0m
+2026.07.02 17:44:18 INFO  compiling discount (3 java sources)[0m
+2026.07.02 17:44:21 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+1 error.[0m
+2026.07.02 17:44:21 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:44:21 WARN  javac exited with exit code 1[0m
+2026.07.02 17:44:21 INFO  time: compiled discount in 2.46s[0m
+2026.07.02 17:44:21 INFO  compiling discount (1 java source)[0m
+2026.07.02 17:44:23 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.07.02 17:44:23 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:44:23 INFO  time: compiled discount in 2.05s[0m
+2026.07.02 17:44:23 INFO  compiling discount (3 java sources)[0m
+2026.07.02 17:44:25 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+1 error.[0m
+2026.07.02 17:44:25 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:44:25 WARN  javac exited with exit code 1[0m
+2026.07.02 17:44:25 INFO  time: compiled discount in 2.37s[0m
+2026.07.02 17:44:41 INFO  compiling discount (2 java sources)[0m
+2026.07.02 17:44:44 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.07.02 17:44:44 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:44:44 INFO  time: compiled discount in 3.01s[0m
+2026.07.02 17:44:44 INFO  compiling discount (4 java sources)[0m
+2026.07.02 17:44:47 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+1 error.[0m
+2026.07.02 17:44:47 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:44:47 WARN  javac exited with exit code 1[0m
+2026.07.02 17:44:47 INFO  time: compiled discount in 2.61s[0m
+2026.07.02 17:44:53 INFO  compiling discount (3 java sources)[0m
+2026.07.02 17:44:56 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountRepositoryJdbcAdapter.java:146: error: cannot find symbol
+            entity.isAutoApply(),
+                  ^
+  symbol:   method isAutoApply()
+  location: variable entity of type DiscountEntity
+3 errors.[0m
+2026.07.02 17:44:56 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:44:56 WARN  javac exited with exit code 1[0m
+2026.07.02 17:44:56 INFO  time: compiled discount in 2.97s[0m
+2026.07.02 17:44:58 INFO  compiling discount (3 java sources)[0m
+2026.07.02 17:45:01 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+2 errors.[0m
+2026.07.02 17:45:01 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:45:01 WARN  javac exited with exit code 1[0m
+2026.07.02 17:45:01 INFO  time: compiled discount in 2.87s[0m
+2026.07.02 17:45:13 INFO  compiling discount (4 java sources)[0m
+2026.07.02 17:45:16 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+2 errors.[0m
+2026.07.02 17:45:16 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:45:16 WARN  javac exited with exit code 1[0m
+2026.07.02 17:45:16 INFO  time: compiled discount in 2.89s[0m
+2026.07.02 17:45:23 INFO  compiling discount (5 java sources)[0m
+2026.07.02 17:45:26 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+2 errors.[0m
+2026.07.02 17:45:26 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:45:26 WARN  javac exited with exit code 1[0m
+2026.07.02 17:45:26 INFO  time: compiled discount in 2.91s[0m
+2026.07.02 17:45:45 INFO  compiling discount (6 java sources)[0m
+2026.07.02 17:45:49 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+2 errors.[0m
+2026.07.02 17:45:49 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:45:49 WARN  javac exited with exit code 1[0m
+2026.07.02 17:45:49 INFO  time: compiled discount in 3.04s[0m
+2026.07.02 17:46:44 INFO  compiling discount (6 java sources)[0m
+2026.07.02 17:46:46 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+2 errors.[0m
+2026.07.02 17:46:46 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:46:46 WARN  javac exited with exit code 1[0m
+2026.07.02 17:46:46 INFO  time: compiled discount in 2.87s[0m
+2026.07.02 17:46:50 INFO  compiling discount (6 java sources)[0m
+2026.07.02 17:46:53 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+2 errors.[0m
+2026.07.02 17:46:53 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:46:53 WARN  javac exited with exit code 1[0m
+2026.07.02 17:46:53 INFO  time: compiled discount in 3.07s[0m
+2026.07.02 17:47:10 INFO  compiling discount (7 java sources)[0m
+2026.07.02 17:47:13 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/UpdateDiscountUseCase.java:75: error: cannot find symbol
+                autoApply,
+                ^
+  symbol:   variable autoApply
+  location: class UpdateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+3 errors.[0m
+2026.07.02 17:47:13 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:47:13 WARN  javac exited with exit code 1[0m
+2026.07.02 17:47:13 INFO  time: compiled discount in 3.05s[0m
+2026.07.02 17:47:19 INFO  compiling discount (8 java sources)[0m
+2026.07.02 17:47:22 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/CreateDiscountUseCase.java:87: error: cannot find symbol
+            autoApply,
+            ^
+  symbol:   variable autoApply
+  location: class CreateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/UpdateDiscountUseCase.java:75: error: cannot find symbol
+                autoApply,
+                ^
+  symbol:   variable autoApply
+  location: class UpdateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+4 errors.[0m
+2026.07.02 17:47:22 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:47:22 WARN  javac exited with exit code 1[0m
+2026.07.02 17:47:22 INFO  time: compiled discount in 3.04s[0m
+2026.07.02 17:47:34 INFO  compiling discount (9 java sources)[0m
+2026.07.02 17:47:37 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/CreateDiscountUseCase.java:87: error: cannot find symbol
+            autoApply,
+            ^
+  symbol:   variable autoApply
+  location: class CreateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/UpdateDiscountUseCase.java:75: error: cannot find symbol
+                autoApply,
+                ^
+  symbol:   variable autoApply
+  location: class UpdateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+4 errors.[0m
+2026.07.02 17:47:37 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:47:37 WARN  javac exited with exit code 1[0m
+2026.07.02 17:47:37 INFO  time: compiled discount in 3.19s[0m
+2026.07.02 17:47:37 INFO  compiling discount (9 java sources)[0m
+2026.07.02 17:47:40 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/CreateDiscountUseCase.java:87: error: cannot find symbol
+            autoApply,
+            ^
+  symbol:   variable autoApply
+  location: class CreateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/UpdateDiscountUseCase.java:75: error: cannot find symbol
+                autoApply,
+                ^
+  symbol:   variable autoApply
+  location: class UpdateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+4 errors.[0m
+2026.07.02 17:47:40 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:47:40 WARN  javac exited with exit code 1[0m
+2026.07.02 17:47:40 INFO  time: compiled discount in 3.04s[0m
+2026.07.02 17:47:48 INFO  compiling discount (10 java sources)[0m
+2026.07.02 17:47:51 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/CreateDiscountUseCase.java:87: error: cannot find symbol
+            autoApply,
+            ^
+  symbol:   variable autoApply
+  location: class CreateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/UpdateDiscountUseCase.java:75: error: cannot find symbol
+                autoApply,
+                ^
+  symbol:   variable autoApply
+  location: class UpdateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/presentation/controller/DiscountController.java:106: error: cannot find symbol
+            discount.isAutoApply(),
+                    ^
+  symbol:   method isAutoApply()
+  location: variable discount of type @jakarta.validation.Valid DiscountDTO
+5 errors.[0m
+2026.07.02 17:47:51 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:47:51 WARN  javac exited with exit code 1[0m
+2026.07.02 17:47:51 INFO  time: compiled discount in 3.27s[0m
+2026.07.02 17:47:59 INFO  compiling discount (11 java sources)[0m
+2026.07.02 17:48:02 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/CreateDiscountUseCase.java:87: error: cannot find symbol
+            autoApply,
+            ^
+  symbol:   variable autoApply
+  location: class CreateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/UpdateDiscountUseCase.java:75: error: cannot find symbol
+                autoApply,
+                ^
+  symbol:   variable autoApply
+  location: class UpdateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/presentation/controller/DiscountController.java:106: error: cannot find symbol
+            discount.isAutoApply(),
+                    ^
+  symbol:   method isAutoApply()
+  location: variable discount of type @jakarta.validation.Valid DiscountDTO
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/presentation/controller/DiscountController.java:143: error: cannot find symbol
+            discount.isAutoApply(),
+                    ^
+  symbol:   method isAutoApply()
+  location: variable discount of type @jakarta.validation.Valid UpdateDiscountDTO
+6 errors.[0m
+2026.07.02 17:48:02 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:48:02 WARN  javac exited with exit code 1[0m
+2026.07.02 17:48:02 INFO  time: compiled discount in 3.42s[0m
+2026.07.02 17:48:02 INFO  compiling discount (11 java sources)[0m
+2026.07.02 17:48:05 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/CreateDiscountUseCase.java:87: error: cannot find symbol
+            autoApply,
+            ^
+  symbol:   variable autoApply
+  location: class CreateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/UpdateDiscountUseCase.java:75: error: cannot find symbol
+                autoApply,
+                ^
+  symbol:   variable autoApply
+  location: class UpdateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/presentation/controller/DiscountController.java:106: error: cannot find symbol
+            discount.isAutoApply(),
+                    ^
+  symbol:   method isAutoApply()
+  location: variable discount of type @jakarta.validation.Valid DiscountDTO
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/presentation/controller/DiscountController.java:143: error: cannot find symbol
+            discount.isAutoApply(),
+                    ^
+  symbol:   method isAutoApply()
+  location: variable discount of type @jakarta.validation.Valid UpdateDiscountDTO
+6 errors.[0m
+2026.07.02 17:48:05 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:48:05 WARN  javac exited with exit code 1[0m
+2026.07.02 17:48:05 INFO  time: compiled discount in 3.2s[0m
+2026.07.02 17:48:09 INFO  compiling discount (11 java sources)[0m
+2026.07.02 17:48:13 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/CreateDiscountUseCase.java:87: error: cannot find symbol
+            autoApply,
+            ^
+  symbol:   variable autoApply
+  location: class CreateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/UpdateDiscountUseCase.java:75: error: cannot find symbol
+                autoApply,
+                ^
+  symbol:   variable autoApply
+  location: class UpdateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/presentation/controller/DiscountController.java:143: error: cannot find symbol
+            discount.isAutoApply(),
+                    ^
+  symbol:   method isAutoApply()
+  location: variable discount of type @jakarta.validation.Valid UpdateDiscountDTO
+5 errors.[0m
+2026.07.02 17:48:13 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:48:13 WARN  javac exited with exit code 1[0m
+2026.07.02 17:48:13 INFO  time: compiled discount in 3.32s[0m
+2026.07.02 17:48:16 INFO  compiling discount (11 java sources)[0m
+2026.07.02 17:48:19 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/CreateDiscountUseCase.java:87: error: cannot find symbol
+            autoApply,
+            ^
+  symbol:   variable autoApply
+  location: class CreateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/UpdateDiscountUseCase.java:75: error: cannot find symbol
+                autoApply,
+                ^
+  symbol:   variable autoApply
+  location: class UpdateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+4 errors.[0m
+2026.07.02 17:48:19 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:48:19 WARN  javac exited with exit code 1[0m
+2026.07.02 17:48:19 INFO  time: compiled discount in 3.45s[0m
+2026.07.02 17:48:22 INFO  compiling discount (11 java sources)[0m
+2026.07.02 17:48:25 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/CreateDiscountUseCase.java:87: error: cannot find symbol
+            autoApply,
+            ^
+  symbol:   variable autoApply
+  location: class CreateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/UpdateDiscountUseCase.java:75: error: cannot find symbol
+                autoApply,
+                ^
+  symbol:   variable autoApply
+  location: class UpdateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+4 errors.[0m
+2026.07.02 17:48:25 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:48:25 WARN  javac exited with exit code 1[0m
+2026.07.02 17:48:25 INFO  time: compiled discount in 3.41s[0m
+2026.07.02 17:48:25 INFO  compiling discount (11 java sources)[0m
+2026.07.02 17:48:29 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/CreateDiscountUseCase.java:87: error: cannot find symbol
+            autoApply,
+            ^
+  symbol:   variable autoApply
+  location: class CreateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/UpdateDiscountUseCase.java:75: error: cannot find symbol
+                autoApply,
+                ^
+  symbol:   variable autoApply
+  location: class UpdateDiscountUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+            ^
+  symbol: variable autoApply
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/model/DiscountEntity.java:67: error: cannot find symbol
+        this.autoApply = discount.autoApply();
+                                 ^
+  symbol:   method autoApply()
+  location: variable discount of type Discount
+4 errors.[0m
+2026.07.02 17:48:29 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.02 17:48:29 WARN  javac exited with exit code 1[0m
+2026.07.02 17:48:29 INFO  time: compiled discount in 3.12s[0m
+2026.07.02 17:48:29 INFO  Shut down connection with build server.[0m
+2026.07.02 17:48:46 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.07.02 17:48:47 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.07.02 17:48:47 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.07.02 17:48:47 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m

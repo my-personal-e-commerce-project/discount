@@ -40,7 +40,7 @@ public class DiscountEntity {
     private Double maxPrice;
     private Integer minStock;
     private Integer maxStock;
-    private boolean autoApply;
+    private boolean isCouponDiscount;
     private boolean isActive;
     private LocalDateTime expiredAt;
 

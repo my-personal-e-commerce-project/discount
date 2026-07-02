@@ -39,7 +39,7 @@ public class DiscountReadRepositoryJdbcAdapter implements DiscountReadRepository
                    d.min_price AS minPrice, d.max_price AS maxPrice,
                    d.min_stock AS minStock, d.max_stock AS maxStock,
                    d.is_active AS isActive, d.expired_at AS expiredAt,
-                   dc.category_id AS catId, d.auto_apply AS autoApply
+                   dc.category_id AS catId, d.is_coupon_discount AS isCouponDiscount
             FROM discounts d 
             LEFT JOIN discount_categories dc ON d.id = dc.discount_id
             WHERE 1=1
@@ -53,13 +53,19 @@ public class DiscountReadRepositoryJdbcAdapter implements DiscountReadRepository
             sql.append(" AND d.name LIKE :query");
             params.addValue("query", query.query());
         }
+        
+        if (query.allowedCategories() != null && query.allowedCategories().size() > 0) {
+            sql.append(" AND dc.category_id IN (:allowedCategories)");
+            params.addValue("allowedCategories", query.allowedCategories());
+        }
+
         if (query.globalCategories() != null) {
             sql.append(" AND d.global_categories = :globalCategories");
             params.addValue("globalCategories", query.globalCategories(), Types.BOOLEAN);
         }
         if (query.autoApply() != null) {
-            sql.append(" AND d.auto_apply = :autoApply");
-            params.addValue("autoApply", query.autoApply(), Types.BOOLEAN);
+            sql.append(" AND d.is_coupon_discount = :is_coupon_discount");
+            params.addValue("is_coupon_discount", query.autoApply(), Types.BOOLEAN);
         }
         if (query.isActive() != null) {
             sql.append(" AND d.is_active = :isActive");
