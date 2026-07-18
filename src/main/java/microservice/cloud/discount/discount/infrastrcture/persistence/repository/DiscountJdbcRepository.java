@@ -33,4 +33,5 @@ public interface DiscountJdbcRepository extends ListPagingAndSortingRepository<D
     );
 
     long countByIdIn(Set<String> ids);
+    boolean existsById(String id);
 }

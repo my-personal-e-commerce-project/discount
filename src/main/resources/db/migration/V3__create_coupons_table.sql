@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS coupons (
     discount_id VARCHAR(255) NOT NULL,
     sales int DEFAULT 0 NOT NULL,
     max_sales int DEFAULT NULL,
-    code VARCHAR(255) NOT NULL,
+    code VARCHAR(255) NOT NULL UNIQUE,
     visibility VARCHAR(255) DEFAULT 'PRIVATE' NOT NULL,
     expired_at timestamp DEFAULT now(),
     
