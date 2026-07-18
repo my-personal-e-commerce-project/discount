@@ -37,8 +37,6 @@ public class UpdateCouponUseCase {
                 maxSales,
                 expiredAt
             );
-
-            
         });
 
         if(!coupon.getEvents().isEmpty()) {

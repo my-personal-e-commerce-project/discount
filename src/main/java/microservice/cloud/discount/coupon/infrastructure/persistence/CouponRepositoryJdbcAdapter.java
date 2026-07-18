@@ -1,11 +1,10 @@
 package microservice.cloud.discount.coupon.infrastructure.persistence;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.function.Consumer;
 
+import org.springframework.data.jdbc.core.JdbcAggregateTemplate;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -25,6 +24,7 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
 
     private final CouponJdbcRepository couponJdbcRepository;
     private final NamedParameterJdbcTemplate namedParameterJdbcTemplate;
+    private final JdbcAggregateTemplate jdbcAggregateTemplate;
 
     @Override
     @Transactional
@@ -37,7 +37,7 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
     }
 
     private Coupon findByIdForUpdate(String id) {
-        String sql = "SELECT * FROM coupon WHERE id = :id FOR UPDATE";
+        String sql = "SELECT * FROM coupons WHERE id = :id FOR UPDATE";
         MapSqlParameterSource params = new MapSqlParameterSource("id", id);
 
         List<CouponEntity> result = namedParameterJdbcTemplate.query(
@@ -56,7 +56,7 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
     @Transactional
     @Override
     public void create(Coupon coupon) {
-        couponJdbcRepository.save(toMap(coupon));
+        jdbcAggregateTemplate.insert(toMap(coupon));
     }
 
     @Transactional
@@ -77,6 +77,7 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
             Id.fromString(entity.getDiscountId()),
             new CouponCode(entity.getCode()),
             CouponVisibility.valueOf(entity.getVisibility()),
+            entity.getSales(),
             entity.getMaxSales(),
             entity.getExpiredAt()
         );

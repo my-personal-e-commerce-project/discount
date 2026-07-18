@@ -64,7 +64,7 @@ public class DiscountEntity {
         this.maxPrice = discount.maxPrice() == null? null: discount.maxPrice().value();
         this.minStock = discount.minStock() == null? null: discount.minStock().value();
         this.maxStock = discount.maxStock() == null? null: discount.maxStock().value();
-        this.autoApply = discount.autoApply();
+        this.isCouponDiscount = discount.isCouponDiscount();
         this.isActive = discount.isActive();
         this.expiredAt = discount.expiredAt();
     } 

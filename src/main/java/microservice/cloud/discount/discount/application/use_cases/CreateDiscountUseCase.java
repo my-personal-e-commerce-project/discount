@@ -84,7 +84,7 @@ public class CreateDiscountUseCase {
             maxPrice,
             minStock,
             maxStock,
-            autoApply,
+            isCouponDiscount,
             isActive,
             expiredAt
         );

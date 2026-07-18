@@ -45,7 +45,7 @@ public class DiscountController {
     private final ListDiscountsUseCase listDiscountsUseCase;
 
     @GetMapping 
-    public ResponseEntity<Pagination<DiscountReadDTO>> listDiscounts(
+    public ResponseEntity<ResponsePayload<Pagination<DiscountReadDTO>>> listDiscounts(
         @RequestParam(defaultValue = "0") int page,
         @RequestParam(defaultValue = "10") int size,
         @RequestParam(required = false) String query,
@@ -59,23 +59,26 @@ public class DiscountController {
         @RequestParam(required = false) Double maxPrice
     ) {
         return ResponseEntity.ok(
-            listDiscountsUseCase.execute(
-                page, 
-                size, 
-                new Query(
-                    query,
-                    allowedCategories == null
-                        ? null
-                        : new ArrayList<>(allowedCategories),
-                    globalCategories,
-                    isActive,
-                    isCouponDiscount,
-                    minStock,
-                    maxStock,
-                    minPrice,
-                    maxPrice
-                )
-            )
+            ResponsePayload.<Pagination<DiscountReadDTO>>builder()
+                .payload(
+                    listDiscountsUseCase.execute(
+                        page, 
+                        size, 
+                        new Query(
+                            query,
+                            allowedCategories == null
+                                ? null
+                                : new ArrayList<>(allowedCategories),
+                            globalCategories,
+                            isActive,
+                            isCouponDiscount,
+                            minStock,
+                            maxStock,
+                            minPrice,
+                            maxPrice
+                        )
+                    )
+                ).build()
         );
     }
 
@@ -117,7 +120,7 @@ public class DiscountController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<UpdateDiscountDTO> updateDiscount(
+    public ResponseEntity<ResponsePayload<UpdateDiscountDTO>> updateDiscount(
         @RequestBody @Valid UpdateDiscountDTO discount,
         @PathVariable String id
     ) {
@@ -150,7 +153,10 @@ public class DiscountController {
             discount.getExpiredAt()
         );
 
-        return ResponseEntity.ok(discount);
+        return new ResponseEntity<>(
+            ResponsePayload.<UpdateDiscountDTO>builder().payload(discount).build(),
+            HttpStatus.OK
+        );
     }
 
     @DeleteMapping("/{id}")

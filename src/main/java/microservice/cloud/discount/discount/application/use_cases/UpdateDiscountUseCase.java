@@ -72,7 +72,7 @@ public class UpdateDiscountUseCase {
                 maxPrice, 
                 minStock, 
                 maxStock,
-                autoApply,
+                isCouponDiscount,
                 isActive,
                 expiredAt
             )

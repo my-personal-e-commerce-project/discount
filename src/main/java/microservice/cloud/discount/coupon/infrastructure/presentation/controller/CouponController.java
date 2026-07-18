@@ -3,6 +3,7 @@ package microservice.cloud.discount.coupon.infrastructure.presentation.controlle
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,7 +24,7 @@ import microservice.cloud.discount.shared.infrastructure.dto.ResponsePayload;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/coupons")
+@RequestMapping("/api/v1/coupons")
 public class CouponController {
     private final ListCouponsUseCase listCouponsUseCase;
     private final CreateCouponUseCase createCouponUseCase;
@@ -51,9 +52,9 @@ public class CouponController {
         );
     }
 
-    @PutMapping("/update/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<ResponsePayload<CouponDTO>> updateCoupon(
-        @RequestBody @Valid CouponDTO coupon, @RequestBody @Valid String id 
+        @RequestBody @Valid CouponDTO coupon, @PathVariable String id
     ) {
         coupon.setId(id);
 
@@ -78,9 +79,6 @@ public class CouponController {
     ) {
         deleteCouponUseCase.execute(Id.fromString(id));
 
-        return new ResponseEntity<>(
-            ResponsePayload.<CouponDTO>builder().build(),
-            HttpStatus.OK
-        );
+        return ResponseEntity.noContent().build();
     }
 }

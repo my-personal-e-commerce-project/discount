@@ -18,23 +18,26 @@ public class Coupon extends AggregateRoot {
     private Integer maxSales;
     private LocalDateTime expiredAt;
 
-    public Coupon(Id id, Id discountId, CouponCode code, CouponVisibility visibility, Integer maxSales, LocalDateTime expiredAt) {
+    public Coupon(Id id, Id discountId, CouponCode code, CouponVisibility visibility, Integer sales, Integer maxSales, LocalDateTime expiredAt) {
         if(id == null) {
             throw new IllegalArgumentException("Coupon id cannot be null");
         }
-        
+       
+        if(discountId == null) {
+            throw new IllegalArgumentException("Discount id cannot be null");
+        }
+
         this.id = id;
         this.discountId= discountId;
         this.code = code;
         this.visibility = visibility;
+        this.sales = sales;
         this.maxSales = maxSales;
         this.expiredAt = expiredAt;
     }
 
     public static Coupon factoryCoupon(Id id, Id discountId, CouponCode code, CouponVisibility visibility, Integer maxSales, LocalDateTime expiredAt) {
-        Coupon coupon = new Coupon(id, discountId, code, visibility, maxSales, expiredAt);
-
-        coupon.sales = 0;
+        Coupon coupon = new Coupon(id, discountId, code, visibility, 0, maxSales, expiredAt);
         
         if(visibility.equals(CouponVisibility.PUBLIC)) {
             coupon.publishEvent(
@@ -62,7 +65,7 @@ public class Coupon extends AggregateRoot {
 
     public void incrementSales() {
         if(this.sales >= this.maxSales) {
-            this.visibility = CouponVisibility.HIDDEN;
+            this.visibility = CouponVisibility.BLOCKED;
 
             this.publishEvent(
                 new CouponIsNotPublic(id.value())
