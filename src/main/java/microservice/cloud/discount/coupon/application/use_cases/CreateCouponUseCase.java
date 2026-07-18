@@ -18,8 +18,8 @@ public class CreateCouponUseCase {
         this.couponRepository = couponRepository;
     }
 
-    public void execute(Id id, String code, Id discountId, CouponVisibility visibility, Integer maxSales, LocalDateTime expiredAt) {
-        Coupon coupon = Coupon.factoryCoupon(id, discountId, new CouponCode(code), visibility, maxSales, expiredAt);
+    public void execute(Id id, Id discountId, CouponCode code,  CouponVisibility visibility, Integer maxSales, LocalDateTime expiredAt) {
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, code, visibility, maxSales, expiredAt);
 
         couponRepository.create(coupon);
 

@@ -13,4 +13,5 @@ public interface CouponJdbcRepository extends Repository<CouponEntity, String> {
     
     CouponEntity save(CouponEntity coupon);
     void deleteById(String id);
+    boolean existsById(String id);
 }

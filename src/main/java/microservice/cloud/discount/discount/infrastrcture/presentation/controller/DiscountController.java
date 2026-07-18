@@ -3,6 +3,7 @@ package microservice.cloud.discount.discount.infrastrcture.presentation.controll
 import java.util.ArrayList;
 import java.util.Set;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,6 +32,7 @@ import microservice.cloud.discount.discount.domain.value_objects.Quantity;
 import microservice.cloud.discount.shared.application.dto.Pagination;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
 import microservice.cloud.discount.shared.domain.value_objects.Slug;
+import microservice.cloud.discount.shared.infrastructure.dto.ResponsePayload;
 
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/discounts")
@@ -78,7 +80,7 @@ public class DiscountController {
     }
 
     @PostMapping
-    public ResponseEntity<DiscountDTO> createDiscount(
+    public ResponseEntity<ResponsePayload<DiscountDTO>> createDiscount(
         @RequestBody @Valid DiscountDTO discount
     ) {
         discount.setId(Id.generate().value());
@@ -108,7 +110,10 @@ public class DiscountController {
             discount.getExpiredAt()
         );
 
-        return ResponseEntity.ok(discount);
+        return new ResponseEntity<>(
+            ResponsePayload.<DiscountDTO>builder().payload(discount).build(),
+            HttpStatus.CREATED
+        );
     }
 
     @PutMapping("/{id}")

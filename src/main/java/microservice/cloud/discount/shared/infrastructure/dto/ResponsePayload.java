@@ -15,7 +15,8 @@ import lombok.Setter;
 @Builder
 public class ResponsePayload <T> {
 
-    private String message;
+    @Builder.Default
+    private String message = "success";
     private T payload;
     private Map<String, String> errors;
 }
