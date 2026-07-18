@@ -8,7 +8,7 @@ import microservice.cloud.discount.shared.domain.event.DomainEvent;
 public abstract class AggregateRoot {
     private List<DomainEvent> events = new ArrayList<>();
 
-    public void publishEvent(DomainEvent event) {
+    protected void publishEvent(DomainEvent event) {
 
         events.add(event);
     };

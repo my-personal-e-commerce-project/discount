@@ -1,0 +1,86 @@
+package microservice.cloud.discount.coupon.infrastructure.persistence;
+
+import java.util.Map;
+
+import org.springframework.data.jdbc.core.JdbcAggregateTemplate;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import lombok.RequiredArgsConstructor;
+import microservice.cloud.discount.coupon.domain.entity.Coupon;
+import microservice.cloud.discount.coupon.domain.repository.CouponRepository;
+import microservice.cloud.discount.coupon.domain.value_objects.CouponCode;
+import microservice.cloud.discount.coupon.domain.value_objects.CouponVisibility;
+import microservice.cloud.discount.shared.domain.value_objects.Id;
+
+@RequiredArgsConstructor
+@Repository
+public class CouponRepositoryJdbcAdapter implements CouponRepository{
+
+    private final JdbcAggregateTemplate jdbcAggregateTemplate;
+    private final JdbcTemplate jdbcTemplate; 
+
+    @Transactional(readOnly = true)
+    @Override
+    public Coupon findById(Id id) {
+        return toMap(jdbcAggregateTemplate.findById(id.value(), CouponEntity.class));
+    }
+
+    @Transactional
+    @Override
+    public void create(Coupon coupon) {
+        jdbcAggregateTemplate.insert(toMap(coupon));
+    }
+
+    @Transactional
+    @Override
+    public void update(Coupon coupon) {
+        jdbcAggregateTemplate.update(toMap(coupon));
+        
+    }
+
+    @Transactional
+    @Override
+    public void delete(Id id) {
+        jdbcAggregateTemplate.deleteById(id.value(), CouponEntity.class);
+    }
+
+    @Transactional
+    @Override
+    public int incrementSales(Id id) {
+        String sql = """
+            UPDATE coupons c
+            SET c.sales = c.sales + 1
+            WHERE c.id = :id AND c.sales < c.max_sales;
+        """;
+
+        return jdbcTemplate.update(sql, Map.of("id", id.value()));
+    }
+
+    private Coupon toMap(CouponEntity entity) {
+        return new Coupon(
+            Id.fromString(entity.getId()),
+            Id.fromString(entity.getDiscountId()),
+            new CouponCode(entity.getCode()),
+            CouponVisibility.valueOf(entity.getVisibility()),
+            entity.getMaxSales(),
+            entity.isActive(),
+            entity.getExpiredAt()
+        );
+    }
+
+    private CouponEntity toMap(Coupon coupon) {
+        
+        return new CouponEntity(
+            coupon.id().value(),
+            coupon.discountId().value(),
+            coupon.sales(),
+            coupon.code().value(),
+            coupon.visibility().toString(),
+            coupon.maxSales(),
+            coupon.isActive(),
+            coupon.expiredAt()
+        );
+    }
+}

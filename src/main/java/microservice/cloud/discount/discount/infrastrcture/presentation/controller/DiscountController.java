@@ -1,4 +1,4 @@
-package microservice.cloud.discount.discount.presentation.controller;
+package microservice.cloud.discount.discount.infrastrcture.presentation.controller;
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -24,8 +24,8 @@ import microservice.cloud.discount.discount.application.use_cases.ListDiscountsU
 import microservice.cloud.discount.discount.application.use_cases.UpdateDiscountUseCase;
 import microservice.cloud.discount.discount.domain.value_objects.DiscountType;
 import microservice.cloud.discount.discount.domain.value_objects.Percentage;
-import microservice.cloud.discount.discount.presentation.validate.DiscountDTO;
-import microservice.cloud.discount.discount.presentation.validate.UpdateDiscountDTO;
+import microservice.cloud.discount.discount.infrastrcture.presentation.validate.DiscountDTO;
+import microservice.cloud.discount.discount.infrastrcture.presentation.validate.UpdateDiscountDTO;
 import microservice.cloud.discount.discount.domain.value_objects.Price;
 import microservice.cloud.discount.discount.domain.value_objects.Quantity;
 import microservice.cloud.discount.shared.application.dto.Pagination;
