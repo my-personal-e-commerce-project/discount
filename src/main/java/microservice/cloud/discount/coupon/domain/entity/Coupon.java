@@ -27,6 +27,10 @@ public class Coupon extends AggregateRoot {
             throw new IllegalArgumentException("Discount id cannot be null");
         }
 
+        if(code == null) {
+            throw new IllegalArgumentException("Coupon code cannot be null");
+        } 
+
         this.id = id;
         this.discountId= discountId;
         this.code = code;

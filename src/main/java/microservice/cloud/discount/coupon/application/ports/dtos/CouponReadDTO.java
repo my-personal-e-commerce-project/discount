@@ -5,6 +5,7 @@ public record CouponReadDTO(
     String discountId,
     String code,
     String visibility,
+    Integer sales,
     Integer maxSales,
     String expiredAt
 ) {}

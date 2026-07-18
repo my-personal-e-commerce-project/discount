@@ -3,15 +3,19 @@ package microservice.cloud.discount.coupon.infrastructure.presentation.controlle
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import microservice.cloud.discount.coupon.application.ports.dtos.CouponReadDTO;
+import microservice.cloud.discount.coupon.application.ports.dtos.Query;
 import microservice.cloud.discount.coupon.application.use_cases.CreateCouponUseCase;
 import microservice.cloud.discount.coupon.application.use_cases.DeleteCouponUseCase;
 import microservice.cloud.discount.coupon.application.use_cases.ListCouponsUseCase;
@@ -19,6 +23,7 @@ import microservice.cloud.discount.coupon.application.use_cases.UpdateCouponUseC
 import microservice.cloud.discount.coupon.domain.value_objects.CouponCode;
 import microservice.cloud.discount.coupon.domain.value_objects.CouponVisibility;
 import microservice.cloud.discount.coupon.infrastructure.presentation.dtos.CouponDTO;
+import microservice.cloud.discount.shared.application.dto.Pagination;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
 import microservice.cloud.discount.shared.infrastructure.dto.ResponsePayload;
 
@@ -26,11 +31,30 @@ import microservice.cloud.discount.shared.infrastructure.dto.ResponsePayload;
 @RestController
 @RequestMapping("/api/v1/coupons")
 public class CouponController {
+
     private final ListCouponsUseCase listCouponsUseCase;
     private final CreateCouponUseCase createCouponUseCase;
     private final UpdateCouponUseCase updateCouponUseCase;
     private final DeleteCouponUseCase deleteCouponUseCase;
-   
+  
+    @GetMapping
+    public ResponseEntity<ResponsePayload<Pagination<CouponReadDTO>>> listCoupons(
+        @RequestParam(defaultValue = "0") int page,
+        @RequestParam(defaultValue = "10") int size
+    ) {
+        Pagination<CouponReadDTO> result = null;
+
+        result = listCouponsUseCase.execute(new Query(page, size));
+
+        return new ResponseEntity<>(
+            ResponsePayload.<Pagination<CouponReadDTO>>builder()
+            .payload(
+                result
+            ).build(),
+            HttpStatus.OK
+        );
+    }
+
     @PostMapping
     public ResponseEntity<ResponsePayload<CouponDTO>> createCoupon(
         @RequestBody @Valid CouponDTO coupon
