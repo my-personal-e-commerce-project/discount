@@ -8,5 +8,5 @@ public interface CouponRepository {
     public Coupon findById(Id id);
     public void create(Coupon coupon);
     public void update(Coupon coupon);
-    public void delete(Id id);
+    public void deleteIfExists(Id id);
 }

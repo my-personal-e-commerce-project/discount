@@ -1,4 +1,4 @@
-package microservice.cloud.discount.coupon.domain.repository;
+package microservice.cloud.discount.couponSales.domain.repository;
 
 import java.util.function.Consumer;
 

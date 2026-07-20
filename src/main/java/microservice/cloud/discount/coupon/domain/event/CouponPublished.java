@@ -7,12 +7,13 @@ import microservice.cloud.discount.shared.domain.event.DomainEvent;
 public record CouponPublished(
     String aggregateId,
     String code,
-    String couponId,
+    String discountId,
+    LocalDateTime expiredAt,
     LocalDateTime occurredOn
 ) implements DomainEvent {
 
-    public CouponPublished(String aggregateId, String code, String couponId) {
-        this(aggregateId, code, couponId, LocalDateTime.now());
+    public CouponPublished(String aggregateId, String code, String discountId, LocalDateTime expiredAt) {
+        this(aggregateId, code, discountId, expiredAt, LocalDateTime.now());
     }
 
     public String domain() {

@@ -12,11 +12,13 @@ import microservice.cloud.discount.shared.domain.value_objects.Id;
 public class Coupon extends AggregateRoot {
     private Id id;
     private Id discountId;
+    private Id couponSalesId;
     private CouponCode code;
+    private Integer maxSales;
     private CouponVisibility visibility;
     private LocalDateTime expiredAt;
 
-    public Coupon(Id id, Id discountId, CouponCode code, CouponVisibility visibility, LocalDateTime expiredAt) {
+    public Coupon(Id id, Id discountId, Id couponSalesId, CouponCode code, Integer maxSales, CouponVisibility visibility, LocalDateTime expiredAt) {
         if(id == null) {
             throw new IllegalArgumentException("Coupon id cannot be null");
         }
@@ -31,21 +33,27 @@ public class Coupon extends AggregateRoot {
 
         this.id = id;
         this.discountId= discountId;
+        this.couponSalesId = couponSalesId;
         this.code = code;
+        this.maxSales = maxSales;
         this.visibility = visibility;
         this.expiredAt = expiredAt;
     }
 
-    public static Coupon factoryCoupon(Id id, Id discountId, CouponCode code, CouponVisibility visibility, LocalDateTime expiredAt) {
-        Coupon coupon = new Coupon(id, discountId, code, visibility, expiredAt);
+    public static Coupon factoryCoupon(Id id, Id discountId, Id couponSalesId, CouponCode code, Integer maxSales, CouponVisibility visibility, LocalDateTime expiredAt) {
+        Coupon coupon = new Coupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
         
         if(visibility.equals(CouponVisibility.PUBLIC)) {
             coupon.publishEvent(
-                new CouponPublished(id.value(), code.value(), id.value())
+                new CouponPublished(id.value(), code.value(), discountId.value(), expiredAt)
             );
         }
 
         return coupon;
+    }
+
+    public boolean maxSalesReached(Integer sales) {
+        return this.maxSales >= sales;
     }
 
     public void block() {
@@ -55,9 +63,10 @@ public class Coupon extends AggregateRoot {
         );
     }
 
-    public void update(Id discountId, CouponCode code, CouponVisibility visibility, LocalDateTime expiredAt) {
+    public void update(Id discountId, CouponCode code, Integer maxSales, CouponVisibility visibility, LocalDateTime expiredAt) {
         this.discountId = discountId;
         this.code = code;
+        this.maxSales = maxSales;
         this.expiredAt = expiredAt;
 
         if(this.visibility.equals(CouponVisibility.PUBLIC) && !visibility.equals(visibility)) {
@@ -77,8 +86,16 @@ public class Coupon extends AggregateRoot {
         return discountId;
     }
 
+    public Id couponSalesId() {
+        return couponSalesId;
+    }
+
     public CouponCode code() {
         return code;
+    }
+
+    public Integer maxSales() {
+        return maxSales;
     }
 
     public CouponVisibility visibility() {

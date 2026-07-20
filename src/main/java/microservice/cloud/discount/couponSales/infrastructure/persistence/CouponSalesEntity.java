@@ -12,12 +12,10 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table("coupon_sales")
+@Table("coupons_sales")
 public class CouponSalesEntity {
 
     @Id
     private String id;
-    private String couponId;
     private Integer sales;
-    private Integer maxSales;
 }

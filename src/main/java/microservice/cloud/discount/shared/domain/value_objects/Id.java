@@ -23,6 +23,9 @@ public class Id {
         if(value == null)
             throw new RuntimeException("Id cannot be null");
 
+        if(value.trim().isEmpty())
+            throw new RuntimeException("Id cannot be empty");
+
         this.value = value;
     }
 

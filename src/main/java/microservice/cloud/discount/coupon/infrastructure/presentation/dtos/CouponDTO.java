@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,6 +19,7 @@ public class CouponDTO{
     private Integer sales;
     @NotEmpty
     private String code;
+    @Pattern(regexp = "PUBLIC|PRIVATE|BLOCKED", message = "The value must be PUBLIC, PRIVATE or BLOCKED")
     @NotEmpty
     private String visibility;
     private Integer maxSales;

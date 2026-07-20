@@ -9,6 +9,9 @@ public class Slug {
         if(value == null)
             throw new RuntimeException("The slug cannot be null");
 
+        if(value.trim().isEmpty())
+            throw new RuntimeException("Id cannot be empty");
+
         this.value = value;
     }
 

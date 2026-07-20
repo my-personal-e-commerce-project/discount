@@ -24,4 +24,16 @@ public record Permission (
     public static Permission deleteDiscount() {
         return new Permission("delete_discount");
     }
+
+    public static Permission createCoupon() {
+        return new Permission("create_coupon");
+    }
+
+    public static Permission updateCoupon() {
+        return new Permission("update_coupon");
+    }
+
+    public static Permission deleteCoupon() {
+        return new Permission("delete_coupon");
+    }
 }

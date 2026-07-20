@@ -1,12 +1,6 @@
 package microservice.cloud.discount.coupon.infrastructure.persistence;
 
-import java.util.List;
-import java.util.function.Consumer;
-
 import org.springframework.data.jdbc.core.JdbcAggregateTemplate;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -27,6 +21,7 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
     private final JdbcAggregateTemplate jdbcAggregateTemplate;
     private final DiscountJdbcRepository discountJdbcRepository;
 
+    @Transactional(readOnly = true)
     @Override
     public Coupon findById(Id id) {
         CouponEntity entity = couponJdbcRepository.findById(id.value())
@@ -40,6 +35,10 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
     @Override
     @Transactional
     public void update(Coupon coupon) {
+        if(!discountJdbcRepository.existsById(coupon.discountId().value())) {
+            throw new DataNotFound("Discount not found");
+        }
+        
         couponJdbcRepository.save(toMap(coupon));
     }
 
@@ -50,7 +49,7 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
             throw new RuntimeException("Coupon code already exists");
         }
 
-        if(discountJdbcRepository.existsById(coupon.discountId().value())) {
+        if(!discountJdbcRepository.existsById(coupon.discountId().value())) {
             throw new DataNotFound("Discount not found");
         }
 
@@ -59,20 +58,10 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
 
     @Transactional
     @Override
-    public void delete(Id id) {
-        CouponEntity entity = couponJdbcRepository.findById(id.value()).orElse(null);
-
-        if(entity == null) {
-            throw new DataNotFound("Coupon not found");
-        }
-
-        if(discountJdbcRepository.existsById(entity.getDiscountId())) {
-            throw new DataNotFound("Discount not found");
-        }
-
-        if(couponJdbcRepository.existsByCode(entity.getCode())) {
-            throw new RuntimeException("Coupon code already exists");
-        }
+    public void deleteIfExists(Id id) {
+        couponJdbcRepository.findById(id.value()).orElseThrow(
+            () -> new DataNotFound("Coupon not found")
+        );
 
         couponJdbcRepository.deleteById(id.value());
     }
@@ -81,7 +70,9 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
         return new Coupon(
             Id.fromString(entity.getId()),
             Id.fromString(entity.getDiscountId()),
+            Id.fromString(entity.getCouponsSalesId()),
             new CouponCode(entity.getCode()),
+            entity.getMaxSales(),
             CouponVisibility.valueOf(entity.getVisibility()),
             entity.getExpiredAt()
         );
@@ -91,7 +82,9 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
         return new CouponEntity(
             coupon.id().value(),
             coupon.discountId().value(),
+            coupon.couponSalesId().value(),
             coupon.code().value(),
+            coupon.maxSales(),
             coupon.visibility().toString(),
             coupon.expiredAt()
         );

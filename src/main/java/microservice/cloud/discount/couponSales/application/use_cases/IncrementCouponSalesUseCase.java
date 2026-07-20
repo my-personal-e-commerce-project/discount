@@ -1,36 +1,35 @@
 package microservice.cloud.discount.couponSales.application.use_cases;
 
-import java.util.List;
-
 import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
-import microservice.cloud.discount.coupon.domain.repository.CouponSalesRepository;
-import microservice.cloud.discount.couponSales.domain.entity.CouponSales;
-import microservice.cloud.discount.couponSales.domain.event.CouponSalesLimitReached;
-import microservice.cloud.discount.shared.application.ports.out.EventPublisher;
-import microservice.cloud.discount.shared.domain.event.DomainEvent;
+import microservice.cloud.discount.coupon.domain.entity.Coupon;
+import microservice.cloud.discount.coupon.domain.repository.CouponRepository;
+import microservice.cloud.discount.couponSales.domain.repository.CouponSalesRepository;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
 
 public class IncrementCouponSalesUseCase {
     private final CouponSalesRepository couponSalesRepository;
-    private final EventPublisher eventPublisher;
     private final BlockCouponUseCase blockedCouponUseCase;
+    private final CouponRepository couponRepository;
 
-    public IncrementCouponSalesUseCase(CouponSalesRepository couponSalesRepository, EventPublisher eventPublisher, BlockCouponUseCase blockCouponUseCase) {
+    public IncrementCouponSalesUseCase(CouponSalesRepository couponSalesRepository, BlockCouponUseCase blockCouponUseCase, CouponRepository couponRepository) {
         this.couponSalesRepository = couponSalesRepository;
-        this.eventPublisher = eventPublisher;
         this.blockedCouponUseCase = blockCouponUseCase;
+        this.couponRepository = couponRepository;
     }
 
     public void execute(Id id) {
-        CouponSales entity = couponSalesRepository.pessimisticUpdate(id, CouponSales::incrementSales);
+        Coupon coupon = couponRepository.findById(id);
 
-        List<DomainEvent> events = entity.getEvents();
-        if (events != null && !events.isEmpty()) {
-            if (events.stream().anyMatch(e -> e instanceof CouponSalesLimitReached)) {
-                blockedCouponUseCase.execute(entity.couponId());
-            }
+        couponSalesRepository
+            .pessimisticUpdate(id, (cs) -> {
+                boolean isBlocked = coupon.maxSalesReached(cs.sales());
 
-            eventPublisher.publish(events);
-        }
+                if (isBlocked) {
+                    blockedCouponUseCase.execute(id);
+                    return;
+                }
+
+                cs.incrementSales();
+            });
     }
 }

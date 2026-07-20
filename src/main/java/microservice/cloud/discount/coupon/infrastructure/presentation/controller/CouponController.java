@@ -24,7 +24,6 @@ import microservice.cloud.discount.coupon.domain.value_objects.CouponCode;
 import microservice.cloud.discount.coupon.domain.value_objects.CouponVisibility;
 import microservice.cloud.discount.coupon.infrastructure.presentation.dtos.CouponDTO;
 import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
-import microservice.cloud.discount.couponSales.application.use_cases.UpdateCouponSalesUseCase;
 import microservice.cloud.discount.shared.application.dto.Pagination;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
 import microservice.cloud.discount.shared.infrastructure.dto.ResponsePayload;
@@ -40,7 +39,6 @@ public class CouponController {
     private final DeleteCouponUseCase deleteCouponUseCase;
  
     private final CreateCouponSalesUseCase createCouponSalesUseCase;
-    private final UpdateCouponSalesUseCase updateCouponSalesUseCase;
 
     @GetMapping
     public ResponseEntity<ResponsePayload<Pagination<CouponReadDTO>>> listCoupons(
@@ -65,19 +63,21 @@ public class CouponController {
         @RequestBody @Valid CouponDTO coupon
     ) {
         coupon.setId(Id.generate().value());
-        
+
+        Id couponSalesId = Id.generate();
+
+        createCouponSalesUseCase.execute(
+            couponSalesId
+        );
+
         createCouponUseCase.execute(
             Id.fromString(coupon.getId()),
             Id.fromString(coupon.getDiscountId()),
+            couponSalesId,
             new CouponCode(coupon.getCode()),
+            coupon.getMaxSales(),
             CouponVisibility.valueOf(coupon.getVisibility()),
             coupon.getExpiredAt()
-        );
-
-        createCouponSalesUseCase.execute(
-            Id.generate(),
-            Id.fromString(coupon.getId()),
-            coupon.getMaxSales()
         );
 
         return new ResponseEntity<>(
@@ -96,13 +96,9 @@ public class CouponController {
             Id.fromString(coupon.getId()),
             Id.fromString(coupon.getDiscountId()),
             new CouponCode(coupon.getCode()),
+            coupon.getMaxSales(),
             CouponVisibility.valueOf(coupon.getVisibility()),
             coupon.getExpiredAt()
-        );
-
-        updateCouponSalesUseCase.execute(
-            Id.fromString(coupon.getId()),
-            coupon.getMaxSales()
         );
 
         return new ResponseEntity<>(
@@ -111,9 +107,9 @@ public class CouponController {
         );
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<ResponsePayload<CouponDTO>> deleteCoupon(
-        @RequestBody @Valid String id
+        @PathVariable String id
     ) {
         deleteCouponUseCase.execute(Id.fromString(id));
 

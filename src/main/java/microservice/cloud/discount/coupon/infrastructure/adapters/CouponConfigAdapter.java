@@ -11,6 +11,7 @@ import microservice.cloud.discount.coupon.application.use_cases.ListCouponsUseCa
 import microservice.cloud.discount.coupon.application.use_cases.UpdateCouponUseCase;
 import microservice.cloud.discount.coupon.domain.repository.CouponRepository;
 import microservice.cloud.discount.shared.application.ports.out.EventPublisher;
+import microservice.cloud.discount.shared.application.ports.out.GetMePort;
 
 @Configuration
 public class CouponConfigAdapter {
@@ -28,18 +29,19 @@ public class CouponConfigAdapter {
     @Bean
     public UpdateCouponUseCase updateCouponUseCase(
         CouponRepository couponRepository,
-        EventPublisher eventPublisher
+        EventPublisher eventPublisher,
+        GetMePort getMePort
     ) {
-        return new UpdateCouponUseCase(couponRepository, eventPublisher);
+        return new UpdateCouponUseCase(couponRepository, eventPublisher, getMePort);
     }
 
     @Bean
-    public DeleteCouponUseCase deleteCouponUseCase(CouponRepository couponRepository) {
-        return new DeleteCouponUseCase(couponRepository);
+    public DeleteCouponUseCase deleteCouponUseCase(CouponRepository couponRepository, GetMePort getMePort) {
+        return new DeleteCouponUseCase(couponRepository, getMePort);
     }
 
     @Bean
-    public CreateCouponUseCase createCouponUseCase(CouponRepository couponRepository, EventPublisher eventPublisher) {
-        return new CreateCouponUseCase(eventPublisher, couponRepository);
+    public CreateCouponUseCase createCouponUseCase(CouponRepository couponRepository, EventPublisher eventPublisher, GetMePort getMePort) {
+        return new CreateCouponUseCase(eventPublisher, couponRepository, getMePort);
     }
 }
