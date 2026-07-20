@@ -26,18 +26,16 @@ public class UpdateCouponUseCase {
         Id discountId,
         CouponCode code,
         CouponVisibility visibility,
-        Integer maxSales,
         LocalDateTime expiredAt
     ) {
-        Coupon coupon = couponRepository.pessimisticUpdate(id, (c) -> {
-            c.update(
-                discountId,
-                code,
-                visibility,
-                maxSales,
-                expiredAt
-            );
-        });
+        Coupon coupon = couponRepository.findById(id);
+
+        coupon.update(
+            discountId,
+            code,
+            visibility,
+            expiredAt
+        );
 
         if(!coupon.getEvents().isEmpty()) {
             eventPublisher.publish(coupon.getEvents());

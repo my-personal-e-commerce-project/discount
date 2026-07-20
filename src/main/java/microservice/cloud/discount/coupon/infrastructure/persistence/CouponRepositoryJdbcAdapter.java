@@ -24,35 +24,23 @@ import microservice.cloud.discount.shared.domain.value_objects.Id;
 public class CouponRepositoryJdbcAdapter implements CouponRepository{
 
     private final CouponJdbcRepository couponJdbcRepository;
-    private final NamedParameterJdbcTemplate namedParameterJdbcTemplate;
     private final JdbcAggregateTemplate jdbcAggregateTemplate;
     private final DiscountJdbcRepository discountJdbcRepository;
 
     @Override
-    @Transactional
-    public Coupon pessimisticUpdate(Id id, Consumer<Coupon> function) {
-        Coupon coupon = findByIdForUpdate(id.value());
-        function.accept(coupon);
-        couponJdbcRepository.save(toMap(coupon));
+    public Coupon findById(Id id) {
+        CouponEntity entity = couponJdbcRepository.findById(id.value())
+            .orElseThrow(
+                () -> new DataNotFound("Coupon not found")
+            );
 
-        return coupon;
+        return toMap(entity);
     }
 
-    private Coupon findByIdForUpdate(String id) {
-        String sql = "SELECT * FROM coupons WHERE id = :id FOR UPDATE";
-        MapSqlParameterSource params = new MapSqlParameterSource("id", id);
-
-        List<CouponEntity> result = namedParameterJdbcTemplate.query(
-            sql, 
-            params, 
-            new BeanPropertyRowMapper<>(CouponEntity.class)
-        );
-
-        CouponEntity coupon = result.stream()
-            .findFirst()
-            .orElseThrow(() -> new DataNotFound("Coupon not found"));
-
-        return toMap(coupon);
+    @Override
+    @Transactional
+    public void update(Coupon coupon) {
+        couponJdbcRepository.save(toMap(coupon));
     }
 
     @Transactional
@@ -95,8 +83,6 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
             Id.fromString(entity.getDiscountId()),
             new CouponCode(entity.getCode()),
             CouponVisibility.valueOf(entity.getVisibility()),
-            entity.getSales(),
-            entity.getMaxSales(),
             entity.getExpiredAt()
         );
     }
@@ -105,10 +91,8 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
         return new CouponEntity(
             coupon.id().value(),
             coupon.discountId().value(),
-            coupon.sales(),
             coupon.code().value(),
             coupon.visibility().toString(),
-            coupon.maxSales(),
             coupon.expiredAt()
         );
     }

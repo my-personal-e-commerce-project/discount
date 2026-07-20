@@ -23,6 +23,8 @@ import microservice.cloud.discount.coupon.application.use_cases.UpdateCouponUseC
 import microservice.cloud.discount.coupon.domain.value_objects.CouponCode;
 import microservice.cloud.discount.coupon.domain.value_objects.CouponVisibility;
 import microservice.cloud.discount.coupon.infrastructure.presentation.dtos.CouponDTO;
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+import microservice.cloud.discount.couponSales.application.use_cases.UpdateCouponSalesUseCase;
 import microservice.cloud.discount.shared.application.dto.Pagination;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
 import microservice.cloud.discount.shared.infrastructure.dto.ResponsePayload;
@@ -36,7 +38,10 @@ public class CouponController {
     private final CreateCouponUseCase createCouponUseCase;
     private final UpdateCouponUseCase updateCouponUseCase;
     private final DeleteCouponUseCase deleteCouponUseCase;
-  
+ 
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+    private final UpdateCouponSalesUseCase updateCouponSalesUseCase;
+
     @GetMapping
     public ResponseEntity<ResponsePayload<Pagination<CouponReadDTO>>> listCoupons(
         @RequestParam(defaultValue = "0") int page,
@@ -66,8 +71,13 @@ public class CouponController {
             Id.fromString(coupon.getDiscountId()),
             new CouponCode(coupon.getCode()),
             CouponVisibility.valueOf(coupon.getVisibility()),
-            coupon.getMaxSales(),
             coupon.getExpiredAt()
+        );
+
+        createCouponSalesUseCase.execute(
+            Id.generate(),
+            Id.fromString(coupon.getId()),
+            coupon.getMaxSales()
         );
 
         return new ResponseEntity<>(
@@ -87,8 +97,12 @@ public class CouponController {
             Id.fromString(coupon.getDiscountId()),
             new CouponCode(coupon.getCode()),
             CouponVisibility.valueOf(coupon.getVisibility()),
-            coupon.getMaxSales(),
             coupon.getExpiredAt()
+        );
+
+        updateCouponSalesUseCase.execute(
+            Id.fromString(coupon.getId()),
+            coupon.getMaxSales()
         );
 
         return new ResponseEntity<>(

@@ -18,9 +18,7 @@ public class CouponEntity {
     @Id
     private String id;
     private String discountId;
-    private Integer sales;
     private String code;
     private String visibility;
-    private Integer maxSales;
     private LocalDateTime expiredAt;
 }

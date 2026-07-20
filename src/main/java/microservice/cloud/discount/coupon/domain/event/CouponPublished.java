@@ -14,4 +14,8 @@ public record CouponPublished(
     public CouponPublished(String aggregateId, String code, String couponId) {
         this(aggregateId, code, couponId, LocalDateTime.now());
     }
+
+    public String domain() {
+        return "discount.coupon";
+    }
 }

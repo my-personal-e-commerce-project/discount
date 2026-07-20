@@ -26,11 +26,12 @@ public class CouponReadRepositoryJdbcAdapter implements CouponReadRepository {
         
         StringBuilder sql = new StringBuilder("""
             SELECT c.id AS coupId, c.code AS code, c.visibility AS visibility, 
-                   c.sales AS sales, c.max_sales AS maxSales,
+                   cs.sales AS sales, cs.max_sales AS maxSales,
                    c.expired_at AS expiredAt
             FROM coupons c
+            LEFT JOIN coupons_sales cs WHERE cs.coupon_id = c.id 
             WHERE 1=1
-            """);
+        """);
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("limit", query.size(), Types.INTEGER);
         params.addValue("offset", offset, Types.INTEGER);

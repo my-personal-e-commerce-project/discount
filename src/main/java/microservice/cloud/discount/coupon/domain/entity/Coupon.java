@@ -12,13 +12,11 @@ import microservice.cloud.discount.shared.domain.value_objects.Id;
 public class Coupon extends AggregateRoot {
     private Id id;
     private Id discountId;
-    private Integer sales;
     private CouponCode code;
     private CouponVisibility visibility;
-    private Integer maxSales;
     private LocalDateTime expiredAt;
 
-    public Coupon(Id id, Id discountId, CouponCode code, CouponVisibility visibility, Integer sales, Integer maxSales, LocalDateTime expiredAt) {
+    public Coupon(Id id, Id discountId, CouponCode code, CouponVisibility visibility, LocalDateTime expiredAt) {
         if(id == null) {
             throw new IllegalArgumentException("Coupon id cannot be null");
         }
@@ -35,13 +33,11 @@ public class Coupon extends AggregateRoot {
         this.discountId= discountId;
         this.code = code;
         this.visibility = visibility;
-        this.sales = sales;
-        this.maxSales = maxSales;
         this.expiredAt = expiredAt;
     }
 
-    public static Coupon factoryCoupon(Id id, Id discountId, CouponCode code, CouponVisibility visibility, Integer maxSales, LocalDateTime expiredAt) {
-        Coupon coupon = new Coupon(id, discountId, code, visibility, 0, maxSales, expiredAt);
+    public static Coupon factoryCoupon(Id id, Id discountId, CouponCode code, CouponVisibility visibility, LocalDateTime expiredAt) {
+        Coupon coupon = new Coupon(id, discountId, code, visibility, expiredAt);
         
         if(visibility.equals(CouponVisibility.PUBLIC)) {
             coupon.publishEvent(
@@ -52,10 +48,16 @@ public class Coupon extends AggregateRoot {
         return coupon;
     }
 
-    public void update(Id discountId, CouponCode code, CouponVisibility visibility, Integer maxSales, LocalDateTime expiredAt) {
+    public void block() {
+        this.visibility = CouponVisibility.BLOCKED;
+        this.publishEvent(
+            new CouponIsNotPublic(id.value())
+        );
+    }
+
+    public void update(Id discountId, CouponCode code, CouponVisibility visibility, LocalDateTime expiredAt) {
         this.discountId = discountId;
         this.code = code;
-        this.maxSales = maxSales;
         this.expiredAt = expiredAt;
 
         if(this.visibility.equals(CouponVisibility.PUBLIC) && !visibility.equals(visibility)) {
@@ -65,24 +67,6 @@ public class Coupon extends AggregateRoot {
         }
 
         this.visibility = visibility;
-    }
-
-    public void incrementSales() {
-        if(this.sales >= this.maxSales) {
-            this.visibility = CouponVisibility.BLOCKED;
-
-            this.publishEvent(
-                new CouponIsNotPublic(id.value())
-            );
-           
-            return;
-        }
-
-        this.sales = this.sales + 1;
-    }
-
-    public Integer sales() {
-        return sales;
     }
 
     public Id id() {
@@ -99,10 +83,6 @@ public class Coupon extends AggregateRoot {
 
     public CouponVisibility visibility() {
         return visibility;
-    }
-
-    public Integer maxSales() {
-        return maxSales;
     }
 
     public LocalDateTime expiredAt() {

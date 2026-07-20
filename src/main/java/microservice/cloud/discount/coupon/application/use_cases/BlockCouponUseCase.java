@@ -5,21 +5,23 @@ import microservice.cloud.discount.coupon.domain.repository.CouponRepository;
 import microservice.cloud.discount.shared.application.ports.out.EventPublisher;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
 
-public class IncrementCouponSalesUseCase {
+public class BlockCouponUseCase {
     private final CouponRepository couponRepository;
     private final EventPublisher eventPublisher;
 
-    public IncrementCouponSalesUseCase(CouponRepository couponRepository, EventPublisher eventPublisher) {
+    public BlockCouponUseCase(CouponRepository couponRepository, EventPublisher eventPublisher) {
         this.couponRepository = couponRepository;
         this.eventPublisher = eventPublisher;
     }
 
     public void execute(Id id) {
-        Coupon coupon = couponRepository.pessimisticUpdate(id, (c) -> {
-            c.incrementSales();
-        });
+        Coupon coupon = couponRepository.findById(id);
 
-        if(!coupon.getEvents().isEmpty()) {
+        coupon.block();
+
+        couponRepository.update(coupon);
+
+        if(!coupon.getEvents().isEmpty() && coupon.getEvents() != null) {
             eventPublisher.publish(coupon.getEvents());
         }
     }
