@@ -108039,3 +108039,606 @@ import microservice.cloud.discount.shared.domain.value_objects.Me;
 2026.07.20 18:55:33 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
 2026.07.20 18:55:33 WARN  javac exited with exit code 1[0m
 2026.07.20 18:55:33 INFO  time: compiled discount in 1.61s[0m
+2026.07.21 03:45:29 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.07.21 03:45:30 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.07.21 03:45:30 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.07.21 03:45:30 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.07.21 03:45:32 INFO  time: initialize in 2.34s[0m
+2026.07.21 03:45:33 INFO  Attempting to connect to the build server...[0m
+2026.07.21 03:45:34 INFO  skipping build import with status 'Requested'[0m
+2026.07.21 03:45:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.07.21 03:45:37 INFO  time: Connected to build server in 3.96s[0m
+2026.07.21 03:45:37 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.07.21 03:45:39 INFO  time: indexed workspace in 2.01s[0m
+2026.07.21 03:51:36 INFO  compiling discount (85 java sources)[0m
+2026.07.21 03:51:41 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:51:41 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:51:43 INFO  time: compiled discount in 7.08s[0m
+2026.07.21 03:51:43 INFO  compiling discount (19 java sources)[0m
+2026.07.21 03:51:46 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:51:46 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:51:46 INFO  time: compiled discount in 3.22s[0m
+2026.07.21 03:51:46 INFO  compiling discount (3 java sources)[0m
+2026.07.21 03:51:47 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:3: error: cannot access DiscountRepository
+import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
+                                                             ^
+  bad class file: /tmp/invalidated-forked-javac17585546846598430625/microservice/cloud/discount/discount/domain/repository/DiscountRepository.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:16: error: cannot access DiscountResultSetExtractor
+import microservice.cloud.discount.discount.infrastrcture.persistence.extractor.DiscountResultSetExtractor;
+                                                                               ^
+  bad class file: /tmp/invalidated-forked-javac17585546846598430625/microservice/cloud/discount/discount/infrastrcture/persistence/extractor/DiscountResultSetExtractor.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:3: error: cannot access Me
+import microservice.cloud.discount.shared.domain.value_objects.Me;
+                                                              ^
+  bad class file: /tmp/invalidated-forked-javac17585546846598430625/microservice/cloud/discount/shared/domain/value_objects/Me.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:8: error: cannot find symbol
+    private final DiscountRepository discountRepository;
+                  ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:11: error: cannot find symbol
+        DiscountRepository discountRepository
+        ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:7: error: cannot find symbol
+    public Me execute();
+           ^
+  symbol:   class Me
+  location: interface GetMePort
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:96: error: cannot find symbol
+            new DiscountResultSetExtractor()
+                ^
+  symbol:   class DiscountResultSetExtractor
+  location: class DiscountReadRepositoryJdbcAdapter
+7 errors.[0m
+2026.07.21 03:51:47 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:51:47 WARN  javac exited with exit code 1[0m
+2026.07.21 03:51:47 INFO  time: compiled discount in 1.38s[0m
+2026.07.21 03:52:23 INFO  compiling discount (85 java sources)[0m
+2026.07.21 03:52:27 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:52:27 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:52:27 INFO  time: compiled discount in 4.96s[0m
+2026.07.21 03:52:27 INFO  compiling discount (19 java sources)[0m
+2026.07.21 03:52:31 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:52:31 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:52:31 INFO  time: compiled discount in 3.3s[0m
+2026.07.21 03:52:31 INFO  compiling discount (3 java sources)[0m
+2026.07.21 03:52:32 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:3: error: cannot access DiscountRepository
+import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
+                                                             ^
+  bad class file: /tmp/invalidated-forked-javac10444443568905370702/microservice/cloud/discount/discount/domain/repository/DiscountRepository.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:16: error: cannot access DiscountResultSetExtractor
+import microservice.cloud.discount.discount.infrastrcture.persistence.extractor.DiscountResultSetExtractor;
+                                                                               ^
+  bad class file: /tmp/invalidated-forked-javac10444443568905370702/microservice/cloud/discount/discount/infrastrcture/persistence/extractor/DiscountResultSetExtractor.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:3: error: cannot access Me
+import microservice.cloud.discount.shared.domain.value_objects.Me;
+                                                              ^
+  bad class file: /tmp/invalidated-forked-javac10444443568905370702/microservice/cloud/discount/shared/domain/value_objects/Me.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:8: error: cannot find symbol
+    private final DiscountRepository discountRepository;
+                  ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:11: error: cannot find symbol
+        DiscountRepository discountRepository
+        ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:7: error: cannot find symbol
+    public Me execute();
+           ^
+  symbol:   class Me
+  location: interface GetMePort
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:96: error: cannot find symbol
+            new DiscountResultSetExtractor()
+                ^
+  symbol:   class DiscountResultSetExtractor
+  location: class DiscountReadRepositoryJdbcAdapter
+7 errors.[0m
+2026.07.21 03:52:32 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:52:32 WARN  javac exited with exit code 1[0m
+2026.07.21 03:52:32 INFO  time: compiled discount in 1.17s[0m
+2026.07.21 03:53:49 INFO  compiling discount (85 java sources)[0m
+2026.07.21 03:53:53 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:53:53 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:53:53 INFO  time: compiled discount in 5.16s[0m
+2026.07.21 03:53:53 INFO  compiling discount (19 java sources)[0m
+2026.07.21 03:53:57 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:53:57 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:53:57 INFO  time: compiled discount in 3.25s[0m
+2026.07.21 03:53:57 INFO  compiling discount (3 java sources)[0m
+2026.07.21 03:53:58 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:3: error: cannot access DiscountRepository
+import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
+                                                             ^
+  bad class file: /tmp/invalidated-forked-javac14152570085064258122/microservice/cloud/discount/discount/domain/repository/DiscountRepository.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:16: error: cannot access DiscountResultSetExtractor
+import microservice.cloud.discount.discount.infrastrcture.persistence.extractor.DiscountResultSetExtractor;
+                                                                               ^
+  bad class file: /tmp/invalidated-forked-javac14152570085064258122/microservice/cloud/discount/discount/infrastrcture/persistence/extractor/DiscountResultSetExtractor.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:3: error: cannot access Me
+import microservice.cloud.discount.shared.domain.value_objects.Me;
+                                                              ^
+  bad class file: /tmp/invalidated-forked-javac14152570085064258122/microservice/cloud/discount/shared/domain/value_objects/Me.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:8: error: cannot find symbol
+    private final DiscountRepository discountRepository;
+                  ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:11: error: cannot find symbol
+        DiscountRepository discountRepository
+        ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:7: error: cannot find symbol
+    public Me execute();
+           ^
+  symbol:   class Me
+  location: interface GetMePort
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:96: error: cannot find symbol
+            new DiscountResultSetExtractor()
+                ^
+  symbol:   class DiscountResultSetExtractor
+  location: class DiscountReadRepositoryJdbcAdapter
+7 errors.[0m
+2026.07.21 03:53:58 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:53:58 WARN  javac exited with exit code 1[0m
+2026.07.21 03:53:58 INFO  time: compiled discount in 1.22s[0m
+2026.07.21 03:54:05 INFO  compiling discount (85 java sources)[0m
+2026.07.21 03:54:09 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:54:09 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:54:09 INFO  time: compiled discount in 4.98s[0m
+2026.07.21 03:54:09 INFO  compiling discount (19 java sources)[0m
+2026.07.21 03:54:13 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:54:13 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:54:13 INFO  time: compiled discount in 3.29s[0m
+2026.07.21 03:54:13 INFO  compiling discount (3 java sources)[0m
+2026.07.21 03:54:14 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:3: error: cannot access DiscountRepository
+import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
+                                                             ^
+  bad class file: /tmp/invalidated-forked-javac6757677927358375348/microservice/cloud/discount/discount/domain/repository/DiscountRepository.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:16: error: cannot access DiscountResultSetExtractor
+import microservice.cloud.discount.discount.infrastrcture.persistence.extractor.DiscountResultSetExtractor;
+                                                                               ^
+  bad class file: /tmp/invalidated-forked-javac6757677927358375348/microservice/cloud/discount/discount/infrastrcture/persistence/extractor/DiscountResultSetExtractor.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:3: error: cannot access Me
+import microservice.cloud.discount.shared.domain.value_objects.Me;
+                                                              ^
+  bad class file: /tmp/invalidated-forked-javac6757677927358375348/microservice/cloud/discount/shared/domain/value_objects/Me.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:8: error: cannot find symbol
+    private final DiscountRepository discountRepository;
+                  ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:11: error: cannot find symbol
+        DiscountRepository discountRepository
+        ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:7: error: cannot find symbol
+    public Me execute();
+           ^
+  symbol:   class Me
+  location: interface GetMePort
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:96: error: cannot find symbol
+            new DiscountResultSetExtractor()
+                ^
+  symbol:   class DiscountResultSetExtractor
+  location: class DiscountReadRepositoryJdbcAdapter
+7 errors.[0m
+2026.07.21 03:54:14 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:54:14 WARN  javac exited with exit code 1[0m
+2026.07.21 03:54:14 INFO  time: compiled discount in 1.12s[0m
+2026.07.21 03:54:14 INFO  compiling discount (85 java sources)[0m
+2026.07.21 03:54:17 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:54:17 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:54:17 INFO  time: compiled discount in 3.55s[0m
+2026.07.21 03:54:17 INFO  compiling discount (19 java sources)[0m
+2026.07.21 03:54:20 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:54:20 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:54:20 INFO  time: compiled discount in 2.33s[0m
+2026.07.21 03:54:20 INFO  compiling discount (3 java sources)[0m
+2026.07.21 03:54:21 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:3: error: cannot access DiscountRepository
+import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
+                                                             ^
+  bad class file: /tmp/invalidated-forked-javac8748160253221890881/microservice/cloud/discount/discount/domain/repository/DiscountRepository.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:16: error: cannot access DiscountResultSetExtractor
+import microservice.cloud.discount.discount.infrastrcture.persistence.extractor.DiscountResultSetExtractor;
+                                                                               ^
+  bad class file: /tmp/invalidated-forked-javac8748160253221890881/microservice/cloud/discount/discount/infrastrcture/persistence/extractor/DiscountResultSetExtractor.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:3: error: cannot access Me
+import microservice.cloud.discount.shared.domain.value_objects.Me;
+                                                              ^
+  bad class file: /tmp/invalidated-forked-javac8748160253221890881/microservice/cloud/discount/shared/domain/value_objects/Me.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:8: error: cannot find symbol
+    private final DiscountRepository discountRepository;
+                  ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:11: error: cannot find symbol
+        DiscountRepository discountRepository
+        ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:7: error: cannot find symbol
+    public Me execute();
+           ^
+  symbol:   class Me
+  location: interface GetMePort
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:96: error: cannot find symbol
+            new DiscountResultSetExtractor()
+                ^
+  symbol:   class DiscountResultSetExtractor
+  location: class DiscountReadRepositoryJdbcAdapter
+7 errors.[0m
+2026.07.21 03:54:21 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:54:21 WARN  javac exited with exit code 1[0m
+2026.07.21 03:54:21 INFO  time: compiled discount in 1.41s[0m
+2026.07.21 03:54:21 INFO  compiling discount (85 java sources)[0m
+2026.07.21 03:54:26 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:54:26 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:54:26 INFO  time: compiled discount in 4.63s[0m
+2026.07.21 03:54:26 INFO  compiling discount (19 java sources)[0m
+2026.07.21 03:54:29 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:54:29 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:54:29 INFO  time: compiled discount in 2.26s[0m
+2026.07.21 03:54:29 INFO  compiling discount (3 java sources)[0m
+2026.07.21 03:54:30 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:3: error: cannot access DiscountRepository
+import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
+                                                             ^
+  bad class file: /tmp/invalidated-forked-javac10416020526642020046/microservice/cloud/discount/discount/domain/repository/DiscountRepository.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:16: error: cannot access DiscountResultSetExtractor
+import microservice.cloud.discount.discount.infrastrcture.persistence.extractor.DiscountResultSetExtractor;
+                                                                               ^
+  bad class file: /tmp/invalidated-forked-javac10416020526642020046/microservice/cloud/discount/discount/infrastrcture/persistence/extractor/DiscountResultSetExtractor.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:3: error: cannot access Me
+import microservice.cloud.discount.shared.domain.value_objects.Me;
+                                                              ^
+  bad class file: /tmp/invalidated-forked-javac10416020526642020046/microservice/cloud/discount/shared/domain/value_objects/Me.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:8: error: cannot find symbol
+    private final DiscountRepository discountRepository;
+                  ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:11: error: cannot find symbol
+        DiscountRepository discountRepository
+        ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:7: error: cannot find symbol
+    public Me execute();
+           ^
+  symbol:   class Me
+  location: interface GetMePort
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:96: error: cannot find symbol
+            new DiscountResultSetExtractor()
+                ^
+  symbol:   class DiscountResultSetExtractor
+  location: class DiscountReadRepositoryJdbcAdapter
+7 errors.[0m
+2026.07.21 03:54:30 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:54:30 WARN  javac exited with exit code 1[0m
+2026.07.21 03:54:30 INFO  time: compiled discount in 1.17s[0m
+2026.07.21 03:54:30 INFO  compiling discount (85 java sources)[0m
+2026.07.21 03:54:33 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:54:33 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:54:33 INFO  time: compiled discount in 3.5s[0m
+2026.07.21 03:54:33 INFO  compiling discount (19 java sources)[0m
+2026.07.21 03:54:36 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:54:36 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:54:36 INFO  time: compiled discount in 2.48s[0m
+2026.07.21 03:54:36 INFO  compiling discount (3 java sources)[0m
+2026.07.21 03:54:37 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:3: error: cannot access DiscountRepository
+import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
+                                                             ^
+  bad class file: /tmp/invalidated-forked-javac8932855240399832523/microservice/cloud/discount/discount/domain/repository/DiscountRepository.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:16: error: cannot access DiscountResultSetExtractor
+import microservice.cloud.discount.discount.infrastrcture.persistence.extractor.DiscountResultSetExtractor;
+                                                                               ^
+  bad class file: /tmp/invalidated-forked-javac8932855240399832523/microservice/cloud/discount/discount/infrastrcture/persistence/extractor/DiscountResultSetExtractor.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:3: error: cannot access Me
+import microservice.cloud.discount.shared.domain.value_objects.Me;
+                                                              ^
+  bad class file: /tmp/invalidated-forked-javac8932855240399832523/microservice/cloud/discount/shared/domain/value_objects/Me.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:8: error: cannot find symbol
+    private final DiscountRepository discountRepository;
+                  ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:11: error: cannot find symbol
+        DiscountRepository discountRepository
+        ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:7: error: cannot find symbol
+    public Me execute();
+           ^
+  symbol:   class Me
+  location: interface GetMePort
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:96: error: cannot find symbol
+            new DiscountResultSetExtractor()
+                ^
+  symbol:   class DiscountResultSetExtractor
+  location: class DiscountReadRepositoryJdbcAdapter
+7 errors.[0m
+2026.07.21 03:54:37 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:54:37 WARN  javac exited with exit code 1[0m
+2026.07.21 03:54:37 INFO  time: compiled discount in 1.22s[0m
+2026.07.21 03:58:08 INFO  compiling discount (85 java sources)[0m
+2026.07.21 03:58:13 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:58:13 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:58:13 INFO  time: compiled discount in 4.9s[0m
+2026.07.21 03:58:13 INFO  compiling discount (19 java sources)[0m
+2026.07.21 03:58:16 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.21 03:58:16 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:58:16 INFO  time: compiled discount in 3.18s[0m
+2026.07.21 03:58:16 INFO  compiling discount (3 java sources)[0m
+2026.07.21 03:58:18 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:3: error: cannot access DiscountRepository
+import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
+                                                             ^
+  bad class file: /tmp/invalidated-forked-javac10843093628821928400/microservice/cloud/discount/discount/domain/repository/DiscountRepository.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:16: error: cannot access DiscountResultSetExtractor
+import microservice.cloud.discount.discount.infrastrcture.persistence.extractor.DiscountResultSetExtractor;
+                                                                               ^
+  bad class file: /tmp/invalidated-forked-javac10843093628821928400/microservice/cloud/discount/discount/infrastrcture/persistence/extractor/DiscountResultSetExtractor.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:3: error: cannot access Me
+import microservice.cloud.discount.shared.domain.value_objects.Me;
+                                                              ^
+  bad class file: /tmp/invalidated-forked-javac10843093628821928400/microservice/cloud/discount/shared/domain/value_objects/Me.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:8: error: cannot find symbol
+    private final DiscountRepository discountRepository;
+                  ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:11: error: cannot find symbol
+        DiscountRepository discountRepository
+        ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:7: error: cannot find symbol
+    public Me execute();
+           ^
+  symbol:   class Me
+  location: interface GetMePort
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:96: error: cannot find symbol
+            new DiscountResultSetExtractor()
+                ^
+  symbol:   class DiscountResultSetExtractor
+  location: class DiscountReadRepositoryJdbcAdapter
+7 errors.[0m
+2026.07.21 03:58:18 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.21 03:58:18 WARN  javac exited with exit code 1[0m
+2026.07.21 03:58:18 INFO  time: compiled discount in 1.15s[0m
