@@ -29,8 +29,6 @@ public class CreateCouponUseCase {
         if(me == null)
             throw new RuntimeException("You do not have permission to perform this action");
 
-        System.out.println(me.permissions().toString());
-
         me.IHavePermission(Permission.createCoupon());
 
         Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);

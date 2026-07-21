@@ -37,7 +37,13 @@ public class CouponReadRepositoryJdbcAdapter implements CouponReadRepository {
         params.addValue("limit", query.size(), Types.INTEGER);
         params.addValue("offset", offset, Types.INTEGER);
 
-        sql.append(" LIMIT :limit OFFSET :offset");
+        if(query.CODES() == null || query.CODES().isEmpty()) {
+
+            sql.append(" LIMIT :limit OFFSET :offset");
+        } else {
+            sql.append(" AND c.code IN (:codes)");
+            params.addValue("codes", query.CODES());
+        }
 
         List<CouponReadDTO> coupons = namedParameterJdbcTemplate.query(
             sql.toString(), 

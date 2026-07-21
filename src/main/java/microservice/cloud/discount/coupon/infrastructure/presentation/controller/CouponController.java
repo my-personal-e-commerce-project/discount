@@ -1,5 +1,7 @@
 package microservice.cloud.discount.coupon.infrastructure.presentation.controller;
 
+import java.util.Set;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -43,11 +45,12 @@ public class CouponController {
     @GetMapping
     public ResponseEntity<ResponsePayload<Pagination<CouponReadDTO>>> listCoupons(
         @RequestParam(defaultValue = "0") int page,
-        @RequestParam(defaultValue = "10") int size
+        @RequestParam(defaultValue = "10") int size,
+        @RequestParam(required = false) Set<String> CODES
     ) {
         Pagination<CouponReadDTO> result = null;
 
-        result = listCouponsUseCase.execute(new Query(page, size));
+        result = listCouponsUseCase.execute(new Query(page, size, CODES));
 
         return new ResponseEntity<>(
             ResponsePayload.<Pagination<CouponReadDTO>>builder()
