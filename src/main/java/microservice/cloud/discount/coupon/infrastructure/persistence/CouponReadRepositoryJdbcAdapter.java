@@ -30,7 +30,7 @@ public class CouponReadRepositoryJdbcAdapter implements CouponReadRepository {
                    cs.sales AS sales, c.max_sales AS maxSales,
                    c.expired_at AS expiredAt
             FROM coupons c
-            LEFT JOIN coupons_sales cs ON cs.id = c.coupons_sales_id
+            LEFT JOIN coupons_sales cs ON cs.coupon_id = c.id
             WHERE 1=1
         """);
         MapSqlParameterSource params = new MapSqlParameterSource();

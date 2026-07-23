@@ -12,13 +12,12 @@ import microservice.cloud.discount.shared.domain.value_objects.Id;
 public class Coupon extends AggregateRoot {
     private Id id;
     private Id discountId;
-    private Id couponSalesId;
     private CouponCode code;
     private Integer maxSales;
     private CouponVisibility visibility;
     private LocalDateTime expiredAt;
 
-    public Coupon(Id id, Id discountId, Id couponSalesId, CouponCode code, Integer maxSales, CouponVisibility visibility, LocalDateTime expiredAt) {
+    public Coupon(Id id, Id discountId, CouponCode code, Integer maxSales, CouponVisibility visibility, LocalDateTime expiredAt) {
         if(id == null) {
             throw new IllegalArgumentException("Coupon id cannot be null");
         }
@@ -33,15 +32,14 @@ public class Coupon extends AggregateRoot {
 
         this.id = id;
         this.discountId= discountId;
-        this.couponSalesId = couponSalesId;
         this.code = code;
         this.maxSales = maxSales;
         this.visibility = visibility;
         this.expiredAt = expiredAt;
     }
 
-    public static Coupon factoryCoupon(Id id, Id discountId, Id couponSalesId, CouponCode code, Integer maxSales, CouponVisibility visibility, LocalDateTime expiredAt) {
-        Coupon coupon = new Coupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+    public static Coupon factoryCoupon(Id id, Id discountId, CouponCode code, Integer maxSales, CouponVisibility visibility, LocalDateTime expiredAt) {
+        Coupon coupon = new Coupon(id, discountId, code, maxSales, visibility, expiredAt);
         
         if(visibility.equals(CouponVisibility.PUBLIC)) {
             coupon.publishEvent(
@@ -84,10 +82,6 @@ public class Coupon extends AggregateRoot {
 
     public Id discountId() {
         return discountId;
-    }
-
-    public Id couponSalesId() {
-        return couponSalesId;
     }
 
     public CouponCode code() {

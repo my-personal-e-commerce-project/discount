@@ -108904,3 +108904,2399 @@ import microservice.cloud.discount.shared.domain.value_objects.Me;
 2026.07.21 04:11:30 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
 2026.07.21 04:11:30 WARN  javac exited with exit code 1[0m
 2026.07.21 04:11:30 INFO  time: compiled discount in 1.55s[0m
+2026.07.21 14:52:44 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.07.21 14:52:44 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.07.21 14:52:44 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.07.21 14:52:44 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.07.21 14:52:46 INFO  time: initialize in 1.62s[0m
+2026.07.21 14:52:46 INFO  Attempting to connect to the build server...[0m
+2026.07.21 14:52:47 INFO  skipping build import with status 'Requested'[0m
+2026.07.21 14:52:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.07.21 14:52:47 INFO  time: Connected to build server in 0.56s[0m
+2026.07.21 14:52:47 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.07.21 14:52:47 INFO  time: Imported build in 0.19s[0m
+2026.07.21 14:52:51 INFO  time: indexed workspace in 3.29s[0m
+2026.07.21 14:53:03 INFO  Shut down connection with build server.[0m
+2026.07.21 15:45:20 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.07.21 15:45:21 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.07.21 15:45:21 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.07.21 15:45:21 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.07.21 15:45:23 INFO  time: initialize in 1.77s[0m
+2026.07.21 15:45:23 INFO  Attempting to connect to the build server...[0m
+2026.07.21 15:45:24 INFO  skipping build import with status 'Requested'[0m
+2026.07.21 15:45:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.07.21 15:45:24 INFO  time: Connected to build server in 0.52s[0m
+2026.07.21 15:45:24 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.07.21 15:45:24 INFO  time: Imported build in 0.11s[0m
+2026.07.21 15:45:27 INFO  time: indexed workspace in 3.19s[0m
+2026.07.21 15:55:12 INFO  Shut down connection with build server.[0m
+2026.07.21 17:06:08 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.07.21 17:06:08 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.07.21 17:06:08 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.07.21 17:06:08 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.07.21 17:06:09 INFO  time: initialize in 1.33s[0m
+2026.07.21 17:06:10 INFO  Attempting to connect to the build server...[0m
+2026.07.21 17:06:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.07.21 17:06:09 INFO  skipping build import with status 'Requested'[0m
+2026.07.21 17:06:10 INFO  time: Connected to build server in 0.22s[0m
+2026.07.21 17:06:10 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.07.21 17:06:14 INFO  time: indexed workspace in 3.85s[0m
+2026.07.21 17:09:27 INFO  Shut down connection with build server.[0m
+2026.07.22 13:23:52 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.07.22 13:23:53 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.07.22 13:23:53 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.07.22 13:23:53 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.07.22 13:23:55 INFO  time: initialize in 2.38s[0m
+2026.07.22 13:23:56 INFO  Attempting to connect to the build server...[0m
+2026.07.22 13:23:57 INFO  skipping build import with status 'Requested'[0m
+2026.07.22 13:23:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.07.22 13:23:56 INFO  time: Connected to build server in 0.96s[0m
+2026.07.22 13:23:56 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.07.22 13:23:57 INFO  time: Imported build in 0.16s[0m
+2026.07.22 13:24:01 INFO  time: indexed workspace in 3.67s[0m
+2026.07.22 13:52:35 INFO  Shut down connection with build server.[0m
+2026.07.23 13:07:03 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.07.23 13:07:04 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.07.23 13:07:04 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.07.23 13:07:04 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.07.23 13:07:07 INFO  time: initialize in 2.57s[0m
+2026.07.23 13:07:08 INFO  Attempting to connect to the build server...[0m
+2026.07.23 13:07:08 INFO  skipping build import with status 'Requested'[0m
+2026.07.23 13:07:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.07.23 13:07:08 INFO  time: Connected to build server in 0.85s[0m
+2026.07.23 13:07:08 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.07.23 13:07:09 INFO  time: Imported build in 0.14s[0m
+2026.07.23 13:07:12 INFO  time: indexed workspace in 3.24s[0m
+2026.07.23 13:07:21 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:07:26 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.23 13:07:26 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:07:26 INFO  time: compiled discount in 4.8s[0m
+2026.07.23 13:07:26 INFO  compiling discount (19 java sources)[0m
+2026.07.23 13:07:29 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.23 13:07:29 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:07:29 INFO  time: compiled discount in 3.19s[0m
+2026.07.23 13:07:29 INFO  compiling discount (3 java sources)[0m
+2026.07.23 13:07:30 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:3: error: cannot access DiscountRepository
+import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
+                                                             ^
+  bad class file: /tmp/invalidated-forked-javac16505151054479126989/microservice/cloud/discount/discount/domain/repository/DiscountRepository.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:16: error: cannot access DiscountResultSetExtractor
+import microservice.cloud.discount.discount.infrastrcture.persistence.extractor.DiscountResultSetExtractor;
+                                                                               ^
+  bad class file: /tmp/invalidated-forked-javac16505151054479126989/microservice/cloud/discount/discount/infrastrcture/persistence/extractor/DiscountResultSetExtractor.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:3: error: cannot access Me
+import microservice.cloud.discount.shared.domain.value_objects.Me;
+                                                              ^
+  bad class file: /tmp/invalidated-forked-javac16505151054479126989/microservice/cloud/discount/shared/domain/value_objects/Me.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:8: error: cannot find symbol
+    private final DiscountRepository discountRepository;
+                  ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/use_cases/RemoveDiscountCategoriesLogUseCase.java:11: error: cannot find symbol
+        DiscountRepository discountRepository
+        ^
+  symbol:   class DiscountRepository
+  location: class RemoveDiscountCategoriesLogUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/application/ports/out/GetMePort.java:7: error: cannot find symbol
+    public Me execute();
+           ^
+  symbol:   class Me
+  location: interface GetMePort
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/infrastrcture/persistence/repository/DiscountReadRepositoryJdbcAdapter.java:96: error: cannot find symbol
+            new DiscountResultSetExtractor()
+                ^
+  symbol:   class DiscountResultSetExtractor
+  location: class DiscountReadRepositoryJdbcAdapter
+7 errors.[0m
+2026.07.23 13:07:30 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:07:30 WARN  javac exited with exit code 1[0m
+2026.07.23 13:07:30 INFO  time: compiled discount in 1.37s[0m
+2026.07.23 13:10:21 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:10:25 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/domain/entity/Coupon.java:88: error: cannot find symbol
+        return couponSalesId;
+               ^
+  symbol:   variable couponSalesId
+  location: class Coupon
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:70: error: constructor Coupon in class Coupon cannot be applied to given types;
+        return new Coupon(
+               ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors.[0m
+2026.07.23 13:10:25 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:10:25 WARN  javac exited with exit code 1[0m
+2026.07.23 13:10:25 INFO  time: compiled discount in 4.3s[0m
+2026.07.23 13:10:27 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:10:32 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/domain/entity/Coupon.java:88: error: cannot find symbol
+        return couponSalesId;
+               ^
+  symbol:   variable couponSalesId
+  location: class Coupon
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:70: error: constructor Coupon in class Coupon cannot be applied to given types;
+        return new Coupon(
+               ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors.[0m
+2026.07.23 13:10:32 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:10:32 WARN  javac exited with exit code 1[0m
+2026.07.23 13:10:32 INFO  time: compiled discount in 4.36s[0m
+2026.07.23 13:10:34 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:10:38 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:70: error: constructor Coupon in class Coupon cannot be applied to given types;
+        return new Coupon(
+               ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:85: error: cannot find symbol
+            coupon.couponSalesId().value(),
+                  ^
+  symbol:   method couponSalesId()
+  location: variable coupon of type Coupon
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors.[0m
+2026.07.23 13:10:38 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:10:38 WARN  javac exited with exit code 1[0m
+2026.07.23 13:10:38 INFO  time: compiled discount in 4.17s[0m
+2026.07.23 13:11:12 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:11:17 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:70: error: constructor Coupon in class Coupon cannot be applied to given types;
+        return new Coupon(
+               ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:85: error: cannot find symbol
+            coupon.couponSalesId().value(),
+                  ^
+  symbol:   method couponSalesId()
+  location: variable coupon of type Coupon
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/domain/entity/CouponSales.java:18: error: constructor CouponSales in class CouponSales cannot be applied to given types;
+        return new CouponSales(id, 0);
+               ^
+  required: Id,Id,Integer
+  found:    Id,int
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:60: error: constructor CouponSales in class CouponSales cannot be applied to given types;
+        return new CouponSales(
+               ^
+  required: Id,Id,Integer
+  found:    Id,Integer
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors.[0m
+2026.07.23 13:11:17 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:11:17 WARN  javac exited with exit code 1[0m
+2026.07.23 13:11:17 INFO  time: compiled discount in 4.24s[0m
+2026.07.23 13:11:30 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:11:34 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:70: error: constructor Coupon in class Coupon cannot be applied to given types;
+        return new Coupon(
+               ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:85: error: cannot find symbol
+            coupon.couponSalesId().value(),
+                  ^
+  symbol:   method couponSalesId()
+  location: variable coupon of type Coupon
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:60: error: constructor CouponSales in class CouponSales cannot be applied to given types;
+        return new CouponSales(
+               ^
+  required: Id,Id,Integer
+  found:    Id,Integer
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors.[0m
+2026.07.23 13:11:34 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:11:34 WARN  javac exited with exit code 1[0m
+2026.07.23 13:11:34 INFO  time: compiled discount in 4.19s[0m
+2026.07.23 13:11:56 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:12:00 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:70: error: constructor Coupon in class Coupon cannot be applied to given types;
+        return new Coupon(
+               ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:85: error: cannot find symbol
+            coupon.couponSalesId().value(),
+                  ^
+  symbol:   method couponSalesId()
+  location: variable coupon of type Coupon
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:60: error: constructor CouponSales in class CouponSales cannot be applied to given types;
+        return new CouponSales(
+               ^
+  required: Id,Id,Integer
+  found:    Id,Integer
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors.[0m
+2026.07.23 13:12:00 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:12:00 WARN  javac exited with exit code 1[0m
+2026.07.23 13:12:00 INFO  time: compiled discount in 4.18s[0m
+2026.07.23 13:12:00 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:12:04 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:73: error: cannot find symbol
+            Id.fromString(entity.getCouponsSalesId()),
+                                ^
+  symbol:   method getCouponsSalesId()
+  location: variable entity of type CouponEntity
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:85: error: cannot find symbol
+            coupon.couponSalesId().value(),
+                  ^
+  symbol:   method couponSalesId()
+  location: variable coupon of type Coupon
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:60: error: constructor CouponSales in class CouponSales cannot be applied to given types;
+        return new CouponSales(
+               ^
+  required: Id,Id,Integer
+  found:    Id,Integer
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors.[0m
+2026.07.23 13:12:04 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:12:04 WARN  javac exited with exit code 1[0m
+2026.07.23 13:12:04 INFO  time: compiled discount in 4.37s[0m
+2026.07.23 13:12:04 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:12:07 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:73: error: cannot find symbol
+            Id.fromString(entity.getCouponsSalesId()),
+                                ^
+  symbol:   method getCouponsSalesId()
+  location: variable entity of type CouponEntity
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:85: error: cannot find symbol
+            coupon.couponSalesId().value(),
+                  ^
+  symbol:   method couponSalesId()
+  location: variable coupon of type Coupon
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:60: error: constructor CouponSales in class CouponSales cannot be applied to given types;
+        return new CouponSales(
+               ^
+  required: Id,Id,Integer
+  found:    Id,Integer
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors.[0m
+2026.07.23 13:12:07 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:12:07 WARN  javac exited with exit code 1[0m
+2026.07.23 13:12:07 INFO  time: compiled discount in 2.43s[0m
+2026.07.23 13:12:07 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:12:09 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:73: error: cannot find symbol
+            Id.fromString(entity.getCouponsSalesId()),
+                                ^
+  symbol:   method getCouponsSalesId()
+  location: variable entity of type CouponEntity
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:85: error: cannot find symbol
+            coupon.couponSalesId().value(),
+                  ^
+  symbol:   method couponSalesId()
+  location: variable coupon of type Coupon
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:60: error: constructor CouponSales in class CouponSales cannot be applied to given types;
+        return new CouponSales(
+               ^
+  required: Id,Id,Integer
+  found:    Id,Integer
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors.[0m
+2026.07.23 13:12:09 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:12:09 WARN  javac exited with exit code 1[0m
+2026.07.23 13:12:09 INFO  time: compiled discount in 2.46s[0m
+2026.07.23 13:12:15 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:12:19 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:73: error: cannot find symbol
+            Id.fromString(entity.getCouponsSalesId()),
+                                ^
+  symbol:   method getCouponsSalesId()
+  location: variable entity of type CouponEntity
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:85: error: cannot find symbol
+            coupon.couponSalesId().value(),
+                  ^
+  symbol:   method couponSalesId()
+  location: variable coupon of type Coupon
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:60: error: constructor CouponSales in class CouponSales cannot be applied to given types;
+        return new CouponSales(
+               ^
+  required: Id,Id,Integer
+  found:    Id,Integer
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors.[0m
+2026.07.23 13:12:19 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:12:19 WARN  javac exited with exit code 1[0m
+2026.07.23 13:12:19 INFO  time: compiled discount in 4.21s[0m
+2026.07.23 13:12:36 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:12:40 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:73: error: cannot find symbol
+            Id.fromString(entity.getCouponsSalesId()),
+                                ^
+  symbol:   method getCouponsSalesId()
+  location: variable entity of type CouponEntity
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:85: error: cannot find symbol
+            coupon.couponSalesId().value(),
+                  ^
+  symbol:   method couponSalesId()
+  location: variable coupon of type Coupon
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:60: error: constructor CouponSales in class CouponSales cannot be applied to given types;
+        return new CouponSales(
+               ^
+  required: Id,Id,Integer
+  found:    Id,Integer
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:67: error: no suitable constructor found for CouponSalesEntity(String,Integer)
+        return new CouponSalesEntity(
+               ^
+    constructor CouponSalesEntity.CouponSalesEntity() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor CouponSalesEntity.CouponSalesEntity(String,String,Integer) is not applicable
+      (actual and formal argument lists differ in length)
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+6 errors.[0m
+2026.07.23 13:12:40 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:12:40 WARN  javac exited with exit code 1[0m
+2026.07.23 13:12:40 INFO  time: compiled discount in 4.19s[0m
+2026.07.23 13:12:53 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:12:58 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:84: error: cannot find symbol
+            coupon.couponSalesId().value(),
+                  ^
+  symbol:   method couponSalesId()
+  location: variable coupon of type Coupon
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:60: error: constructor CouponSales in class CouponSales cannot be applied to given types;
+        return new CouponSales(
+               ^
+  required: Id,Id,Integer
+  found:    Id,Integer
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:67: error: no suitable constructor found for CouponSalesEntity(String,Integer)
+        return new CouponSalesEntity(
+               ^
+    constructor CouponSalesEntity.CouponSalesEntity() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor CouponSalesEntity.CouponSalesEntity(String,String,Integer) is not applicable
+      (actual and formal argument lists differ in length)
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors.[0m
+2026.07.23 13:12:58 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:12:58 WARN  javac exited with exit code 1[0m
+2026.07.23 13:12:58 INFO  time: compiled discount in 4.25s[0m
+2026.07.23 13:12:58 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:13:03 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:60: error: constructor CouponSales in class CouponSales cannot be applied to given types;
+        return new CouponSales(
+               ^
+  required: Id,Id,Integer
+  found:    Id,Integer
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:67: error: no suitable constructor found for CouponSalesEntity(String,Integer)
+        return new CouponSalesEntity(
+               ^
+    constructor CouponSalesEntity.CouponSalesEntity() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor CouponSalesEntity.CouponSalesEntity(String,String,Integer) is not applicable
+      (actual and formal argument lists differ in length)
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors.[0m
+2026.07.23 13:13:03 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:13:03 WARN  javac exited with exit code 1[0m
+2026.07.23 13:13:03 INFO  time: compiled discount in 4.12s[0m
+2026.07.23 13:13:29 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:13:33 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:68: error: no suitable constructor found for CouponSalesEntity(String,Integer)
+        return new CouponSalesEntity(
+               ^
+    constructor CouponSalesEntity.CouponSalesEntity() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor CouponSalesEntity.CouponSalesEntity(String,String,Integer) is not applicable
+      (actual and formal argument lists differ in length)
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors.[0m
+2026.07.23 13:13:33 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:13:33 WARN  javac exited with exit code 1[0m
+2026.07.23 13:13:33 INFO  time: compiled discount in 4.32s[0m
+2026.07.23 13:13:36 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:13:41 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors.[0m
+2026.07.23 13:13:41 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:13:41 WARN  javac exited with exit code 1[0m
+2026.07.23 13:13:41 INFO  time: compiled discount in 4.17s[0m
+2026.07.23 13:13:42 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:13:46 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: method factoryCoupon in class Coupon cannot be applied to given types;
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+                              ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors.[0m
+2026.07.23 13:13:46 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:13:46 WARN  javac exited with exit code 1[0m
+2026.07.23 13:13:46 INFO  time: compiled discount in 4.21s[0m
+2026.07.23 13:14:09 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:14:14 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:27: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        CouponSales couponSales = CouponSales.factoryCouponSales(id);
+                                             ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors.[0m
+2026.07.23 13:14:14 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:14:14 WARN  javac exited with exit code 1[0m
+2026.07.23 13:14:14 INFO  time: compiled discount in 4.31s[0m
+2026.07.23 13:14:56 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:15:00 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:28: error: method factoryCouponSales in class CouponSales cannot be applied to given types;
+        couponSalesRepository.create(couponSales);
+                                            ^
+  required: Id,Id
+  found:    Id
+  reason: actual and formal argument lists differ in length
+com.sourcegraph.semanticdb_javac.CompilationUnitException: file:///home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java
+Caused by: java.lang.StringIndexOutOfBoundsException: Index 1188 out of bounds for length 1177
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.lang.String.checkIndex(String.java:4832)
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:46)
+	at java.base/java.lang.String.charAt(String.java:1555)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.correctForTabs(SemanticdbVisitor.java:323)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.semanticdbRange(SemanticdbVisitor.java:307)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.semanticdbOccurrence(SemanticdbVisitor.java:339)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.emitSymbolOccurrence(SemanticdbVisitor.java:84)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberSelect(SemanticdbVisitor.java:235)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberSelect(SemanticdbVisitor.java:30)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCFieldAccess.accept(JCTree.java:2589)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at jdk.compiler/com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:96)
+	at jdk.compiler/com.sun.source.util.TreeScanner.visitMethodInvocation(TreeScanner.java:590)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1832)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at jdk.compiler/com.sun.source.util.TreeScanner.visitExpressionStatement(TreeScanner.java:503)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCExpressionStatement.accept(JCTree.java:1611)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at jdk.compiler/com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:96)
+	at jdk.compiler/com.sun.source.util.TreeScanner.scan(TreeScanner.java:111)
+	at jdk.compiler/com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:272)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:1104)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at jdk.compiler/com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:96)
+	at jdk.compiler/com.sun.source.util.TreeScanner.visitMethod(TreeScanner.java:224)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMethod(SemanticdbVisitor.java:197)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMethod(SemanticdbVisitor.java:30)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCMethodDecl.accept(JCTree.java:948)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at jdk.compiler/com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:96)
+	at jdk.compiler/com.sun.source.util.TreeScanner.scan(TreeScanner.java:111)
+	at jdk.compiler/com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:119)
+	at jdk.compiler/com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:203)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitClass(SemanticdbVisitor.java:171)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitClass(SemanticdbVisitor.java:30)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:855)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at jdk.compiler/com.sun.source.util.TreeScanner.scan(TreeScanner.java:111)
+	at jdk.compiler/com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:119)
+	at jdk.compiler/com.sun.source.util.TreeScanner.visitCompilationUnit(TreeScanner.java:152)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:623)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.buildTextDocument(SemanticdbVisitor.java:68)
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.onFinishedAnalyze(SemanticdbTaskListener.java:66)
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.finished(SemanticdbTaskListener.java:46)
+	at jdk.compiler/com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:876)
+	at jdk.compiler/com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:133)
+	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1436)
+	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1393)
+	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:976)
+	at jdk.compiler/com.sun.tools.javac.main.Main.compile(Main.java:319)
+	at jdk.compiler/com.sun.tools.javac.main.Main.compile(Main.java:178)
+	at jdk.compiler/com.sun.tools.javac.Main.compile(Main.java:64)
+	at jdk.compiler/com.sun.tools.javac.Main.main(Main.java:50)
+Please report a bug to https://github.com/sourcegraph/semanticdb-java with the stack trace above.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors.[0m
+2026.07.23 13:15:00 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:15:00 WARN  javac exited with exit code 1[0m
+2026.07.23 13:15:00 INFO  time: compiled discount in 4.46s[0m
+2026.07.23 13:15:00 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:15:04 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error.[0m
+2026.07.23 13:15:04 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:15:04 WARN  javac exited with exit code 1[0m
+2026.07.23 13:15:04 INFO  time: compiled discount in 4.34s[0m
+2026.07.23 13:15:04 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:15:07 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/CreateCouponSalesUseCase.java:13: error: cannot find symbol
+        this.couponSalesRepository = couponSalesRepository;
+            ^
+  symbol: variable couponSalesRepository
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors.[0m
+2026.07.23 13:15:07 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:15:07 WARN  javac exited with exit code 1[0m
+2026.07.23 13:15:07 INFO  time: compiled discount in 2.98s[0m
+2026.07.23 13:15:09 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:15:13 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error.[0m
+2026.07.23 13:15:13 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:15:13 WARN  javac exited with exit code 1[0m
+2026.07.23 13:15:13 INFO  time: compiled discount in 4.21s[0m
+2026.07.23 13:15:49 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:15:53 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:24: error: cannot find symbol
+            .pessimisticUpdate(id, (cs) -> {
+                               ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:28: error: cannot find symbol
+                    blockedCouponUseCase.execute(id);
+                                                 ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors.[0m
+2026.07.23 13:15:53 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:15:53 WARN  javac exited with exit code 1[0m
+2026.07.23 13:15:53 INFO  time: compiled discount in 4.29s[0m
+2026.07.23 13:16:13 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:16:17 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:24: error: cannot find symbol
+            .pessimisticUpdate(id, (cs) -> {
+                               ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:28: error: cannot find symbol
+                    blockedCouponUseCase.execute(id);
+                                                 ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors.[0m
+2026.07.23 13:16:17 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:16:17 WARN  javac exited with exit code 1[0m
+2026.07.23 13:16:17 INFO  time: compiled discount in 4.32s[0m
+2026.07.23 13:16:25 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:16:29 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:21: error: incompatible types: CouponSales cannot be converted to Coupon
+        Coupon coupon = couponSalesRepository.findByCouponId(couponId);
+                                                            ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:24: error: cannot find symbol
+            .pessimisticUpdate(id, (cs) -> {
+                               ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:28: error: cannot find symbol
+                    blockedCouponUseCase.execute(id);
+                                                 ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors.[0m
+2026.07.23 13:16:29 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:16:29 WARN  javac exited with exit code 1[0m
+2026.07.23 13:16:29 INFO  time: compiled discount in 4.21s[0m
+2026.07.23 13:16:32 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:16:36 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:21: error: cannot find symbol
+        CouponSales = couponSalesRepository.findByCouponId(couponId);
+        ^
+  symbol:   variable CouponSales
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:24: error: cannot find symbol
+            .pessimisticUpdate(id, (cs) -> {
+                               ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:25: error: cannot find symbol
+                boolean isBlocked = coupon.maxSalesReached(cs.sales());
+                                    ^
+  symbol:   variable coupon
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:28: error: cannot find symbol
+                    blockedCouponUseCase.execute(id);
+                                                 ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+6 errors.[0m
+2026.07.23 13:16:36 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:16:36 WARN  javac exited with exit code 1[0m
+2026.07.23 13:16:36 INFO  time: compiled discount in 4.27s[0m
+2026.07.23 13:16:38 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:16:42 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:25: error: cannot find symbol
+            .pessimisticUpdate(id, (cs) -> {
+                               ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:26: error: cannot find symbol
+                boolean isBlocked = coupon.maxSalesReached(cs.sales());
+                                    ^
+  symbol:   variable coupon
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:29: error: cannot find symbol
+                    blockedCouponUseCase.execute(id);
+                                                 ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors.[0m
+2026.07.23 13:16:42 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:16:42 WARN  javac exited with exit code 1[0m
+2026.07.23 13:16:42 INFO  time: compiled discount in 4.26s[0m
+2026.07.23 13:16:45 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:16:50 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:26: error: cannot find symbol
+                boolean isBlocked = coupon.maxSalesReached(cs.sales());
+                                    ^
+  symbol:   variable coupon
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:29: error: cannot find symbol
+                    blockedCouponUseCase.execute(id);
+                                                 ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors.[0m
+2026.07.23 13:16:50 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:16:50 WARN  javac exited with exit code 1[0m
+2026.07.23 13:16:50 INFO  time: compiled discount in 4.26s[0m
+2026.07.23 13:17:04 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:17:08 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:24: error: cannot find symbol
+        Coupon coupon = couponRepository.findById(id);
+                                                  ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:31: error: cannot find symbol
+                    blockedCouponUseCase.execute(id);
+                                                 ^
+  symbol:   variable id
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors.[0m
+2026.07.23 13:17:08 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:17:08 WARN  javac exited with exit code 1[0m
+2026.07.23 13:17:08 INFO  time: compiled discount in 4.22s[0m
+2026.07.23 13:17:18 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:17:22 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors.[0m
+2026.07.23 13:17:22 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:17:22 WARN  javac exited with exit code 1[0m
+2026.07.23 13:17:22 INFO  time: compiled discount in 4.2s[0m
+2026.07.23 13:31:40 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:31:44 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors.[0m
+2026.07.23 13:31:44 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:31:44 WARN  javac exited with exit code 1[0m
+2026.07.23 13:31:44 INFO  time: compiled discount in 4.33s[0m
+2026.07.23 13:32:17 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:32:21 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:18: error: cannot find symbol
+        this.blockedCouponUseCase = blockCouponUseCase;
+            ^
+  symbol: variable blockedCouponUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:18: error: cannot find symbol
+        this.blockedCouponUseCase = blockCouponUseCase;
+                                    ^
+  symbol:   variable blockCouponUseCase
+  location: class IncrementCouponSalesUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/adapters/CouponSalesConfigAdapter.java:18: error: incompatible types: BlockCouponUseCase cannot be converted to CouponRepository
+        return new IncrementCouponSalesUseCase(couponSalesRepository, blockCouponUseCase, couponRepository);
+                                                                      ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+5 errors.[0m
+2026.07.23 13:32:21 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:32:21 WARN  javac exited with exit code 1[0m
+2026.07.23 13:32:21 INFO  time: compiled discount in 4.44s[0m
+2026.07.23 13:32:25 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:32:29 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/adapters/CouponSalesConfigAdapter.java:18: error: incompatible types: BlockCouponUseCase cannot be converted to CouponRepository
+        return new IncrementCouponSalesUseCase(couponSalesRepository, blockCouponUseCase, couponRepository);
+                                                                      ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors.[0m
+2026.07.23 13:32:29 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:32:29 WARN  javac exited with exit code 1[0m
+2026.07.23 13:32:29 INFO  time: compiled discount in 4.27s[0m
+2026.07.23 13:32:31 INFO  compiling discount (85 java sources)[0m
+2026.07.23 13:32:35 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/adapters/CouponSalesConfigAdapter.java:18: error: incompatible types: BlockCouponUseCase cannot be converted to CouponRepository
+        return new IncrementCouponSalesUseCase(couponSalesRepository, blockCouponUseCase, couponRepository);
+                                                                      ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors.[0m
+2026.07.23 13:32:35 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:32:35 WARN  javac exited with exit code 1[0m
+2026.07.23 13:32:35 INFO  time: compiled discount in 4.2s[0m
+2026.07.23 13:33:01 INFO  compiling discount (84 java sources)[0m
+2026.07.23 13:33:05 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:76: error: method execute in class CreateCouponUseCase cannot be applied to given types;
+        createCouponUseCase.execute(
+                           ^
+  required: Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  found:    Id,Id,Id,CouponCode,Integer,CouponVisibility,LocalDateTime
+  reason: actual and formal argument lists differ in length
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/adapters/CouponSalesConfigAdapter.java:18: error: incompatible types: BlockCouponUseCase cannot be converted to CouponRepository
+        return new IncrementCouponSalesUseCase(couponSalesRepository, blockCouponUseCase, couponRepository);
+                                                                      ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors.[0m
+2026.07.23 13:33:05 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:33:05 WARN  javac exited with exit code 1[0m
+2026.07.23 13:33:05 INFO  time: compiled discount in 4.26s[0m
+2026.07.23 13:33:41 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:33:44 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/adapters/CouponSalesConfigAdapter.java:9: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/adapters/CouponSalesConfigAdapter.java:23: error: cannot find symbol
+    public CreateCouponSalesUseCase createCouponSalesUseCase(CouponSalesRepository couponSalesRepository, GetMePort getMePort){
+           ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponSalesConfigAdapter
+5 errors.[0m
+2026.07.23 13:33:44 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:33:44 WARN  javac exited with exit code 1[0m
+2026.07.23 13:33:44 INFO  time: compiled discount in 3.08s[0m
+2026.07.23 13:33:45 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:33:48 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/adapters/CouponConfigAdapter.java:7: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/adapters/CouponConfigAdapter.java:25: error: cannot find symbol
+    public BlockCouponUseCase blockedCouponUseCase(CouponRepository couponRepository, EventPublisher eventPublisher) {
+           ^
+  symbol:   class BlockCouponUseCase
+  location: class CouponConfigAdapter
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/adapters/CouponSalesConfigAdapter.java:8: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/adapters/CouponSalesConfigAdapter.java:22: error: cannot find symbol
+    public CreateCouponSalesUseCase createCouponSalesUseCase(CouponSalesRepository couponSalesRepository, GetMePort getMePort){
+           ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponSalesConfigAdapter
+8 errors.[0m
+2026.07.23 13:33:48 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:33:48 WARN  javac exited with exit code 1[0m
+2026.07.23 13:33:48 INFO  time: compiled discount in 3.01s[0m
+2026.07.23 13:33:48 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:33:51 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/adapters/CouponConfigAdapter.java:7: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/adapters/CouponConfigAdapter.java:25: error: cannot find symbol
+    public BlockCouponUseCase blockedCouponUseCase(CouponRepository couponRepository, EventPublisher eventPublisher) {
+           ^
+  symbol:   class BlockCouponUseCase
+  location: class CouponConfigAdapter
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/adapters/CouponSalesConfigAdapter.java:8: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/adapters/CouponSalesConfigAdapter.java:22: error: cannot find symbol
+    public CreateCouponSalesUseCase createCouponSalesUseCase(CouponSalesRepository couponSalesRepository, GetMePort getMePort){
+           ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponSalesConfigAdapter
+8 errors.[0m
+2026.07.23 13:33:51 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:33:51 WARN  javac exited with exit code 1[0m
+2026.07.23 13:33:51 INFO  time: compiled discount in 2.95s[0m
+2026.07.23 13:33:58 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:34:01 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/adapters/CouponConfigAdapter.java:7: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/adapters/CouponConfigAdapter.java:25: error: cannot find symbol
+    public BlockCouponUseCase blockedCouponUseCase(CouponRepository couponRepository, EventPublisher eventPublisher) {
+           ^
+  symbol:   class BlockCouponUseCase
+  location: class CouponConfigAdapter
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+6 errors.[0m
+2026.07.23 13:34:01 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:34:01 WARN  javac exited with exit code 1[0m
+2026.07.23 13:34:01 INFO  time: compiled discount in 3.07s[0m
+2026.07.23 13:34:08 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:34:11 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/adapters/CouponConfigAdapter.java:7: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/adapters/CouponConfigAdapter.java:25: error: cannot find symbol
+    public BlockCouponUseCase blockedCouponUseCase(CouponRepository couponRepository, EventPublisher eventPublisher) {
+           ^
+  symbol:   class BlockCouponUseCase
+  location: class CouponConfigAdapter
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+6 errors.[0m
+2026.07.23 13:34:11 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:34:11 WARN  javac exited with exit code 1[0m
+2026.07.23 13:34:11 INFO  time: compiled discount in 3.01s[0m
+2026.07.23 13:34:20 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:34:23 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/adapters/CouponConfigAdapter.java:7: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/adapters/CouponConfigAdapter.java:25: error: cannot find symbol
+    public BlockCouponUseCase blockedCouponUseCase(CouponRepository couponRepository, EventPublisher eventPublisher) {
+           ^
+  symbol:   class BlockCouponUseCase
+  location: class CouponConfigAdapter
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+6 errors.[0m
+2026.07.23 13:34:23 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:34:23 WARN  javac exited with exit code 1[0m
+2026.07.23 13:34:23 INFO  time: compiled discount in 3s[0m
+2026.07.23 13:34:40 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:34:43 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+4 errors.[0m
+2026.07.23 13:34:43 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:34:43 WARN  javac exited with exit code 1[0m
+2026.07.23 13:34:43 INFO  time: compiled discount in 3.07s[0m
+2026.07.23 13:34:43 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:34:46 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+4 errors.[0m
+2026.07.23 13:34:46 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:34:46 WARN  javac exited with exit code 1[0m
+2026.07.23 13:34:46 INFO  time: compiled discount in 2.89s[0m
+2026.07.23 13:35:04 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:35:07 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+4 errors.[0m
+2026.07.23 13:35:07 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:35:07 WARN  javac exited with exit code 1[0m
+2026.07.23 13:35:07 INFO  time: compiled discount in 3.2s[0m
+2026.07.23 13:35:44 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:35:47 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+4 errors.[0m
+2026.07.23 13:35:47 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:35:47 WARN  javac exited with exit code 1[0m
+2026.07.23 13:35:47 INFO  time: compiled discount in 3.36s[0m
+2026.07.23 13:36:00 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:36:03 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+4 errors.[0m
+2026.07.23 13:36:03 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:36:03 WARN  javac exited with exit code 1[0m
+2026.07.23 13:36:03 INFO  time: compiled discount in 3.33s[0m
+2026.07.23 13:36:29 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:36:33 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+4 errors.[0m
+2026.07.23 13:36:33 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:36:33 WARN  javac exited with exit code 1[0m
+2026.07.23 13:36:33 INFO  time: compiled discount in 3.31s[0m
+2026.07.23 13:36:46 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:36:49 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+4 errors.[0m
+2026.07.23 13:36:49 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:36:49 WARN  javac exited with exit code 1[0m
+2026.07.23 13:36:49 INFO  time: compiled discount in 3.24s[0m
+2026.07.23 13:36:58 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:37:02 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+4 errors.[0m
+2026.07.23 13:37:02 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:37:02 WARN  javac exited with exit code 1[0m
+2026.07.23 13:37:02 INFO  time: compiled discount in 3.41s[0m
+2026.07.23 13:37:14 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:37:17 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+4 errors.[0m
+2026.07.23 13:37:17 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:37:17 WARN  javac exited with exit code 1[0m
+2026.07.23 13:37:17 INFO  time: compiled discount in 3.21s[0m
+2026.07.23 13:37:36 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:37:39 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+4 errors.[0m
+2026.07.23 13:37:39 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:37:39 WARN  javac exited with exit code 1[0m
+2026.07.23 13:37:39 INFO  time: compiled discount in 3.29s[0m
+2026.07.23 13:37:44 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:37:48 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+4 errors.[0m
+2026.07.23 13:37:48 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:37:48 WARN  javac exited with exit code 1[0m
+2026.07.23 13:37:48 INFO  time: compiled discount in 3.31s[0m
+2026.07.23 13:39:09 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:39:12 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:3: error: cannot find symbol
+import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
+                                                               ^
+  symbol:   class BlockCouponUseCase
+  location: package microservice.cloud.discount.coupon.application.use_cases
+4 errors.[0m
+2026.07.23 13:39:12 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:39:12 WARN  javac exited with exit code 1[0m
+2026.07.23 13:39:12 INFO  time: compiled discount in 3.24s[0m
+2026.07.23 13:39:52 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:39:56 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+3 errors.[0m
+2026.07.23 13:39:56 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:39:56 WARN  javac exited with exit code 1[0m
+2026.07.23 13:39:56 INFO  time: compiled discount in 3.36s[0m
+2026.07.23 13:40:00 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:40:03 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+3 errors.[0m
+2026.07.23 13:40:03 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:40:03 WARN  javac exited with exit code 1[0m
+2026.07.23 13:40:03 INFO  time: compiled discount in 3.27s[0m
+2026.07.23 13:40:09 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:40:12 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+3 errors.[0m
+2026.07.23 13:40:12 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:40:12 WARN  javac exited with exit code 1[0m
+2026.07.23 13:40:12 INFO  time: compiled discount in 3.33s[0m
+2026.07.23 13:41:21 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:41:25 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+3 errors.[0m
+2026.07.23 13:41:25 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:41:25 WARN  javac exited with exit code 1[0m
+2026.07.23 13:41:25 INFO  time: compiled discount in 3.33s[0m
+2026.07.23 13:41:58 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:42:01 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+3 errors.[0m
+2026.07.23 13:42:01 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:42:01 WARN  javac exited with exit code 1[0m
+2026.07.23 13:42:01 INFO  time: compiled discount in 3.36s[0m
+2026.07.23 13:42:01 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:42:05 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+3 errors.[0m
+2026.07.23 13:42:05 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:42:05 WARN  javac exited with exit code 1[0m
+2026.07.23 13:42:05 INFO  time: compiled discount in 3.34s[0m
+2026.07.23 13:45:24 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:45:27 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.couponSales.application.use_cases.CreateCouponSalesUseCase;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:43: error: cannot find symbol
+    private final CreateCouponSalesUseCase createCouponSalesUseCase;
+                  ^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:33: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class CreateCouponSalesUseCase
+  location: class CouponController
+3 errors.[0m
+2026.07.23 13:45:27 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:45:27 WARN  javac exited with exit code 1[0m
+2026.07.23 13:45:27 INFO  time: compiled discount in 3.14s[0m
+2026.07.23 13:45:40 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:45:43 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:28: error: cannot find symbol
+import microservice.cloud.discount.shared.application.dto.Pagination;
+                                                                    ^
+  symbol:   class CreateCouponSalesUseCase
+  location: package microservice.cloud.discount.couponSales.application.use_cases
+1 error.[0m
+2026.07.23 13:45:43 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:45:43 WARN  javac exited with exit code 1[0m
+2026.07.23 13:45:43 INFO  time: compiled discount in 3.15s[0m
+2026.07.23 13:45:43 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:45:48 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/presentation/controller/CouponController.java:69: error: cannot find symbol
+        createCouponSalesUseCase.execute(
+        ^
+  symbol:   variable createCouponSalesUseCase
+  location: class CouponController
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors.[0m
+2026.07.23 13:45:48 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:45:48 WARN  javac exited with exit code 1[0m
+2026.07.23 13:45:48 INFO  time: compiled discount in 4.43s[0m
+2026.07.23 13:45:49 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:45:54 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error.[0m
+2026.07.23 13:45:54 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:45:54 WARN  javac exited with exit code 1[0m
+2026.07.23 13:45:54 INFO  time: compiled discount in 4.83s[0m
+2026.07.23 13:46:40 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:46:45 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error.[0m
+2026.07.23 13:46:45 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:46:45 WARN  javac exited with exit code 1[0m
+2026.07.23 13:46:45 INFO  time: compiled discount in 4.53s[0m
+2026.07.23 13:46:50 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:46:55 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:29: error: cannot find symbol
+        CouponSales couponSales = findByIdForUpdate(discountId.value());
+                                                    ^
+  symbol:   variable discountId
+  location: class CouponSalesRepositoryJdbcAdapter
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors.[0m
+2026.07.23 13:46:55 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:46:55 WARN  javac exited with exit code 1[0m
+2026.07.23 13:46:55 INFO  time: compiled discount in 4.62s[0m
+2026.07.23 13:46:57 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:47:02 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error.[0m
+2026.07.23 13:47:02 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:47:02 WARN  javac exited with exit code 1[0m
+2026.07.23 13:47:02 INFO  time: compiled discount in 4.41s[0m
+2026.07.23 13:47:13 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:47:18 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:21: error: CouponSalesRepositoryJdbcAdapter is not abstract and does not override abstract method findByCouponId(Id) in CouponSalesRepository
+public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
+       ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:54: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors.[0m
+2026.07.23 13:47:18 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:47:18 WARN  javac exited with exit code 1[0m
+2026.07.23 13:47:18 INFO  time: compiled discount in 4.54s[0m
+2026.07.23 13:48:12 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:48:16 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/infrastructure/persistence/CouponSalesRepositoryJdbcAdapter.java:55: error: cannot find symbol
+        CouponEntity couponEntity = jdbcAggregateTemplate.findById(couponId.value(), CouponSalesEntity.class);
+        ^
+  symbol:   class CouponEntity
+  location: class CouponSalesRepositoryJdbcAdapter
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error.[0m
+2026.07.23 13:48:16 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:48:16 WARN  javac exited with exit code 1[0m
+2026.07.23 13:48:16 INFO  time: compiled discount in 4.45s[0m
+2026.07.23 13:48:51 INFO  compiling discount (83 java sources)[0m
+2026.07.23 13:48:56 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.07.23 13:48:56 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:48:56 INFO  time: compiled discount in 4.95s[0m
+2026.07.23 13:49:03 INFO  compiling discount (1 java source)[0m
+2026.07.23 13:49:05 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.07.23 13:49:05 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:49:05 INFO  time: compiled discount in 2.46s[0m
+2026.07.23 13:49:19 INFO  compiling discount (1 java source)[0m
+2026.07.23 13:49:21 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.07.23 13:49:21 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:49:21 INFO  time: compiled discount in 2.45s[0m
+2026.07.23 13:49:22 INFO  compiling discount (1 java source)[0m
+2026.07.23 13:49:25 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.07.23 13:49:25 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:49:25 INFO  time: compiled discount in 2.42s[0m
+2026.07.23 13:50:11 INFO  compiling discount (1 java source)[0m
+2026.07.23 13:50:14 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.07.23 13:50:14 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:50:14 INFO  time: compiled discount in 2.39s[0m
+2026.07.23 13:50:22 INFO  compiling discount (1 java source)[0m
+2026.07.23 13:50:25 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.07.23 13:50:25 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:50:25 INFO  time: compiled discount in 2.46s[0m
+2026.07.23 13:50:33 INFO  compiling discount (1 java source)[0m
+2026.07.23 13:50:36 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.07.23 13:50:36 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.23 13:50:36 INFO  time: compiled discount in 2.47s[0m

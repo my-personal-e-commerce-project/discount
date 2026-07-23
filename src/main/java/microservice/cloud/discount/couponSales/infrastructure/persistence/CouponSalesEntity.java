@@ -17,5 +17,6 @@ public class CouponSalesEntity {
 
     @Id
     private String id;
+    private String couponId;
     private Integer sales;
 }

@@ -1,4 +1,0 @@
-CREATE TABLE coupons_sales (
-    id VARCHAR(255) PRIMARY KEY UNIQUE NOT NULL,
-    sales int DEFAULT 0 NOT NULL
-)

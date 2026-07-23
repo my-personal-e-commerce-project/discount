@@ -31,9 +31,9 @@ public class CreateCouponUseCase {
 
         me.IHavePermission(Permission.createCoupon());
 
-        Coupon coupon = Coupon.factoryCoupon(id, discountId, couponSalesId, code, maxSales, visibility, expiredAt);
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, code, maxSales, visibility, expiredAt);
 
-        couponRepository.create(coupon);
+        couponRepository.createCouponAndSales(coupon, couponSalesId);
 
         if(coupon != null && !coupon.getEvents().isEmpty()) {
             eventPublisher.publish(coupon.getEvents());

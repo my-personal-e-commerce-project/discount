@@ -1,35 +1,39 @@
 package microservice.cloud.discount.couponSales.application.use_cases;
 
-import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
 import microservice.cloud.discount.coupon.domain.entity.Coupon;
 import microservice.cloud.discount.coupon.domain.repository.CouponRepository;
+import microservice.cloud.discount.couponSales.domain.entity.CouponSales;
 import microservice.cloud.discount.couponSales.domain.repository.CouponSalesRepository;
+import microservice.cloud.discount.shared.application.ports.out.EventPublisher;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
 
 public class IncrementCouponSalesUseCase {
     private final CouponSalesRepository couponSalesRepository;
-    private final BlockCouponUseCase blockedCouponUseCase;
     private final CouponRepository couponRepository;
+    private final EventPublisher eventPublisher;
 
-    public IncrementCouponSalesUseCase(CouponSalesRepository couponSalesRepository, BlockCouponUseCase blockCouponUseCase, CouponRepository couponRepository) {
+    public IncrementCouponSalesUseCase(CouponSalesRepository couponSalesRepository, CouponRepository couponRepository, EventPublisher eventPublisher) {
         this.couponSalesRepository = couponSalesRepository;
-        this.blockedCouponUseCase = blockCouponUseCase;
         this.couponRepository = couponRepository;
+        this.eventPublisher = eventPublisher;
     }
 
-    public void execute(Id id) {
-        Coupon coupon = couponRepository.findById(id);
+    public void execute(Id couponId) {
+        CouponSales couponSales = couponSalesRepository.findByCouponId(couponId);
+
+        Coupon coupon = couponRepository.findById(couponId);
 
         couponSalesRepository
-            .pessimisticUpdate(id, (cs) -> {
+            .pessimisticUpdate(couponSales.couponId(), (cs) -> {
                 boolean isBlocked = coupon.maxSalesReached(cs.sales());
 
-                if (isBlocked) {
-                    blockedCouponUseCase.execute(id);
-                    return;
-                }
-
+                if(isBlocked) coupon.block();
+               
                 cs.incrementSales();
             });
+
+        if(!coupon.getEvents().isEmpty() && coupon.getEvents() != null) {
+            eventPublisher.publish(coupon.getEvents());
+        }
     }
 }

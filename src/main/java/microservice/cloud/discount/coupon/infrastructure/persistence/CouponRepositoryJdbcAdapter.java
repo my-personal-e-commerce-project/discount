@@ -9,6 +9,7 @@ import microservice.cloud.discount.coupon.domain.entity.Coupon;
 import microservice.cloud.discount.coupon.domain.repository.CouponRepository;
 import microservice.cloud.discount.coupon.domain.value_objects.CouponCode;
 import microservice.cloud.discount.coupon.domain.value_objects.CouponVisibility;
+import microservice.cloud.discount.couponSales.infrastructure.persistence.CouponSalesEntity;
 import microservice.cloud.discount.discount.infrastrcture.persistence.repository.DiscountJdbcRepository;
 import microservice.cloud.discount.shared.domain.exception.DataNotFound;
 import microservice.cloud.discount.shared.domain.value_objects.Id;
@@ -44,7 +45,7 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
 
     @Transactional
     @Override
-    public void create(Coupon coupon) {
+    public void createCouponAndSales(Coupon coupon, Id couponSalesId) {
         if(couponJdbcRepository.existsByCode(coupon.code().value())) {
             throw new RuntimeException("Coupon code already exists");
         }
@@ -54,6 +55,7 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
         }
 
         jdbcAggregateTemplate.insert(toMap(coupon));
+        jdbcAggregateTemplate.insert(new CouponSalesEntity(couponSalesId.value(), coupon.id().value(), 0));
     }
 
     @Transactional
@@ -70,7 +72,6 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
         return new Coupon(
             Id.fromString(entity.getId()),
             Id.fromString(entity.getDiscountId()),
-            Id.fromString(entity.getCouponsSalesId()),
             new CouponCode(entity.getCode()),
             entity.getMaxSales(),
             CouponVisibility.valueOf(entity.getVisibility()),
@@ -82,7 +83,6 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
         return new CouponEntity(
             coupon.id().value(),
             coupon.discountId().value(),
-            coupon.couponSalesId().value(),
             coupon.code().value(),
             coupon.maxSales(),
             coupon.visibility().toString(),

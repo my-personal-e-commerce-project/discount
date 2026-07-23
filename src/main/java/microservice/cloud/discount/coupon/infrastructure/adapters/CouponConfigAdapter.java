@@ -4,7 +4,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import microservice.cloud.discount.coupon.application.ports.out.CouponReadRepository;
-import microservice.cloud.discount.coupon.application.use_cases.BlockCouponUseCase;
 import microservice.cloud.discount.coupon.application.use_cases.CreateCouponUseCase;
 import microservice.cloud.discount.coupon.application.use_cases.DeleteCouponUseCase;
 import microservice.cloud.discount.coupon.application.use_cases.ListCouponsUseCase;
@@ -19,11 +18,6 @@ public class CouponConfigAdapter {
     @Bean
     public ListCouponsUseCase listCouponsUseCase(CouponReadRepository couponReadRepository) {
         return new ListCouponsUseCase(couponReadRepository);
-    }
-
-    @Bean
-    public BlockCouponUseCase blockedCouponUseCase(CouponRepository couponRepository, EventPublisher eventPublisher) {
-        return new BlockCouponUseCase(couponRepository, eventPublisher);
     }
 
     @Bean
