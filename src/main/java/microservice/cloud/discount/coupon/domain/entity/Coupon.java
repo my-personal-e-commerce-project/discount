@@ -57,7 +57,7 @@ public class Coupon extends AggregateRoot {
     public void block() {
         this.visibility = CouponVisibility.BLOCKED;
         this.publishEvent(
-            new CouponIsNotPublic(id.value())
+            new CouponIsNotPublic(id.value(), code.value(), discountId.value(), expiredAt)
         );
     }
 
@@ -67,9 +67,9 @@ public class Coupon extends AggregateRoot {
         this.maxSales = maxSales;
         this.expiredAt = expiredAt;
 
-        if(this.visibility.equals(CouponVisibility.PUBLIC) && !visibility.equals(visibility)) {
+        if(this.visibility.equals(CouponVisibility.PUBLIC) && !this.visibility.equals(visibility)) {
             this.publishEvent(
-                new CouponIsNotPublic(id.value())
+                new CouponIsNotPublic(id.value(), code.value(), discountId.value(), expiredAt)
             );
         }
 
