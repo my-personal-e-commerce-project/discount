@@ -111606,3 +111606,133 @@ import microservice.cloud.discount.coupon.domain.entity.Coupon;
 2026.07.23 18:34:52 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
 2026.07.23 18:34:52 WARN  javac exited with exit code 1[0m
 2026.07.23 18:34:52 INFO  time: compiled discount in 0.87s[0m
+2026.07.24 12:35:10 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.07.24 12:35:11 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.07.24 12:35:11 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.07.24 12:35:11 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.07.24 12:35:13 INFO  time: initialize in 2s[0m
+2026.07.24 12:35:17 INFO  Attempting to connect to the build server...[0m
+2026.07.24 12:35:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.07.24 12:35:17 INFO  time: Connected to build server in 0.27s[0m
+2026.07.24 12:35:17 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.07.24 12:35:17 INFO  skipping build import with status 'Requested'[0m
+2026.07.24 12:35:17 INFO  time: Imported build in 0.11s[0m
+2026.07.24 12:35:22 INFO  time: indexed workspace in 4.52s[0m
+2026.07.24 12:38:26 INFO  compiling discount (3 java sources)[0m
+2026.07.24 12:38:29 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.07.24 12:38:29 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.24 12:38:29 INFO  time: compiled discount in 2.75s[0m
+2026.07.24 12:38:29 INFO  compiling discount (2 java sources)[0m
+2026.07.24 12:38:31 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.07.24 12:38:31 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.24 12:38:31 INFO  time: compiled discount in 2.39s[0m
+2026.07.24 12:38:31 INFO  compiling discount (5 java sources)[0m
+2026.07.24 12:38:33 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:5: error: cannot access Coupon
+import microservice.cloud.discount.coupon.domain.entity.Coupon;
+                                                       ^
+  bad class file: /tmp/invalidated-forked-javac10933283639783949532/microservice/cloud/discount/coupon/domain/entity/Coupon.class
+    class file truncated at offset 0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/domain/repository/CouponRepository.java:8: error: cannot find symbol
+    public Coupon findById(Id id);
+           ^
+  symbol:   class Coupon
+  location: interface CouponRepository
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/domain/repository/CouponRepository.java:9: error: cannot find symbol
+    public void createCouponAndSales(Coupon coupon, Id couponSalesId);
+                                     ^
+  symbol:   class Coupon
+  location: interface CouponRepository
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/domain/repository/CouponRepository.java:10: error: cannot find symbol
+    public void update(Coupon coupon);
+                       ^
+  symbol:   class Coupon
+  location: interface CouponRepository
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:27: error: cannot find symbol
+    public Coupon findById(Id id) {
+           ^
+  symbol:   class Coupon
+  location: class CouponRepositoryJdbcAdapter
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:38: error: cannot find symbol
+    public void update(Coupon coupon) {
+                       ^
+  symbol:   class Coupon
+  location: class CouponRepositoryJdbcAdapter
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:48: error: cannot find symbol
+    public void createCouponAndSales(Coupon coupon, Id couponSalesId) {
+                                     ^
+  symbol:   class Coupon
+  location: class CouponRepositoryJdbcAdapter
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:71: error: cannot find symbol
+    private Coupon toMap(CouponEntity entity) {
+            ^
+  symbol:   class Coupon
+  location: class CouponRepositoryJdbcAdapter
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:82: error: cannot find symbol
+    private CouponEntity toMap(Coupon coupon) {
+                               ^
+  symbol:   class Coupon
+  location: class CouponRepositoryJdbcAdapter
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: cannot find symbol
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, code, maxSales, visibility, expiredAt);
+        ^
+  symbol:   class Coupon
+  location: class CreateCouponUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/CreateCouponUseCase.java:34: error: cannot find symbol
+        Coupon coupon = Coupon.factoryCoupon(id, discountId, code, maxSales, visibility, expiredAt);
+                        ^
+  symbol:   variable Coupon
+  location: class CreateCouponUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/application/use_cases/UpdateCouponUseCase.java:45: error: cannot find symbol
+        Coupon coupon = couponRepository.findById(id);
+        ^
+  symbol:   class Coupon
+  location: class UpdateCouponUseCase
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:33: error: reference to toMap is ambiguous
+        return toMap(entity);
+               ^
+  both method toMap(CouponEntity) in CouponRepositoryJdbcAdapter and method toMap(Coupon) in CouponRepositoryJdbcAdapter match
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/coupon/infrastructure/persistence/CouponRepositoryJdbcAdapter.java:72: error: cannot find symbol
+        return new Coupon(
+                   ^
+  symbol:   class Coupon
+  location: class CouponRepositoryJdbcAdapter
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/couponSales/application/use_cases/IncrementCouponSalesUseCase.java:24: error: cannot find symbol
+        Coupon coupon = couponRepository.findById(couponId);
+        ^
+  symbol:   class Coupon
+  location: class IncrementCouponSalesUseCase
+15 errors.[0m
+2026.07.24 12:38:33 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.07.24 12:38:33 WARN  javac exited with exit code 1[0m
+2026.07.24 12:38:33 INFO  time: compiled discount in 1.6s[0m
+2026.07.24 13:56:01 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.07.24 13:56:01 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.07.24 13:56:01 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.07.24 13:56:01 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.07.24 13:56:02 INFO  time: initialize in 0.87s[0m
+2026.07.24 13:56:05 INFO  Attempting to connect to the build server...[0m
+2026.07.24 13:56:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.07.24 13:56:05 INFO  time: Connected to build server in 0.2s[0m
+2026.07.24 13:56:05 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.07.24 13:56:06 INFO  skipping build import with status 'Requested'[0m
+2026.07.24 13:56:08 INFO  time: indexed workspace in 2s[0m

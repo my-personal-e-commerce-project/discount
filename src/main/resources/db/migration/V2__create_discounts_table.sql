@@ -54,8 +54,9 @@ BEGIN
             'maxPrice', NEW.max_price,
             'minStock', NEW.min_stock,
             'maxStock', NEW.max_stock,
-            'couponDiscount', NEW.is_coupon_discount,
-            'active', NEW.is_active,
+            'isActive', NEW.is_active,
+            'isCouponDiscount', NEW.is_coupon_discount,
+            'coupons', '[]'::jsonb,
             'expiredAt', NEW.expired_at,
             'allowedCategories', (
                 SELECT coalesce(

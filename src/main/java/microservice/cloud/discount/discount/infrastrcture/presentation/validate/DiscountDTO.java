@@ -36,7 +36,7 @@ public class DiscountDTO {
     private Double maxPrice = null;
     private Integer minStock = null;
     private Integer maxStock = null;
-    private boolean isCouponDiscount = true;
+    private boolean isCouponDiscount = false;
     private boolean isActive = false;
 
     @NotNull
