@@ -18,8 +18,15 @@ DECLARE
     v_payload JSONB;
 BEGIN
     IF (TG_OP = 'DELETE') THEN
+        SELECT jsonb_build_object(
+            'id', NEW.id,
+            'discountId', NEW.discount_id,
+            'code', NEW.code,
+            'expiredAt', NEW.expired_at
+        ) INTO v_payload;
+
         INSERT INTO outbox (aggregate_type, aggregate_id, type, payload, created_at)
-        VALUES ('coupons', OLD.id, 'COUPON_DELETED', jsonb_build_object('id', OLD.id, 'deleted', true), now());
+        VALUES ('coupons', OLD.id, 'COUPON_DELETED', v_payload, now());
     END IF;
 
     RETURN NULL;
