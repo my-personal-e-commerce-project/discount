@@ -31,6 +31,11 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
     @Transactional
     @Override
     public void save(Discount discount) {
+        boolean isSlugExists = discountJdbcRepository.existsBySlug(discount.slug().value());
+
+        if(isSlugExists)
+            throw new ThisDiscountAlreadyExistsException("This slug discount already exists");
+
         jdbcAggregateTemplate.insert(toMap(discount));
     }
 
