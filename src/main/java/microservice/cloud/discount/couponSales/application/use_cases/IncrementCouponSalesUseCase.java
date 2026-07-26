@@ -19,18 +19,17 @@ public class IncrementCouponSalesUseCase {
     }
 
     public void execute(Id couponId) {
-        CouponSales couponSales = couponSalesRepository.findByCouponId(couponId);
+        CouponSales cs = couponSalesRepository.findByCouponId(couponId);
 
         Coupon coupon = couponRepository.findById(couponId);
 
-        couponSalesRepository
-            .pessimisticUpdate(couponSales.couponId(), (cs) -> {
-                boolean isBlocked = coupon.maxSalesReached(cs.sales());
+        boolean isBlocked = coupon.maxSalesReached(cs.sales());
 
-                if(isBlocked) coupon.block();
-               
-                cs.incrementSales();
-            });
+        if(isBlocked) coupon.block();
+       
+        cs.incrementSales();
+
+        couponSalesRepository.updateIfExists(cs.id(), cs);
 
         if(!coupon.getEvents().isEmpty() && coupon.getEvents() != null) {
             eventPublisher.publish(coupon.getEvents());

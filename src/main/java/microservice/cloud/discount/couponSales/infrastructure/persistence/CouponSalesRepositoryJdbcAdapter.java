@@ -25,29 +25,12 @@ public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
 
     @Transactional
     @Override
-    public CouponSales pessimisticUpdate(Id couponId, Consumer<CouponSales> function) {
-        CouponSales couponSales = findByCouponIdForUpdate(couponId.value());
-        function.accept(couponSales);
-        jdbcAggregateTemplate.update(toMap(couponSales));
+    public void updateIfExists(Id id, CouponSales couponSales) {
+        CouponSalesEntity cs = jdbcAggregateTemplate.findById(id.value(), CouponSalesEntity.class);
         
-        return null;
-    }
- 
-    private CouponSales findByCouponIdForUpdate(String couponId) {
-        String sql = "SELECT * FROM coupons_sales WHERE coupon_id = :couponId";
-        MapSqlParameterSource params = new MapSqlParameterSource("couponId", couponId);
+        cs.updateFromDomain(couponSales);
 
-        List<CouponSalesEntity> result = namedParameterJdbcTemplate.query(
-            sql, 
-            params, 
-            new BeanPropertyRowMapper<>(CouponSalesEntity.class)
-        );
-
-        CouponSalesEntity coupon = result.stream()
-            .findFirst()
-            .orElseThrow(() -> new DataNotFound("Coupon sales not found"));
-
-        return toMap(coupon);
+        jdbcAggregateTemplate.update(cs);
     }
 
     @Transactional(readOnly = true)
@@ -73,14 +56,6 @@ public class CouponSalesRepositoryJdbcAdapter implements CouponSalesRepository {
             Id.fromString(couponSalesEntity.getId()),
             Id.fromString(couponSalesEntity.getCouponId()),
             couponSalesEntity.getSales()
-        );
-    }
-
-    public CouponSalesEntity toMap(CouponSales couponSales) {
-        return new CouponSalesEntity(
-            couponSales.id().value(),
-            couponSales.id().value(),
-            couponSales.sales()
         );
     }
 }

@@ -19,10 +19,10 @@ DECLARE
 BEGIN
     IF (TG_OP = 'DELETE') THEN
         SELECT jsonb_build_object(
-            'id', NEW.id,
-            'discountId', NEW.discount_id,
-            'code', NEW.code,
-            'expiredAt', NEW.expired_at
+            'id', OLD.id,
+            'discountId', OLD.discount_id,
+            'code', OLD.code,
+            'expiredAt', OLD.expired_at
         ) INTO v_payload;
 
         INSERT INTO outbox (aggregate_type, aggregate_id, type, payload, created_at)
