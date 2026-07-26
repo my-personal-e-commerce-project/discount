@@ -67,12 +67,5 @@ public class DiscountEntity {
         this.isCouponDiscount = discount.isCouponDiscount();
         this.isActive = discount.isActive();
         this.expiredAt = discount.expiredAt();
-
-        if (this.version != null) {
-
-            this.version++;
-        } else {
-            this.version = 1L;
-        }
     }
 }

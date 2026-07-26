@@ -35,12 +35,19 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
 
     @Override
     @Transactional
-    public void update(Coupon coupon) {
+    public void updateIfExists(Coupon coupon) {
         if(!discountJdbcRepository.existsById(coupon.discountId().value())) {
             throw new DataNotFound("Discount not found");
         }
-        
-        couponJdbcRepository.save(toMap(coupon));
+       
+        CouponEntity couponEntity = couponJdbcRepository.findById(coupon.id().value())
+            .orElseThrow(
+                () -> new DataNotFound("Coupon not found")
+            );
+       
+        couponEntity.updateFromDomain(coupon);
+
+        couponJdbcRepository.save(couponEntity);
     }
 
     @Transactional
@@ -54,8 +61,10 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
             throw new DataNotFound("Discount not found");
         }
 
-        jdbcAggregateTemplate.insert(toMap(coupon));
-        jdbcAggregateTemplate.insert(new CouponSalesEntity(couponSalesId.value(), coupon.id().value(), 0));
+        jdbcAggregateTemplate.insert(factoryCouponEntity(coupon));
+        jdbcAggregateTemplate.insert(
+            new CouponSalesEntity(couponSalesId.value(), coupon.id().value(), 0, 1L)
+        );
     }
 
     @Transactional
@@ -79,14 +88,15 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
         );
     }
 
-    private CouponEntity toMap(Coupon coupon) {
+    private CouponEntity factoryCouponEntity(Coupon coupon) {
         return new CouponEntity(
             coupon.id().value(),
             coupon.discountId().value(),
             coupon.code().value(),
             coupon.maxSales(),
             coupon.visibility().toString(),
-            coupon.expiredAt()
+            coupon.expiredAt(),
+            1L
         );
     }
 }

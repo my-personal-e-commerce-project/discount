@@ -36,7 +36,7 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
         if(isSlugExists)
             throw new ThisDiscountAlreadyExistsException("This slug discount already exists");
 
-        jdbcAggregateTemplate.insert(toMap(discount));
+        jdbcAggregateTemplate.insert(factoryDiscountEntity(discount));
     }
 
     @Transactional
@@ -154,7 +154,7 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
         );
     }
 
-    private DiscountEntity toMap(Discount discount) {
+    private DiscountEntity factoryDiscountEntity(Discount discount) {
     
         return new DiscountEntity(
             discount.id().value(), 

@@ -29,7 +29,5 @@ public class CouponSalesEntity {
         this.id = cs.id().value();
         this.couponId = cs.couponId().value();
         this.sales = cs.sales();
-
-        this.version++;
     } 
 }
