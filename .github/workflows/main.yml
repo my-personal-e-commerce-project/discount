@@ -28,4 +28,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: lucianocaetano/e_commerce_inventory_service
+          tags: lucianocaetano/e_commerce_discount_service
