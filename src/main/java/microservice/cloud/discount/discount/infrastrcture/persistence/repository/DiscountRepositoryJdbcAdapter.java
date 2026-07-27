@@ -2,6 +2,7 @@ package microservice.cloud.discount.discount.infrastrcture.persistence.repositor
 
 import java.util.List;
 import java.util.Set;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 import org.springframework.data.jdbc.core.JdbcAggregateTemplate;
@@ -41,15 +42,21 @@ public class DiscountRepositoryJdbcAdapter implements DiscountRepository {
 
     @Transactional
     @Override
-    public void updateIfExists(Discount discount) {
-        DiscountEntity entity = jdbcAggregateTemplate.findById(discount.id().value(), DiscountEntity.class);
+    public Discount updateIfExists(Id id, Consumer<Discount> function) {
+        DiscountEntity entity = jdbcAggregateTemplate.findById(id.value(), DiscountEntity.class);
 
         if(entity == null)
             throw new DataNotFound("Discount not found");
 
+        Discount discount = toMap(entity);
+
+        function.accept(discount);
+
         entity.updateFromDomain(discount);
         
         jdbcAggregateTemplate.update(entity);
+
+        return discount;
     }
 
     @Transactional

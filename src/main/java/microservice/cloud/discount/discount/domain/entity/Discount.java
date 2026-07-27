@@ -77,6 +77,52 @@ public class Discount {
         this.expiredAt = expiredAt;
     }
 
+    public void update(
+        String name,
+        Slug slug,
+        DiscountType discountType,
+        Percentage percentageValue,
+        Price decrementValue,
+        Set<String> allowedCategories,
+        boolean globalCategories,
+        Price minPrice,
+        Price maxPrice,
+        Quantity minStock,
+        Quantity maxStock,
+        boolean isCouponDiscount,
+        boolean isActive,
+        LocalDateTime expiredAt
+    ) {
+        if(name == null)
+            throw new RuntimeException("The name cannot be null");
+
+        if(globalCategories && !allowedCategories.isEmpty())
+            throw new RuntimeException("This discount cannot have categories, because globalCategories field is true");
+
+        if(discountType == null)
+            throw new RuntimeException("The discountType field cannot be null.");
+
+        if(discountType.toString().equals(DiscountType.DECREMENT.toString()) && percentageValue != null)
+            throw new RuntimeException("The percentageValue should be null.");
+
+        if(discountType.toString().equals(DiscountType.PERCENTAGE.toString()) && decrementValue != null)
+            throw new RuntimeException("The decrementValue should be null.");
+
+
+        this.discountType = discountType;
+        this.percentageValue = percentageValue;
+        this.decrementValue = decrementValue;
+        this.allowedCategories = allowedCategories;
+        this.globalCategories = globalCategories;
+        this.minPrice = minPrice;
+        this.maxPrice = maxPrice;
+        this.minStock = minStock;
+        this.maxStock = maxStock;
+        this.isCouponDiscount = isCouponDiscount;
+        this.isActive = isActive;
+        this.expiredAt = expiredAt;
+    }
+
     public Id id() {return id;}
     public String name() {return name;}
     public Slug slug() {return slug;}

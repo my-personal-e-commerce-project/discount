@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 import java.util.Set;
 
 import microservice.cloud.discount.discount.application.ports.out.ValidTheseCategoriesPort;
-import microservice.cloud.discount.discount.domain.entity.Discount;
 import microservice.cloud.discount.discount.domain.repository.DiscountRepository;
 import microservice.cloud.discount.discount.domain.value_objects.DiscountType;
 import microservice.cloud.discount.discount.domain.value_objects.Percentage;
@@ -59,23 +58,25 @@ public class UpdateDiscountUseCase {
         if(!globalCategories) validTheseCategoriesPort.execute(allowedCategories);
 
         discountRepository.updateIfExists(
-            new Discount(
-                id,
-                name,
-                slug,
-                discountType, 
-                percentageValue, 
-                decrementValue, 
-                allowedCategories, 
-                globalCategories, 
-                minPrice, 
-                maxPrice, 
-                minStock, 
-                maxStock,
-                isCouponDiscount,
-                isActive,
-                expiredAt
-            )
+            id,
+            d -> {
+                d.update(
+                    name,
+                    slug,
+                    discountType, 
+                    percentageValue, 
+                    decrementValue, 
+                    allowedCategories, 
+                    globalCategories, 
+                    minPrice, 
+                    maxPrice, 
+                    minStock, 
+                    maxStock,
+                    isCouponDiscount,
+                    isActive,
+                    expiredAt
+                );
+            }
         );
     }
 }

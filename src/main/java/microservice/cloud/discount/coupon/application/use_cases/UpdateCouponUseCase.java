@@ -42,19 +42,17 @@ public class UpdateCouponUseCase {
 
         me.IHavePermission(Permission.createCoupon());
 
-        Coupon coupon = couponRepository.findById(id);
+        Coupon coupon = couponRepository.updateIfExists(id, c -> {
+            c.update(
+                discountId,
+                code,
+                maxSales,
+                visibility,
+                expiredAt
+            );
+        });
 
-        coupon.update(
-            discountId,
-            code,
-            maxSales,
-            visibility,
-            expiredAt
-        );
-
-        couponRepository.update(coupon);
-
-        if(!coupon.getEvents().isEmpty()) {
+        if(coupon.getEvents() != null && !coupon.getEvents().isEmpty()) {
             eventPublisher.publish(coupon.getEvents());
         }
     }

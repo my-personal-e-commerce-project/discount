@@ -1,5 +1,7 @@
 package microservice.cloud.discount.coupon.infrastructure.persistence;
 
+import java.util.function.Consumer;
+
 import org.springframework.data.jdbc.core.JdbcAggregateTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -35,19 +37,26 @@ public class CouponRepositoryJdbcAdapter implements CouponRepository{
 
     @Override
     @Transactional
-    public void updateIfExists(Coupon coupon) {
-        if(!discountJdbcRepository.existsById(coupon.discountId().value())) {
-            throw new DataNotFound("Discount not found");
-        }
-       
-        CouponEntity couponEntity = couponJdbcRepository.findById(coupon.id().value())
+    public Coupon updateIfExists(Id id, Consumer<Coupon> function) {
+        CouponEntity couponEntity = couponJdbcRepository.findById(id.value())
             .orElseThrow(
                 () -> new DataNotFound("Coupon not found")
             );
-       
+      
+        if(!discountJdbcRepository.existsById(couponEntity.getDiscountId())) {
+            throw new DataNotFound("Discount not found");
+        }
+
+
+        Coupon coupon = toMap(couponEntity);
+        
+        function.accept(coupon);
+
         couponEntity.updateFromDomain(coupon);
 
         couponJdbcRepository.save(couponEntity);
+
+        return coupon;
     }
 
     @Transactional

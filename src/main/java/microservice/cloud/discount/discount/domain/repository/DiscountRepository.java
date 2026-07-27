@@ -2,6 +2,7 @@ package microservice.cloud.discount.discount.domain.repository;
 
 import java.util.List;
 import java.util.Set;
+import java.util.function.Consumer;
 
 import microservice.cloud.discount.discount.domain.entity.Discount;
 import microservice.cloud.discount.discount.domain.value_objects.DiscountType;
@@ -13,7 +14,7 @@ import microservice.cloud.discount.shared.domain.value_objects.Id;
 public interface DiscountRepository {
 
     public void save(Discount discount);
-    public void updateIfExists(Discount discount);
+    public Discount updateIfExists(Id id, Consumer<Discount> function);
     public void delete(Discount discount);
     public Discount getById(Id id);
     public void existsDiscountWithFollowingAttributes(
