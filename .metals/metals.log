@@ -115771,3 +115771,763 @@ import microservice.cloud.discount.discount.application.use_cases.UpdateDiscount
 2026.07.27 15:02:32 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
 2026.07.27 15:02:32 WARN  javac exited with exit code 1[0m
 2026.07.27 15:02:32 INFO  time: compiled discount in 1.83s[0m
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@4e4017f9 rejected from java.util.concurrent.ThreadPoolExecutor@3349e9bb[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 1734]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026.08.05 11:15:59 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.08.05 11:16:21 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.08.05 11:16:21 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.08.05 11:16:22 INFO  time: initialize in 1.34s[0m
+2026.08.05 11:16:23 INFO  Attempting to connect to the build server...[0m
+2026.08.05 11:16:22 INFO  skipping build import with status 'Requested'[0m
+2026.08.05 11:16:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.08.05 11:16:26 INFO  time: Connected to build server in 3.38s[0m
+2026.08.05 11:16:26 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.08.05 11:16:26 INFO  time: Imported build in 0.28s[0m
+2026.08.05 11:16:31 INFO  time: indexed workspace in 4.63s[0m
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@4a87ebd8 rejected from java.util.concurrent.ThreadPoolExecutor@f6efaab[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 104]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026.09.13 19:38:52 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.09.13 19:38:53 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.09.13 19:38:53 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.09.13 19:38:53 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.09.13 19:38:55 INFO  time: initialize in 2.14s[0m
+2026.09.13 19:38:56 INFO  Attempting to connect to the build server...[0m
+2026.09.13 19:38:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.09.13 19:38:56 INFO  time: Connected to build server in 0.31s[0m
+2026.09.13 19:38:56 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.09.13 19:38:55 INFO  skipping build import with status 'Requested'[0m
+2026.09.13 19:39:00 INFO  time: indexed workspace in 3.67s[0m
+2026.09.13 19:39:56 INFO  compiling discount (84 java sources)[0m
+2026.09.13 19:40:00 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+Note: /home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/GetMeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details..[0m
+2026.09.13 19:40:00 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:40:00 INFO  time: compiled discount in 4.75s[0m
+2026.09.13 19:40:42 INFO  compiling discount (1 java source)[0m
+2026.09.13 19:40:44 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.13 19:40:44 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:40:44 INFO  time: compiled discount in 1.94s[0m
+2026.09.13 19:41:16 INFO  compiling discount (1 java source)[0m
+2026.09.13 19:41:18 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/persistence/dao/DomainOutboxDao.java:7: error: package microservice.cloud.inventory.shared.application.ports.out does not exist
+import microservice.cloud.inventory.shared.application.ports.out.DomainOutboxDaoInterface;
+                                                                ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/persistence/dao/DomainOutboxDao.java:11: error: cannot find symbol
+public class DomainOutboxDao implements DomainOutboxDaoInterface {
+                                        ^
+  symbol: class DomainOutboxDaoInterface
+2 errors.[0m
+2026.09.13 19:41:18 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:41:18 WARN  javac exited with exit code 1[0m
+2026.09.13 19:41:18 INFO  time: compiled discount in 1.89s[0m
+2026.09.13 19:41:27 INFO  compiling discount (1 java source)[0m
+2026.09.13 19:41:29 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/persistence/dao/DomainOutboxDao.java:7: error: package microservice.cloud.inventory.shared.application.ports.out does not exist
+import microservice.cloud.inventory.shared.application.ports.out.DomainOutboxDaoInterface;
+                                                                ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/persistence/dao/DomainOutboxDao.java:11: error: cannot find symbol
+public class DomainOutboxDao implements DomainOutboxDaoInterface {
+                                        ^
+  symbol: class DomainOutboxDaoInterface
+2 errors.[0m
+2026.09.13 19:41:29 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:41:29 WARN  javac exited with exit code 1[0m
+2026.09.13 19:41:29 INFO  time: compiled discount in 1.91s[0m
+2026.09.13 19:41:36 INFO  compiling discount (1 java source)[0m
+2026.09.13 19:41:38 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.13 19:41:38 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:41:38 INFO  time: compiled discount in 2.21s[0m
+2026.09.13 19:44:38 INFO  compiling discount (1 java source)[0m
+2026.09.13 19:44:40 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.13 19:44:40 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:44:40 INFO  time: compiled discount in 2.15s[0m
+2026.09.13 19:45:01 INFO  compiling discount (1 java source)[0m
+2026.09.13 19:45:03 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.13 19:45:03 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:45:03 INFO  time: compiled discount in 2.11s[0m
+2026.09.13 19:45:51 INFO  compiling discount (1 java source)[0m
+2026.09.13 19:45:53 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.13 19:45:53 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:45:53 INFO  time: compiled discount in 1.94s[0m
+2026.09.13 19:45:53 INFO  compiling discount (4 java sources)[0m
+2026.09.13 19:45:55 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/event/CategoryDiscountRemovalFailed.java:7: error: CategoryDiscountRemovalFailed is not abstract and does not override abstract method topic() in Event
+public record CategoryDiscountRemovalFailed (
+       ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/event/CategoryDiscountRemoved.java:7: error: CategoryDiscountRemoved is not abstract and does not override abstract method topic() in Event
+public record CategoryDiscountRemoved (
+       ^
+2 errors.[0m
+2026.09.13 19:45:55 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:45:55 WARN  javac exited with exit code 1[0m
+2026.09.13 19:45:55 INFO  time: compiled discount in 2.27s[0m
+2026.09.13 19:46:59 INFO  compiling discount (2 java sources)[0m
+2026.09.13 19:46:59 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/event/CategoryDiscountRemoved.java:23: error: unclosed string literal
+        return "discount.discount.saga-events
+               ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/event/CategoryDiscountRemoved.java:24: error: unclosed string literal
+";
+^
+2 errors.[0m
+2026.09.13 19:46:59 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:46:59 WARN  javac exited with exit code 1[0m
+2026.09.13 19:46:59 INFO  time: compiled discount in 0.98s[0m
+2026.09.13 19:47:02 INFO  compiling discount (2 java sources)[0m
+2026.09.13 19:47:04 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.13 19:47:04 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:47:04 INFO  time: compiled discount in 2.07s[0m
+2026.09.13 19:47:04 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:47:06 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/event/CategoryDiscountRemovalFailed.java:7: error: CategoryDiscountRemovalFailed is not abstract and does not override abstract method topic() in Event
+public record CategoryDiscountRemovalFailed (
+       ^
+1 error.[0m
+2026.09.13 19:47:06 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:47:06 WARN  javac exited with exit code 1[0m
+2026.09.13 19:47:06 INFO  time: compiled discount in 2.13s[0m
+2026.09.13 19:48:20 INFO  compiling discount (2 java sources)[0m
+2026.09.13 19:48:22 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.13 19:48:22 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:48:22 INFO  time: compiled discount in 1.99s[0m
+2026.09.13 19:48:22 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:48:25 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/event/CategoryDiscountRemovalFailed.java:7: error: CategoryDiscountRemovalFailed is not abstract and does not override abstract method topic() in Event
+public record CategoryDiscountRemovalFailed (
+       ^
+1 error.[0m
+2026.09.13 19:48:25 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:48:25 WARN  javac exited with exit code 1[0m
+2026.09.13 19:48:25 INFO  time: compiled discount in 2.16s[0m
+2026.09.13 19:52:40 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:52:42 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:18: error: cannot find symbol
+    private final ObjectMapper objectMapper;
+                  ^
+  symbol:   class ObjectMapper
+  location: class EventPublisherImpl
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:14: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class ObjectMapper
+  location: class EventPublisherImpl
+2 errors.[0m
+2026.09.13 19:52:42 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:52:42 WARN  javac exited with exit code 1[0m
+2026.09.13 19:52:42 INFO  time: compiled discount in 1.9s[0m
+2026.09.13 19:53:05 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:53:07 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:35: error: unreported exception JsonProcessingException; must be caught or declared to be thrown
+        String payload = objectMapper.writeValueAsString(event);
+                                                        ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:40: error: unreported exception JsonProcessingException; must be caught or declared to be thrown
+        String payload = objectMapper.writeValueAsString(event);
+                                                        ^
+2 errors.[0m
+2026.09.13 19:53:07 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:53:07 WARN  javac exited with exit code 1[0m
+2026.09.13 19:53:07 INFO  time: compiled discount in 2.29s[0m
+2026.09.13 19:53:53 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:53:55 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:37: error: method publish(List<? extends DomainEvent>) is already defined in class EventPublisherImpl
+    public void publish(List<? extends DomainEvent> events) {
+                ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:35: error: cannot find symbol
+    @Transactional
+     ^
+  symbol:   class Transactional
+  location: class EventPublisherImpl
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:42: error: cannot find symbol
+                if(e instanceof MinStockAlertEvent) {
+                                ^
+  symbol:   class MinStockAlertEvent
+  location: class EventPublisherImpl
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:43: error: cannot find symbol
+                    handleMinStockAlert((MinStockAlertEvent) e);
+                                         ^
+  symbol:   class MinStockAlertEvent
+  location: class EventPublisherImpl
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:46: error: cannot find symbol
+                if(e instanceof DeletedCategory) {
+                                ^
+  symbol:   class DeletedCategory
+  location: class EventPublisherImpl
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:47: error: cannot find symbol
+                    handleDeletedCategory((DeletedCategory) e);
+                                           ^
+  symbol:   class DeletedCategory
+  location: class EventPublisherImpl
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:51: error: cannot find symbol
+            log.error(e.getMessage());
+            ^
+  symbol:   variable log
+  location: class EventPublisherImpl
+7 errors.[0m
+2026.09.13 19:53:55 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:53:55 WARN  javac exited with exit code 1[0m
+2026.09.13 19:53:55 INFO  time: compiled discount in 1.76s[0m
+2026.09.13 19:54:46 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:54:48 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:38: error: method publish(List<? extends DomainEvent>) is already defined in class EventPublisherImpl
+    public void publish(List<? extends DomainEvent> events) {
+                ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:44: error: incompatible types: DomainEvent cannot be converted to CouponIsNotPublic
+                    publishCouponNotPublic(e);
+                                           ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:48: error: incompatible types: DomainEvent cannot be converted to CouponPublished
+                    publishCouponPublished(e);
+                                           ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:52: error: cannot find symbol
+            log.error(e.getMessage());
+            ^
+  symbol:   variable log
+  location: class EventPublisherImpl
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors.[0m
+2026.09.13 19:54:48 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:54:48 WARN  javac exited with exit code 1[0m
+2026.09.13 19:54:48 INFO  time: compiled discount in 1.79s[0m
+2026.09.13 19:54:58 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:55:00 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:33: error: incompatible types: DomainEvent cannot be converted to CouponIsNotPublic
+                    publishCouponNotPublic(e);
+                                           ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:37: error: incompatible types: DomainEvent cannot be converted to CouponPublished
+                    publishCouponPublished(e);
+                                           ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:41: error: cannot find symbol
+            log.error(e.getMessage());
+            ^
+  symbol:   variable log
+  location: class EventPublisherImpl
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors.[0m
+2026.09.13 19:55:00 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:55:00 WARN  javac exited with exit code 1[0m
+2026.09.13 19:55:00 INFO  time: compiled discount in 2.31s[0m
+2026.09.13 19:55:09 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:55:11 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:18: error: cannot find symbol
+@Slf4j
+ ^
+  symbol: class Slf4j
+1 error.[0m
+2026.09.13 19:55:11 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:55:11 WARN  javac exited with exit code 1[0m
+2026.09.13 19:55:11 INFO  time: compiled discount in 2s[0m
+2026.09.13 19:55:13 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:55:15 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:35: error: incompatible types: DomainEvent cannot be converted to CouponIsNotPublic
+                    publishCouponNotPublic(e);
+                                           ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:39: error: incompatible types: DomainEvent cannot be converted to CouponPublished
+                    publishCouponPublished(e);
+                                           ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors.[0m
+2026.09.13 19:55:15 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:55:15 WARN  javac exited with exit code 1[0m
+2026.09.13 19:55:15 INFO  time: compiled discount in 2.25s[0m
+2026.09.13 19:55:32 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:55:34 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/out/EventPublisherImpl.java:39: error: incompatible types: DomainEvent cannot be converted to CouponPublished
+                    publishCouponPublished(e);
+                                           ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error.[0m
+2026.09.13 19:55:34 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:55:34 WARN  javac exited with exit code 1[0m
+2026.09.13 19:55:34 INFO  time: compiled discount in 2.3s[0m
+2026.09.13 19:55:49 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:55:52 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.13 19:55:52 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:55:52 INFO  time: compiled discount in 2.39s[0m
+2026.09.13 19:55:52 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:55:54 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/event/CategoryDiscountRemovalFailed.java:7: error: CategoryDiscountRemovalFailed is not abstract and does not override abstract method topic() in Event
+public record CategoryDiscountRemovalFailed (
+       ^
+1 error.[0m
+2026.09.13 19:55:54 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:55:54 WARN  javac exited with exit code 1[0m
+2026.09.13 19:55:54 INFO  time: compiled discount in 2.21s[0m
+2026.09.13 19:56:06 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:56:08 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.13 19:56:08 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:56:08 INFO  time: compiled discount in 2.32s[0m
+2026.09.13 19:56:08 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:56:10 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/event/CategoryDiscountRemovalFailed.java:7: error: CategoryDiscountRemovalFailed is not abstract and does not override abstract method topic() in Event
+public record CategoryDiscountRemovalFailed (
+       ^
+1 error.[0m
+2026.09.13 19:56:10 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:56:10 WARN  javac exited with exit code 1[0m
+2026.09.13 19:56:10 INFO  time: compiled discount in 2.19s[0m
+2026.09.13 19:56:19 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:56:21 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.13 19:56:21 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:56:21 INFO  time: compiled discount in 2.35s[0m
+2026.09.13 19:56:21 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:56:24 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/event/CategoryDiscountRemovalFailed.java:7: error: CategoryDiscountRemovalFailed is not abstract and does not override abstract method topic() in Event
+public record CategoryDiscountRemovalFailed (
+       ^
+1 error.[0m
+2026.09.13 19:56:24 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:56:24 WARN  javac exited with exit code 1[0m
+2026.09.13 19:56:24 INFO  time: compiled discount in 2.18s[0m
+2026.09.13 19:56:24 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:56:26 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.13 19:56:26 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:56:26 INFO  time: compiled discount in 2.26s[0m
+2026.09.13 19:56:26 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:56:28 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/event/CategoryDiscountRemovalFailed.java:7: error: CategoryDiscountRemovalFailed is not abstract and does not override abstract method topic() in Event
+public record CategoryDiscountRemovalFailed (
+       ^
+1 error.[0m
+2026.09.13 19:56:28 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:56:28 WARN  javac exited with exit code 1[0m
+2026.09.13 19:56:28 INFO  time: compiled discount in 2.1s[0m
+2026.09.13 19:56:28 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:56:30 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.13 19:56:30 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:56:30 INFO  time: compiled discount in 1.78s[0m
+2026.09.13 19:56:30 INFO  compiling discount (3 java sources)[0m
+2026.09.13 19:56:31 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/discount/application/event/CategoryDiscountRemovalFailed.java:7: error: CategoryDiscountRemovalFailed is not abstract and does not override abstract method topic() in Event
+public record CategoryDiscountRemovalFailed (
+       ^
+1 error.[0m
+2026.09.13 19:56:31 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.13 19:56:31 WARN  javac exited with exit code 1[0m
+2026.09.13 19:56:31 INFO  time: compiled discount in 1.44s[0m
+2026.09.13 20:00:48 INFO  Shut down connection with build server.[0m
+2026.09.13 20:00:57 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.09.13 20:00:57 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.09.13 20:00:57 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.09.13 20:00:57 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.09.13 20:00:59 INFO  time: initialize in 2.06s[0m
+2026.09.13 20:01:00 INFO  Attempting to connect to the build server...[0m
+2026.09.13 20:01:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.09.13 20:01:00 INFO  time: Connected to build server in 0.3s[0m
+2026.09.13 20:01:00 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.09.13 20:01:01 INFO  skipping build import with status 'Requested'[0m
+2026.09.13 20:01:03 INFO  time: indexed workspace in 2.83s[0m
+2026.09.14 19:52:37 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.09.14 19:52:38 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.09.14 19:52:38 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.09.14 19:52:38 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.09.14 19:52:39 INFO  time: initialize in 1.68s[0m
+2026.09.14 19:52:40 INFO  Attempting to connect to the build server...[0m
+2026.09.14 19:52:39 INFO  skipping build import with status 'Requested'[0m
+2026.09.14 19:52:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.09.14 19:52:43 INFO  time: Connected to build server in 3.7s[0m
+2026.09.14 19:52:43 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.09.14 19:52:43 INFO  time: Imported build in 0.17s[0m
+2026.09.14 19:52:47 INFO  time: indexed workspace in 2.71s[0m
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@42e3cd56 rejected from java.util.concurrent.ThreadPoolExecutor@3349e9bb[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 104]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026.09.15 13:15:49 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/lsp.trace.json or /home/mauroc/.cache/metals/lsp.trace.json[0m
+2026.09.15 13:15:49 INFO  logging to file /home/mauroc/project/microservice_ecommerce/discount/.metals/metals.log[0m
+2026.09.15 13:15:49 INFO  Started: Metals version 0.11.2 in workspace '/home/mauroc/project/microservice_ecommerce/discount' for client coc.nvim 0.0.82.[0m
+2026.09.15 13:15:49 WARN  Can't instantiate JavaInteractiveSemanticdb (version: None, jdkHome: /nix/store/1kdb2nl1dvwjzqlg1ihc6dy82ffw7prl-openjdk-21.0.9+8, javac exists: true)[0m
+2026.09.15 13:15:50 INFO  time: initialize in 0.87s[0m
+2026.09.15 13:15:50 INFO  Attempting to connect to the build server...[0m
+2026.09.15 13:15:50 INFO  skipping build import with status 'Requested'[0m
+2026.09.15 13:15:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/mauroc/project/microservice_ecommerce/discount/.metals/bsp.trace.json or /home/mauroc/.cache/metals/bsp.trace.json[0m
+2026.09.15 13:15:52 INFO  time: Connected to build server in 2.13s[0m
+2026.09.15 13:15:52 INFO  Connected to Build server: Bloop v1.4.13[0m
+2026.09.15 13:15:52 INFO  time: Imported build in 0.17s[0m
+2026.09.15 13:15:54 INFO  time: indexed workspace in 1.75s[0m
+2026.09.15 13:22:03 INFO  compiling discount (4 java sources)[0m
+2026.09.15 13:22:05 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.15 13:22:05 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.15 13:22:05 INFO  time: compiled discount in 1.44s[0m
+2026.09.15 13:22:05 INFO  compiling discount (2 java sources)[0m
+2026.09.15 13:22:06 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.15 13:22:06 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.15 13:22:06 INFO  time: compiled discount in 1.35s[0m
+2026.09.15 13:26:10 INFO  compiling discount (1 java source)[0m
+2026.09.15 13:26:11 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/in/KafkaConsumer.java:46: error: incompatible types: bad return type in lambda expression
+            return outputEvent;
+                   ^
+    unexpected return value
+1 error.[0m
+2026.09.15 13:26:11 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.15 13:26:11 WARN  javac exited with exit code 1[0m
+2026.09.15 13:26:11 INFO  time: compiled discount in 1.33s[0m
+2026.09.15 13:26:43 INFO  compiling discount (1 java source)[0m
+2026.09.15 13:26:44 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/in/KafkaConsumer.java:49: error: incompatible types: CategoryDiscountRemoved cannot be converted to String
+            domainOutboxDao.save(outputEvent.topic(), outputEvent);
+                                                      ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error.[0m
+2026.09.15 13:26:44 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.15 13:26:44 WARN  javac exited with exit code 1[0m
+2026.09.15 13:26:44 INFO  time: compiled discount in 1.24s[0m
+2026.09.15 13:27:14 INFO  compiling discount (1 java source)[0m
+2026.09.15 13:27:15 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/in/KafkaConsumer.java:23: error: cannot find symbol
+    private final ObjectMapper objectMapper;
+                  ^
+  symbol:   class ObjectMapper
+  location: class KafkaConsumer
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/in/KafkaConsumer.java:19: error: cannot find symbol
+@RequiredArgsConstructor
+^
+  symbol:   class ObjectMapper
+  location: class KafkaConsumer
+2 errors.[0m
+2026.09.15 13:27:15 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.15 13:27:15 WARN  javac exited with exit code 1[0m
+2026.09.15 13:27:15 INFO  time: compiled discount in 1.14s[0m
+2026.09.15 13:27:28 INFO  compiling discount (1 java source)[0m
+2026.09.15 13:27:29 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/in/KafkaConsumer.java:50: error: incompatible types: CategoryDiscountRemoved cannot be converted to String
+            domainOutboxDao.save(outputEvent.topic(), outputEvent);
+                                                      ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error.[0m
+2026.09.15 13:27:29 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.15 13:27:29 WARN  javac exited with exit code 1[0m
+2026.09.15 13:27:29 INFO  time: compiled discount in 1.25s[0m
+2026.09.15 13:27:39 INFO  compiling discount (1 java source)[0m
+2026.09.15 13:27:40 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/in/KafkaConsumer.java:49: error: unreported exception JsonProcessingException; must be caught or declared to be thrown
+            String payload = objectMapper.writeValueAsString(outputEvent);
+                                                            ^
+1 error.[0m
+2026.09.15 13:27:40 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.15 13:27:40 WARN  javac exited with exit code 1[0m
+2026.09.15 13:27:40 INFO  time: compiled discount in 1.24s[0m
+2026.09.15 13:28:12 INFO  compiling discount (1 java source)[0m
+2026.09.15 13:28:13 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/in/KafkaConsumer.java:53: error: exception JsonProcessingException is never thrown in body of corresponding try statement
+            }catch(JsonProcessingException e) {
+             ^
+/home/mauroc/project/microservice_ecommerce/discount/src/main/java/microservice/cloud/discount/shared/infrastructure/adapters/in/KafkaConsumer.java:50: error: unreported exception JsonProcessingException; must be caught or declared to be thrown
+                String payload = objectMapper.writeValueAsString(outputEvent);
+                                                                ^
+2 errors.[0m
+2026.09.15 13:28:13 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.15 13:28:13 WARN  javac exited with exit code 1[0m
+2026.09.15 13:28:13 INFO  time: compiled discount in 1.28s[0m
+2026.09.15 13:28:31 INFO  compiling discount (1 java source)[0m
+2026.09.15 13:28:33 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.15 13:28:33 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.15 13:28:33 INFO  time: compiled discount in 1.3s[0m
+2026.09.15 13:29:15 INFO  compiling discount (1 java source)[0m
+2026.09.15 13:29:16 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.15 13:29:16 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.15 13:29:16 INFO  time: compiled discount in 1.32s[0m
+2026.09.15 13:29:20 INFO  compiling discount (1 java source)[0m
+2026.09.15 13:29:21 WARN  Unexpected javac output: Note: Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing..[0m
+2026.09.15 13:29:21 INFO  Note: Annotation processing is enabled because one or more processors were found[0m
+2026.09.15 13:29:21 INFO  time: compiled discount in 1.3s[0m

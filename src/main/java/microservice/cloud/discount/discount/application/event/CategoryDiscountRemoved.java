@@ -19,6 +19,10 @@ public record CategoryDiscountRemoved (
         this(categoryId, success, message, LocalDateTime.now());
     }
 
+    public String topic() {
+        return "discount.discount.saga-events";
+    }
+
     @Override
     public LocalDateTime occurredOn() {
         return occurredOn;

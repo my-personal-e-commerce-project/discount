@@ -42,9 +42,6 @@ spring:
           destination: inventory.category.saga-events
           group: discount-group
           content-type: application/json
-        processInventorySaga-out-0:
-          destination: discount.discount.saga-events
-          content-type: application/json
   datasource:
     driver-class-name: org.postgresql.Driver
     url: ${SPRING_DATASOURCE_URL} 

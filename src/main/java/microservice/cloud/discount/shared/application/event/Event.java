@@ -4,4 +4,5 @@ import java.time.LocalDateTime;
 
 public interface Event {
     LocalDateTime occurredOn();
+    String topic();
 }

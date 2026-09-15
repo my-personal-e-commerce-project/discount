@@ -25,7 +25,7 @@ BEGIN
             'expiredAt', OLD.expired_at
         ) INTO v_payload;
 
-        INSERT INTO outbox (aggregate_type, aggregate_id, type, payload, created_at)
+        INSERT INTO aggregate_outbox (aggregate_type, aggregate_id, type, payload, created_at)
         VALUES ('coupons', OLD.id, 'COUPON_DELETED', v_payload, now());
     END IF;
 

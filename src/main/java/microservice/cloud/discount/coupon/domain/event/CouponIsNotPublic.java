@@ -28,6 +28,6 @@ public record CouponIsNotPublic(
     }
 
     public String domain() {
-        return "discount.coupon";
+        return "discount.discount.coupon-is-not-public";
     }
 }
