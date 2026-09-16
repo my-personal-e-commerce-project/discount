@@ -38,28 +38,30 @@ services:
 #
 # curl -i -X PUT -H "Accept:application/json" -H "Content-Type:application/json" \
 #  localhost:8084/connectors/domain-outbox-connector/config -d '{
-#  "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
-#  "database.hostname": "discount-postgres-1",
-#  "database.port": "5434",
-#  "database.user": "root",
-#  "database.password": "root",
-#  "database.dbname": "discounts",
-#  "topic.prefix": "domain",
-#  "table.include.list": "public.domain_outbox",
-#  "plugin.name": "pgoutput",
-#  
-#  "transforms": "outbox",
-#  "transforms.outbox.type": "io.debezium.transforms.outbox.EventRouter",
-#  "transforms.outbox.table.field.event.timestamp": "created_at",
-#  "transforms.outbox.table.field.event.key": "id",
-#  "transforms.outbox.route.by.field": "topic",
-#  "transforms.outbox.route.topic.replacement": "${routedByValue}",
-#                                                                                
-#  "value.converter": "org.apache.kafka.connect.json.JsonConverter",
-#  "value.converter.schemas.enable": "false",
-#  "key.converter": "org.apache.kafka.connect.json.JsonConverter",
-#  "key.converter.schemas.enable": "false"
-# }'
+#   "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+#   "database.hostname": "discount-postgres-1",
+#   "database.port": "5432",
+#   "database.user": "root",
+#   "database.password": "root",
+#   "database.dbname": "discounts",
+#   "topic.prefix": "domain",
+#   "table.include.list": "public.domain_outbox",
+#   "plugin.name": "pgoutput",
+#
+#   "transforms": "outbox",
+#   "transforms.outbox.type": "io.debezium.transforms.outbox.EventRouter",
+#   "transforms.outbox.table.field.event.timestamp": "created_at",
+#   "transforms.outbox.table.field.event.key": "id",
+#   "transforms.outbox.table.field.event.payload": "payload",
+#   "transforms.outbox.route.by.field": "topic",
+#   "transforms.outbox.route.topic.replacement": "${routedByValue}",
+#
+#   "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+#   "value.converter.schemas.enable": "false",
+#   "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+#   "key.converter.schemas.enable": "false"
+#  }'
+ 
 # Para verificar el estado del conector:
 # curl -s localhost:8084/connectors/mi-conector-postgres/status | jq
 # =========================================================================
@@ -73,10 +75,10 @@ services:
       - e-commerce-network
     environment:
       - BOOTSTRAP_SERVERS=kafka:29092
-      - GROUP_ID=1
-      - CONFIG_STORAGE_TOPIC=my_connect_configs
-      - OFFSET_STORAGE_TOPIC=my_connect_offsets
-      - STATUS_STORAGE_TOPIC=my_connect_statuses
+      - GROUP_ID=2
+      - CONFIG_STORAGE_TOPIC=my_connect_configs_b
+      - OFFSET_STORAGE_TOPIC=my_connect_offsets_b
+      - STATUS_STORAGE_TOPIC=my_connect_statuses_b
 networks:
   e-commerce-network:
     external: true
